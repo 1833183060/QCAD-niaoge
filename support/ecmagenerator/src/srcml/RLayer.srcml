@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.sdml.info/srcML/src" xmlns:cpp="http://www.sdml.info/srcML/cpp" language="C++" dir="./core" filename="RLayer.h"><comment type="block">/**
+ * Copyright (c) 2011-2018 by Andrew Mustun. All rights reserved.
+ * 
+ * This file is part of the QCAD project.
+ *
+ * QCAD is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * QCAD is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with QCAD.
+ */</comment>
+
+<cpp:ifndef>#<cpp:directive>ifndef</cpp:directive> <name>RLAYER_H</name></cpp:ifndef>
+<cpp:define>#<cpp:directive>define</cpp:directive> <name>RLAYER_H</name></cpp:define>
+
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"core_global.h"</cpp:file></cpp:include>
+
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>&lt;QString&gt;</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>&lt;QColor&gt;</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>&lt;QDebug&gt;</cpp:file></cpp:include>
+
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"RGlobal.h"</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"RObject.h"</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"RVector.h"</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"RPropertyTypeId.h"</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"RLayerProxy.h"</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"RLinetype.h"</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"RColor.h"</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"RLineweight.h"</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"RPropertyAttributes.h"</cpp:file></cpp:include>
+
+<class_decl>class <name>RDocument</name>;</class_decl>
+
+<comment type="block">/**
+ * Represents a layer in a drawing.
+ *
+ * \ingroup core
+ * \scriptable
+ * \sharedPointerSupport
+ */</comment>
+<class>class <macro><name>QCADCORE_EXPORT</name></macro> <name>RLayer</name><super>: <specifier>public</specifier> <name>RObject</name></super> <block>{<private type="default">
+</private><public>public:
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertyCustom</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertyType</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertyHandle</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertyProtected</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertySelected</name></decl>;</decl_stmt>
+
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertyName</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertyOff</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertyFrozen</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertyLocked</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertyCollapsed</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertyPlottable</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertySnappable</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertyOffIsFreeze</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertyColor</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertyLinetype</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RPropertyTypeId</name></type> <name>PropertyLineweight</name></decl>;</decl_stmt>
+
+
+</public><public>public:
+    <enum>enum <name>LayerFlag</name> <block>{
+        <comment type="line">// these complement the RObject flags</comment>
+        <expr><name>Off</name> = 0x010</expr>,              <comment type="line">//!&lt; layer is off</comment>
+        <expr><name>Frozen</name> = 0x020</expr>,           <comment type="line">//!&lt; layer is frozen</comment>
+        <expr><name>Locked</name> = 0x040</expr>,           <comment type="line">//!&lt; layer is locked</comment>
+        <expr><name>Collapsed</name> = 0x080</expr>,        <comment type="line">//!&lt; layer is collapsed</comment>
+        <expr><name>Plottable</name> = 0x100</expr>,        <comment type="line">//!&lt; printing disabled for this layer</comment>
+        <expr><name>Snappable</name> = 0x200</expr>,        <comment type="line">//!&lt; snap disabled for this layer</comment>
+        <expr><name>OffIsFreeze</name> = 0x400</expr>       <comment type="line">//!&lt; off means freeze for this layer</comment>
+    }</block>;</enum>
+    <macro><name>Q_DECLARE_FLAGS</name><argument_list>(<argument>LayerFlags</argument>, <argument>LayerFlag</argument>)</argument_list></macro>
+
+</public><public>public:
+    <constructor_decl><name>RLayer</name><parameter_list>()</parameter_list>;</constructor_decl>
+
+    <constructor_decl><name>RLayer</name><parameter_list>(<param><decl><type><name>RDocument</name>*</type> <name>document</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>name</name></decl></param>, <param><decl><type><name>bool</name></type> <name>frozen</name> =<init> <expr><name>false</name></expr></init></decl></param>,
+        <param><decl><type><name>bool</name></type> <name>locked</name> =<init> <expr><name>false</name></expr></init></decl></param>, <param><decl><type><name>const</name> <name>RColor</name>&amp;</type> <name>color</name> =<init> <expr><name><name>Qt</name>::<name>black</name></name></expr></init></decl></param>,
+        <param><decl><type><name><name>RLinetype</name>::<name>Id</name></name></type> <name>linetypeId</name> =<init> <expr><name><name>RLinetype</name>::<name>INVALID_ID</name></name></expr></init></decl></param>,
+        <param><decl><type><name><name>RLineweight</name>::<name>Lineweight</name></name></type> <name>lineweight</name> =<init> <expr><name><name>RLineweight</name>::<name>Weight000</name></name></expr></init></decl></param>,
+        <param><decl><type><name>bool</name></type> <name>off</name> =<init> <expr><name>false</name></expr></init></decl></param>)</parameter_list>;</constructor_decl>
+
+    <constructor_decl><name>RLayer</name><parameter_list>(<param><decl><type><name>const</name> <name>RLayer</name>&amp;</type> <name>other</name></decl></param>)</parameter_list>;</constructor_decl>
+    <destructor_decl><specifier>virtual</specifier> <name>~RLayer</name><parameter_list>()</parameter_list>;</destructor_decl>
+
+    <function_decl><type><name>static</name> <name>void</name></type> <name>init</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function><type><name>virtual</name> <name><name>RS</name>::<name>EntityType</name></name></type> <name>getType</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><name><name>RS</name>::<name>ObjectLayer</name></name></expr>;</return>
+    }</block></function>
+
+    <function_decl><type><name>virtual</name> <name>RLayer</name>*</type> <name>clone</name><parameter_list>()</parameter_list> <specifier>const</specifier>;</function_decl>
+
+    <function_decl><type><name><name>RLayer</name>::<name>Id</name></name></type> <name>getParentLayerId</name><parameter_list>()</parameter_list> <specifier>const</specifier>;</function_decl>
+
+    <function><type><name>QString</name></type> <name>getName</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><name>name</name></expr>;</return>
+    }</block></function>
+
+    <function_decl><type><name>void</name></type> <name>setName</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>n</name></decl></param>)</parameter_list>;</function_decl>
+
+    <function><type><name>bool</name></type> <name>isOffOrFrozen</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><call><name>isOff</name><argument_list>()</argument_list></call> || <call><name>isFrozen</name><argument_list>()</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>bool</name></type> <name>isOff</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><call><name>getFlag</name><argument_list>(<argument><expr><name><name>RLayer</name>::<name>Off</name></name></expr></argument>)</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>void</name></type> <name>setOff</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list> <block>{
+        <constructor_decl><name>setFlag</name><parameter_list>(<param><decl><type><name><name>RLayer</name>::<name>Off</name></name></type></decl></param>, <param><decl><type><name>on</name></type></decl></param>)</parameter_list>;</constructor_decl>
+    }</block></function>
+
+    <function><type><name>bool</name></type> <name>isFrozen</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><call><name>getFlag</name><argument_list>(<argument><expr><name><name>RLayer</name>::<name>Frozen</name></name></expr></argument>)</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>void</name></type> <name>setFrozen</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list> <block>{
+        <constructor_decl><name>setFlag</name><parameter_list>(<param><decl><type><name><name>RLayer</name>::<name>Frozen</name></name></type></decl></param>, <param><decl><type><name>on</name></type></decl></param>)</parameter_list>;</constructor_decl>
+    }</block></function>
+
+    <function><type><name>bool</name></type> <name>isLocked</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><call><name>getFlag</name><argument_list>(<argument><expr><name><name>RLayer</name>::<name>Locked</name></name></expr></argument>)</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>void</name></type> <name>setLocked</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list> <block>{
+        <constructor_decl><name>setFlag</name><parameter_list>(<param><decl><type><name><name>RLayer</name>::<name>Locked</name></name></type></decl></param>, <param><decl><type><name>on</name></type></decl></param>)</parameter_list>;</constructor_decl>
+    }</block></function>
+
+    <function><type><name>bool</name></type> <name>isCollapsed</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><call><name>getFlag</name><argument_list>(<argument><expr><name><name>RLayer</name>::<name>Collapsed</name></name></expr></argument>)</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>void</name></type> <name>setCollapsed</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list> <block>{
+        <constructor_decl><name>setFlag</name><parameter_list>(<param><decl><type><name><name>RLayer</name>::<name>Collapsed</name></name></type></decl></param>, <param><decl><type><name>on</name></type></decl></param>)</parameter_list>;</constructor_decl>
+    }</block></function>
+
+    <function><type><name>bool</name></type> <name>isPlottable</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><call><name>getFlag</name><argument_list>(<argument><expr><name><name>RLayer</name>::<name>Plottable</name></name></expr></argument>)</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>void</name></type> <name>setPlottable</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list> <block>{
+        <if>if <condition>(<expr><name>name</name>.<call><name>toLower</name><argument_list>()</argument_list></call>!="defpoints"</expr>)</condition><then> <block>{
+            <constructor_decl><name>setFlag</name><parameter_list>(<param><decl><type><name><name>RLayer</name>::<name>Plottable</name></name></type></decl></param>, <param><decl><type><name>on</name></type></decl></param>)</parameter_list>;</constructor_decl>
+        }</block></then></if>
+    }</block></function>
+
+    <function><type><name>bool</name></type> <name>isSnappable</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><call><name>getFlag</name><argument_list>(<argument><expr><name><name>RLayer</name>::<name>Snappable</name></name></expr></argument>)</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>void</name></type> <name>setSnappable</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list> <block>{
+        <constructor_decl><name>setFlag</name><parameter_list>(<param><decl><type><name><name>RLayer</name>::<name>Snappable</name></name></type></decl></param>, <param><decl><type><name>on</name></type></decl></param>)</parameter_list>;</constructor_decl>
+    }</block></function>
+
+    <function><type><name>bool</name></type> <name>isOffIsFreeze</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><call><name>getFlag</name><argument_list>(<argument><expr><name><name>RLayer</name>::<name>OffIsFreeze</name></name></expr></argument>)</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>void</name></type> <name>setOffIsFreeze</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list> <block>{
+        <constructor_decl><name>setFlag</name><parameter_list>(<param><decl><type><name><name>RLayer</name>::<name>OffIsFreeze</name></name></type></decl></param>, <param><decl><type><name>on</name></type></decl></param>)</parameter_list>;</constructor_decl>
+    }</block></function>
+
+    <function><type><name>RColor</name></type> <name>getColor</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><name>color</name></expr>;</return>
+    }</block></function>
+
+    <function><type><name>void</name></type> <name>setColor</name><parameter_list>(<param><decl><type><name>const</name> <name>RColor</name>&amp;</type> <name>c</name></decl></param>)</parameter_list> <block>{
+        <expr_stmt><expr><name>color</name> = <name>c</name></expr>;</expr_stmt>
+    }</block></function>
+
+    <function><type><name><name>RLinetype</name>::<name>Id</name></name></type> <name>getLinetypeId</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><name>linetypeId</name></expr>;</return>
+    }</block></function>
+
+    <function><type><name>void</name></type> <name>setLinetypeId</name><parameter_list>(<param><decl><type><name><name>RLinetype</name>::<name>Id</name></name></type> <name>lt</name></decl></param>)</parameter_list> <block>{
+        <expr_stmt><expr><name>linetypeId</name> = <name>lt</name></expr>;</expr_stmt>
+    }</block></function>
+
+    <function><type><name><name>RLineweight</name>::<name>Lineweight</name></name></type> <name>getLineweight</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><name>lineweight</name></expr>;</return>
+    }</block></function>
+
+    <function><type><name>void</name></type> <name>setLineweight</name><parameter_list>(<param><decl><type><name><name>RLineweight</name>::<name>Lineweight</name></name></type> <name>lw</name></decl></param>)</parameter_list> <block>{
+        <expr_stmt><expr><name>lineweight</name> = <name>lw</name></expr>;</expr_stmt>
+    }</block></function>
+
+    <function_decl><type><name>virtual</name> <name>QPair<argument_list>&lt;<argument><name>QVariant</name></argument>, <argument><name>RPropertyAttributes</name></argument>&gt;</argument_list></name></type> <name>getProperty</name><parameter_list>(
+            <param><decl><type><name>RPropertyTypeId</name>&amp;</type> <name>propertyTypeId</name></decl></param>,
+            <param><decl><type><name>bool</name></type> <name>humanReadable</name> =<init> <expr><name>false</name></expr></init></decl></param>, <param><decl><type><name>bool</name></type> <name>noAttributes</name> =<init> <expr><name>false</name></expr></init></decl></param>, <param><decl><type><name>bool</name></type> <name>showOnRequest</name> =<init> <expr><name>false</name></expr></init></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>virtual</name> <name>bool</name></type> <name>setProperty</name><parameter_list>(<param><decl><type><name>RPropertyTypeId</name></type> <name>propertyTypeId</name></decl></param>,
+            <param><decl><type><name>const</name> <name>QVariant</name>&amp;</type> <name>value</name></decl></param>, <param><decl><type><name>RTransaction</name>*</type> <name>transaction</name>=<init><expr><name>NULL</name></expr></init></decl></param>)</parameter_list>;</function_decl>
+
+    <function><type><name>bool</name></type> <name>hasChildLayers</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <decl_stmt><decl><type><name>const</name> <name>RDocument</name>*</type> <name>doc</name> =<init> <expr><call><name>getDocument</name><argument_list>()</argument_list></call></expr></init></decl>;</decl_stmt>
+        <if>if <condition>(<expr><name>doc</name>==<name>NULL</name></expr>)</condition><then> <block>{
+            <return>return <expr><name>false</name></expr>;</return>
+        }</block></then></if>
+        <return>return <expr><call><name><name>RLayer</name>::<name>hasChildLayersStatic</name></name><argument_list>(<argument><expr><name>doc</name></expr></argument>, <argument><expr><name>name</name></expr></argument>)</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>QList<argument_list>&lt;<argument><name>QString</name></argument>&gt;</argument_list></name></type> <name>getChildLayerNames</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>recursive</name> =<init> <expr><name>true</name></expr></init></decl></param>)</parameter_list> <specifier>const</specifier> <block>{
+        <decl_stmt><decl><type><name>const</name> <name>RDocument</name>*</type> <name>doc</name> =<init> <expr><call><name>getDocument</name><argument_list>()</argument_list></call></expr></init></decl>;</decl_stmt>
+        <if>if <condition>(<expr><name>doc</name>==<name>NULL</name></expr>)</condition><then> <block>{
+            <return>return <expr><call><name>QList<argument_list>&lt;<argument><name>QString</name></argument>&gt;</argument_list></name><argument_list>()</argument_list></call></expr>;</return>
+        }</block></then></if>
+        <return>return <expr><call><name><name>RLayer</name>::<name>getChildLayerNamesStatic</name></name><argument_list>(<argument><expr><name>doc</name></expr></argument>, <argument><expr><name>name</name></expr></argument>, <argument><expr><name>recursive</name></expr></argument>)</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>QString</name></type> <name>getParentLayerName</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><call><name><name>RLayer</name>::<name>getParentLayerNameStatic</name></name><argument_list>(<argument><expr><name>name</name></expr></argument>)</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>QString</name></type> <name>getShortLayerName</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><call><name><name>RLayer</name>::<name>getShortLayerNameStatic</name></name><argument_list>(<argument><expr><name>name</name></expr></argument>)</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>QList<argument_list>&lt;<argument><name>QString</name></argument>&gt;</argument_list></name></type> <name>getLayerNameHierarchy</name><parameter_list>()</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><call><name><name>RLayer</name>::<name>getLayerNameHierarchyStatic</name></name><argument_list>(<argument><expr><name>name</name></expr></argument>)</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>bool</name></type> <name>isChildLayerOf</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>layerName</name></decl></param>)</parameter_list> <specifier>const</specifier> <block>{
+        <return>return <expr><call><name><name>RLayer</name>::<name>isChildLayerOfStatic</name></name><argument_list>(<argument><expr><name>name</name></expr></argument>, <argument><expr><name>layerName</name></expr></argument>)</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>static</name> <name>QString</name></type> <name>getHierarchySeparator</name><parameter_list>()</parameter_list> <block>{
+        <if>if <condition>(<expr><name>layerProxy</name>!=<name>NULL</name></expr>)</condition><then> <block>{
+            <return>return <expr><name>layerProxy</name>-&gt;<call><name>getHierarchySeparator</name><argument_list>()</argument_list></call></expr>;</return>
+        }</block></then></if>
+        <return>return <expr>""</expr>;</return>
+    }</block></function>
+
+    <function><type><name>static</name> <name>bool</name></type> <name>hasChildLayersStatic</name><parameter_list>(<param><decl><type><name>const</name> <name>RDocument</name>*</type> <name>doc</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>layerName</name></decl></param>)</parameter_list> <block>{
+        <if>if <condition>(<expr><name>layerProxy</name>!=<name>NULL</name></expr>)</condition><then> <block>{
+            <return>return <expr><name>layerProxy</name>-&gt;<call><name>hasChildLayers</name><argument_list>(<argument><expr><name>doc</name></expr></argument>, <argument><expr><name>layerName</name></expr></argument>)</argument_list></call></expr>;</return>
+        }</block></then></if>
+        <return>return <expr><name>false</name></expr>;</return>
+    }</block></function>
+
+    <function><type><name>static</name> <name>QList<argument_list>&lt;<argument><name>QString</name></argument>&gt;</argument_list></name></type> <name>getChildLayerNamesStatic</name><parameter_list>(<param><decl><type><name>const</name> <name>RDocument</name>*</type> <name>doc</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>layerName</name></decl></param>, <param><decl><type><name>bool</name></type> <name>recursive</name> =<init> <expr><name>true</name></expr></init></decl></param>)</parameter_list> <block>{
+        <if>if <condition>(<expr><name>layerProxy</name>!=<name>NULL</name></expr>)</condition><then> <block>{
+            <return>return <expr><name>layerProxy</name>-&gt;<call><name>getChildLayerNames</name><argument_list>(<argument><expr><name>doc</name></expr></argument>, <argument><expr><name>layerName</name></expr></argument>, <argument><expr><name>recursive</name></expr></argument>)</argument_list></call></expr>;</return>
+        }</block></then></if>
+        <return>return <expr><call><name>QList<argument_list>&lt;<argument><name>QString</name></argument>&gt;</argument_list></name><argument_list>()</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>static</name> <name>QString</name></type> <name>getParentLayerNameStatic</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>layerName</name></decl></param>)</parameter_list> <block>{
+        <if>if <condition>(<expr><name>layerProxy</name>!=<name>NULL</name></expr>)</condition><then> <block>{
+            <return>return <expr><name>layerProxy</name>-&gt;<call><name>getParentLayerName</name><argument_list>(<argument><expr><name>layerName</name></expr></argument>)</argument_list></call></expr>;</return>
+        }</block></then></if>
+        <return>return <expr><call><name>QString</name><argument_list>()</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>static</name> <name>QString</name></type> <name>getShortLayerNameStatic</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>layerName</name></decl></param>)</parameter_list> <block>{
+        <if>if <condition>(<expr><name>layerProxy</name>!=<name>NULL</name></expr>)</condition><then> <block>{
+            <return>return <expr><name>layerProxy</name>-&gt;<call><name>getShortLayerName</name><argument_list>(<argument><expr><name>layerName</name></expr></argument>)</argument_list></call></expr>;</return>
+        }</block></then></if>
+        <return>return <expr><call><name>QString</name><argument_list>()</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>static</name> <name>QList<argument_list>&lt;<argument><name>QString</name></argument>&gt;</argument_list></name></type> <name>getLayerNameHierarchyStatic</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>layerName</name></decl></param>)</parameter_list> <block>{
+        <if>if <condition>(<expr><name>layerProxy</name>!=<name>NULL</name></expr>)</condition><then> <block>{
+            <return>return <expr><name>layerProxy</name>-&gt;<call><name>getLayerNameHierarchy</name><argument_list>(<argument><expr><name>layerName</name></expr></argument>)</argument_list></call></expr>;</return>
+        }</block></then></if>
+        <return>return <expr><call><name>QList<argument_list>&lt;<argument><name>QString</name></argument>&gt;</argument_list></name><argument_list>()</argument_list></call></expr>;</return>
+    }</block></function>
+
+    <function><type><name>static</name> <name>bool</name></type> <name>isChildLayerOfStatic</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>layerName</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>parentLayerName</name></decl></param>)</parameter_list> <block>{
+        <if>if <condition>(<expr><name>layerProxy</name>!=<name>NULL</name></expr>)</condition><then> <block>{
+            <return>return <expr><name>layerProxy</name>-&gt;<call><name>isChildLayerOf</name><argument_list>(<argument><expr><name>layerName</name></expr></argument>, <argument><expr><name>parentLayerName</name></expr></argument>)</argument_list></call></expr>;</return>
+        }</block></then></if>
+        <return>return <expr><name>false</name></expr>;</return>
+    }</block></function>
+
+    <function><type><name>static</name> <name>bool</name></type> <name>hasProxy</name><parameter_list>()</parameter_list> <block>{
+        <return>return <expr><name>layerProxy</name>!=<name>NULL</name></expr>;</return>
+    }</block></function>
+
+    <comment type="block">/**
+     * \nonscriptable
+     */</comment>
+    <function><type><name>static</name> <name>void</name></type> <name>setLayerProxy</name><parameter_list>(<param><decl><type><name>RLayerProxy</name>*</type> <name>p</name></decl></param>)</parameter_list> <block>{
+        <if>if <condition>(<expr><name>layerProxy</name>!=<name>NULL</name></expr>)</condition><then> <block>{
+            <expr_stmt><expr>delete <name>layerProxy</name></expr>;</expr_stmt>
+        }</block></then></if>
+        <expr_stmt><expr><name>layerProxy</name> = <name>p</name></expr>;</expr_stmt>
+    }</block></function>
+
+    <comment type="block">/**
+     * \nonscriptable
+     */</comment>
+    <function><type><name>static</name> <name>RLayerProxy</name>*</type> <name>getLayerProxy</name><parameter_list>()</parameter_list> <block>{
+        <return>return <expr><name>layerProxy</name></expr>;</return>
+    }</block></function>
+
+</public><private>private:
+    <decl_stmt><decl><type><name>QString</name></type> <name>name</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>LayerFlags</name></type> <name>flags</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>RColor</name></type> <name>color</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name><name>RLinetype</name>::<name>Id</name></name></type> <name>linetypeId</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name><name>RLineweight</name>::<name>Lineweight</name></name></type> <name>lineweight</name></decl>;</decl_stmt>
+
+    <decl_stmt><decl><type><name>static</name> <name>RLayerProxy</name>*</type> <name>layerProxy</name></decl>;</decl_stmt>
+</private>}</block>;</class>
+
+<function_decl><type><name>QCADCORE_EXPORT</name> <name>QDebug</name></type> <name>operator&lt;&lt;</name><parameter_list>(<param><decl><type><name>QDebug</name></type> <name>dbg</name></decl></param>, <param><decl><type><name>const</name> <name>RLayer</name>&amp;</type> <name>l</name></decl></param>)</parameter_list>;</function_decl>
+
+<macro><name>Q_DECLARE_METATYPE</name><argument_list>(<argument>QSharedPointer&lt;RLayer&gt;</argument>)</argument_list></macro>
+<macro><name>Q_DECLARE_METATYPE</name><argument_list>(<argument>QSharedPointer&lt;RLayer&gt;*</argument>)</argument_list></macro>
+<macro><name>Q_DECLARE_METATYPE</name><argument_list>(<argument>RLayer</argument>)</argument_list></macro>
+<macro><name>Q_DECLARE_METATYPE</name><argument_list>(<argument>RLayer*</argument>)</argument_list></macro>
+<macro><name>Q_DECLARE_METATYPE</name><argument_list>(<argument>RLayer::LayerFlag</argument>)</argument_list></macro>
+<macro><name>Q_DECLARE_METATYPE</name><argument_list>(<argument>QFlags&lt;RLayer::LayerFlag&gt;</argument>)</argument_list></macro>
+
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+</unit>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.sdml.info/srcML/src" xmlns:cpp="http://www.sdml.info/srcML/cpp" language="C++" dir="./core" filename="RSettings.h"><comment type="block">/**
+ * Copyright (c) 2011-2018 by Andrew Mustun. All rights reserved.
+ * 
+ * This file is part of the QCAD project.
+ *
+ * QCAD is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * QCAD is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with QCAD.
+ */</comment>
+
+<cpp:ifndef>#<cpp:directive>ifndef</cpp:directive> <name>RSETTINGS_H</name></cpp:ifndef>
+<cpp:define>#<cpp:directive>define</cpp:directive> <name>RSETTINGS_H</name></cpp:define>
+
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"core_global.h"</cpp:file></cpp:include>
+
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>&lt;QDir&gt;</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>&lt;QSettings&gt;</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>&lt;QFont&gt;</cpp:file></cpp:include>
+
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"RColor.h"</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"RBox.h"</cpp:file></cpp:include>
+
+<comment type="line">// workaround for src2srcml bug:</comment>
+<cpp:ifndef>#<cpp:directive>ifndef</cpp:directive> <name>RDEFAULT_RCOLOR</name></cpp:ifndef>
+<cpp:define>#<cpp:directive>define</cpp:directive> <name>RDEFAULT_RCOLOR</name> <name>RColor</name>()</cpp:define>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+
+<cpp:ifndef>#<cpp:directive>ifndef</cpp:directive> <name>RDEFAULT_RBOX</name></cpp:ifndef>
+<cpp:define>#<cpp:directive>define</cpp:directive> <name>RDEFAULT_RBOX</name> <name>RBox</name>()</cpp:define>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+
+<cpp:ifndef>#<cpp:directive>ifndef</cpp:directive> <name>RDEFAULT_QVARIANT</name></cpp:ifndef>
+<cpp:define>#<cpp:directive>define</cpp:directive> <name>RDEFAULT_QVARIANT</name> <name>QVariant</name>()</cpp:define>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+
+<cpp:ifndef>#<cpp:directive>ifndef</cpp:directive> <name>RDEFAULT_QSTRING</name></cpp:ifndef>
+<cpp:define>#<cpp:directive>define</cpp:directive> <name>RDEFAULT_QSTRING</name> <name>QString</name>()</cpp:define>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+
+<cpp:ifndef>#<cpp:directive>ifndef</cpp:directive> <name>RDEFAULT_QSTRINGLIST</name></cpp:ifndef>
+<cpp:define>#<cpp:directive>define</cpp:directive> <name>RDEFAULT_QSTRINGLIST</name> <name>QStringList</name>()</cpp:define>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+
+<cpp:ifndef>#<cpp:directive>ifndef</cpp:directive> <name>RDEFAULT_QLISTINT</name></cpp:ifndef>
+<cpp:define>#<cpp:directive>define</cpp:directive> <name>RDEFAULT_QLISTINT</name> <name>QList</name>&lt;int&gt;()</cpp:define>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+
+<comment type="block">/**
+ * \ingroup core
+ * \scriptable
+ */</comment>
+<class>class <macro><name>QCADCORE_EXPORT</name></macro> <name>RSettings</name> <block>{<private type="default">
+</private><public>public:
+    <function_decl><type><name>static</name> <name>void</name></type> <name>uninit</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>setNoWrite</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name> =<init> <expr><name>true</name></expr></init></decl></param>)</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getAppId</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>double</name></type> <name>getDevicePixelRatio</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getLocale</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>loadTranslations</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>module</name></decl></param>, <param><decl><type><name>const</name> <name>QStringList</name>&amp;</type> <name>dirs</name> =<init> <expr><name>RDEFAULT_QSTRINGLIST</name></expr></init></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>translate</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>context</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>str</name></decl></param>)</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>QStringList</name></type> <name>getOriginalArguments</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>setOriginalArguments</name><parameter_list>(<param><decl><type><name>const</name> <name>QStringList</name>&amp;</type> <name>a</name></decl></param>)</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getArgument</name><parameter_list>(<param><decl><type><name>const</name> <name>QStringList</name>&amp;</type> <name>args</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>shortFlag</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>longFlag</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>def</name> =<init> <expr><name>RDEFAULT_QSTRING</name></expr></init></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QStringList</name></type> <name>getArguments</name><parameter_list>(<param><decl><type><name>const</name> <name>QStringList</name>&amp;</type> <name>args</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>shortFlag</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>longFlag</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getIntArgument</name><parameter_list>(<param><decl><type><name>const</name> <name>QStringList</name>&amp;</type> <name>args</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>shortFlag</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>longFlag</name></decl></param>, <param><decl><type><name>int</name></type> <name>def</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QList<argument_list>&lt;<argument><name>int</name></argument>&gt;</argument_list></name></type> <name>getIntListArgument</name><parameter_list>(<param><decl><type><name>const</name> <name>QStringList</name>&amp;</type> <name>args</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>shortFlag</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>longFlag</name></decl></param>, <param><decl><type><name>QList<argument_list>&lt;<argument><name>int</name></argument>&gt;</argument_list></name></type> <name>def</name> =<init> <expr><name>RDEFAULT_QLISTINT</name></expr></init></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>double</name></type> <name>getFloatArgument</name><parameter_list>(<param><decl><type><name>const</name> <name>QStringList</name>&amp;</type> <name>args</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>shortFlag</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>longFlag</name></decl></param>, <param><decl><type><name>double</name></type> <name>def</name> =<init> <expr><name>RNANDOUBLE</name></expr></init></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>RColor</name></type> <name>getColorArgument</name><parameter_list>(<param><decl><type><name>const</name> <name>QStringList</name>&amp;</type> <name>args</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>shortFlag</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>longFlag</name></decl></param>, <param><decl><type><name>const</name> <name>RColor</name>&amp;</type> <name>def</name> =<init> <expr><name>RDEFAULT_RCOLOR</name></expr></init></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>RVector</name></type> <name>getVectorArgument</name><parameter_list>(<param><decl><type><name>const</name> <name>QStringList</name>&amp;</type> <name>args</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>shortFlag</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>longFlag</name></decl></param>, <param><decl><type><name>const</name> <name>RVector</name>&amp;</type> <name>def</name> =<init> <expr><name>RDEFAULT_RVECTOR</name></expr></init></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>RBox</name></type> <name>getBoxArgument</name><parameter_list>(<param><decl><type><name>const</name> <name>QStringList</name>&amp;</type> <name>args</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>shortFlag</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>longFlag</name></decl></param>, <param><decl><type><name>const</name> <name>RBox</name>&amp;</type> <name>def</name> =<init> <expr><name>RDEFAULT_RBOX</name></expr></init></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>testArgument</name><parameter_list>(<param><decl><type><name>const</name> <name>QStringList</name>&amp;</type> <name>args</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>shortFlag</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>longFlag</name></decl></param>)</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>isDeployed</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getApplicationPath</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QStringList</name></type> <name>getPluginPaths</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getPluginPath</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getThemePath</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getStandardLocation</name><parameter_list>(<param><decl><type><name>int</name></type> <name>sl</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getCacheLocation</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getDataLocation</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getTempLocation</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getDesktopLocation</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getDocumentsLocation</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getHomeLocation</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <comment type="line">//static void setEventBlocking(bool on);</comment>
+    <comment type="line">//static bool isEventBlockingEnabled();</comment>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>isGuiEnabled</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>isDebuggerEnabled</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>hasQuitFlag</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>setQuitFlag</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getFileName</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getPath</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getLaunchPath</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>setLaunchPath</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>launchPath</name></decl></param>)</parameter_list>;</function_decl>
+
+    <comment type="line">//static QString getDefaultStyle();</comment>
+
+    <comment type="line">// GraphicsView Appearance Fonts</comment>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>setRulerFont</name><parameter_list>(<param><decl><type><name>const</name> <name>QFont</name>&amp;</type> <name>font</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QFont</name></type> <name>getRulerFont</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>setSnapLabelFont</name><parameter_list>(<param><decl><type><name>const</name> <name>QFont</name>&amp;</type> <name>font</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QFont</name></type> <name>getSnapLabelFont</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QFont</name></type> <name>getInfoLabelFont</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QFont</name></type> <name>getStatusBarFont</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>RColor</name></type> <name>getSelectionColor</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>RColor</name></type> <name>getReferencePointColor</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>RColor</name></type> <name>getStartReferencePointColor</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>RColor</name></type> <name>getEndReferencePointColor</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>RColor</name></type> <name>getSecondaryReferencePointColor</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>RColor</name></type> <name>getTertiaryReferencePointColor</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getHighResolutionGraphicsView</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getAutoScaleGrid</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getAutoScaleMetaGrid</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getAutoScalePatterns</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getAutoZoomOnLoad</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getColorCorrection</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getColorCorrectionDisableForPrinting</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getColorThreshold</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getTextHeightThreshold</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>double</name></type> <name>getArcAngleLengthThreshold</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>double</name></type> <name>getMinArcAngleStep</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getDashThreshold</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getQtVersion</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getQtVersionString</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>isQt</name><parameter_list>(<param><decl><type><name>int</name></type> <name>majorVersion</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getCompilerVersion</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getOSVersion</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getReleaseDate</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getVersionString</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getNumericalVersionString</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getMajorVersion</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getMinorVersion</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getRevisionVersion</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getBuildVersion</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getRevisionString</name><parameter_list>()</parameter_list>;</function_decl>
+    <function><type><name>static</name> <name>void</name></type> <name>setFirstStart</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list> <block>{
+        <expr_stmt><expr><name>firstStart</name> = <name>on</name></expr>;</expr_stmt>
+    }</block></function>
+    <function><type><name>static</name> <name>bool</name></type> <name>isFirstStart</name><parameter_list>()</parameter_list> <block>{
+        <return>return <expr><name>firstStart</name></expr>;</return>
+    }</block></function>
+    <function><type><name>static</name> <name>void</name></type> <name>setNewVersion</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list> <block>{
+        <expr_stmt><expr><name>newVersion</name> = <name>on</name></expr>;</expr_stmt>
+    }</block></function>
+    <function><type><name>static</name> <name>bool</name></type> <name>isNewVersion</name><parameter_list>()</parameter_list> <block>{
+        <return>return <expr><name>newVersion</name></expr>;</return>
+    }</block></function>
+    <function><type><name>static</name> <name>void</name></type> <name>setPreviousVersion</name><parameter_list>(<param><decl><type><name>int</name></type> <name>pv</name></decl></param>)</parameter_list> <block>{
+        <expr_stmt><expr><name>previousVersion</name> = <name>pv</name></expr>;</expr_stmt>
+    }</block></function>
+    <comment type="block">/**
+     * \return Current version as int in format 11223344 where
+     * 11 is the major version, 22 the minor version, 33 the revision
+     * and 44 the build version.
+     */</comment>
+    <function><type><name>static</name> <name>int</name></type> <name>getCurrentVersion</name><parameter_list>()</parameter_list> <block>{
+        <return>return <expr><call><name>getMajorVersion</name><argument_list>()</argument_list></call>*1000000 +
+               <call><name>getMinorVersion</name><argument_list>()</argument_list></call>*10000 +
+               <call><name>getRevisionVersion</name><argument_list>()</argument_list></call>*100 +
+               <call><name>getBuildVersion</name><argument_list>()</argument_list></call></expr>;</return>
+    }</block></function>
+    <function><type><name>static</name> <name>int</name></type> <name>getPreviousVersion</name><parameter_list>()</parameter_list> <block>{
+        <return>return <expr><name>previousVersion</name></expr>;</return>
+    }</block></function>
+    <comment type="block">/**
+     * \return True if this is the first start of the software or
+     * the current version is a newer version than the one previously installed
+     * while the current version is the same or newer than versionCheck.
+     * This can be used to check for an update from a version older than the given
+     * version to a version newer or equal to the given version.
+     */</comment>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>isUpdated</name><argument_list>(<argument><expr><name>int</name> <name>versionCheck</name>=-1</expr></argument>)</argument_list> <block>{
+        <if>if <condition>(<expr><call><name>isNewVersion</name><argument_list>()</argument_list></call></expr>)</condition><then> <block>{
+            <return>return <expr><name>true</name></expr>;</return>
+        }</block></then></if>
+        <if>if <condition>(<expr><name>versionCheck</name>==-1</expr>)</condition><then> <block>{
+            <if>if <condition>(<expr><call><name>getCurrentVersion</name><argument_list>()</argument_list></call>&gt;<call><name>getPreviousVersion</name><argument_list>()</argument_list></call></expr>)</condition><then> <block>{
+                <return>return <expr><name>true</name></expr>;</return>
+            }</block></then></if>
+        }</block></then></if>
+        <if>if <condition>(<expr><call><name>getCurrentVersion</name><argument_list>()</argument_list></call>&gt;=<name>versionCheck</name> &amp;&amp; <call><name>getPreviousVersion</name><argument_list>()</argument_list></call>&lt;<name>versionCheck</name></expr>)</condition><then> <block>{
+            <return>return <expr><name>true</name></expr>;</return>
+        }</block></then></if>
+        <return>return <expr><name>false</name></expr>;</return>
+    }</block></decl></decl_stmt>
+
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getSnapRange</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getPickRange</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getZeroWeightWeight</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getPreviewEntities</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getLimitZoomAndScroll</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getShowCrosshair</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>setShowCrosshair</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getShowLargeCrosshair</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>setShowLargeCrosshair</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getShowLargeOriginAxis</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>setShowLargeOriginAxis</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getConcurrentDrawing</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>setConcurrentDrawing</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QLocale</name></type> <name>getNumberLocale</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>void</name></type> <name>initRecentFiles</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>addRecentFile</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>fileName</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>removeRecentFile</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>fileName</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QStringList</name></type> <name>getRecentFiles</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>clearRecentFiles</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>RColor</name></type> <name>getColor</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>key</name></decl></param>, <param><decl><type><name>const</name> <name>RColor</name>&amp;</type> <name>defaultValue</name>=<init><expr><name>RDEFAULT_RCOLOR</name></expr></init></decl></param>)</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>hasValue</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>key</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QVariant</name></type> <name>getValue</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>key</name></decl></param>, <param><decl><type><name>const</name> <name>QVariant</name>&amp;</type> <name>defaultValue</name>=<init><expr><name>RDEFAULT_QVARIANT</name></expr></init></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>RColor</name></type> <name>getColorValue</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>key</name></decl></param>, <param><decl><type><name>const</name> <name>RColor</name>&amp;</type> <name>defaultValue</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getBoolValue</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>key</name></decl></param>, <param><decl><type><name>bool</name></type> <name>defaultValue</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>double</name></type> <name>getDoubleValue</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>key</name></decl></param>, <param><decl><type><name>double</name></type> <name>defaultValue</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getIntValue</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>key</name></decl></param>, <param><decl><type><name>int</name></type> <name>defaultValue</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getStringValue</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>key</name></decl></param>, <param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>defaultValue</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QStringList</name></type> <name>getStringListValue</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>key</name></decl></param>, <param><decl><type><name>const</name> <name>QStringList</name>&amp;</type> <name>defaultValue</name></decl></param>)</parameter_list>;</function_decl>
+
+    <comment type="block">/**
+     * \nonscriptable
+     */</comment>
+    <function_decl><type><name>static</name> <name>QChar</name></type> <name>getCharValue</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>key</name></decl></param>, <param><decl><type><name>const</name> <name>QChar</name>&amp;</type> <name>defaultValue</name></decl></param>)</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>void</name></type> <name>setValue</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>key</name></decl></param>, <param><decl><type><name>const</name> <name>QVariant</name>&amp;</type> <name>value</name></decl></param>, <param><decl><type><name>bool</name></type> <name>overwrite</name>=<init><expr><name>true</name></expr></init></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>removeValue</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>key</name></decl></param>)</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>void</name></type> <name>setApplicationNameOverride</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>n</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getApplicationNameOverride</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>hasApplicationNameOverride</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>QStringList</name></type> <name>getAllKeys</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>group</name></decl></param>)</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>QSettings</name>*</type> <name>getQSettings</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>void</name></type> <name>resetCache</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>void</name></type> <name>setXDataEnabled</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>isXDataEnabled</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>void</name></type> <name>setNextVersionEnabled</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>isNextVersionEnabled</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getAutoScaleLinetypePatterns</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getUseSecondarySelectionColor</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getUseSolidLineSelection</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getMouseThreshold</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getPositionByMousePress</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getAllowMouseMoveInterruptions</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>isTextRenderedAsText</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>isLayer0CompatibilityOn</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getSelectBlockWithAttribute</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getHideAttributeWithBlock</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getImportRecomputedDimBlocks</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getIgnoreBlockReferencePoint</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getIgnoreAllReferencePoints</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getReferencePointSize</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>int</name></type> <name>getReferencePointShape</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>getPropertyEditorShowOnRequest</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getPolarCoordinateSeparator</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getCartesianCoordinateSeparator</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getRelativeCoordinatePrefix</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>isDarkMode</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>hasDarkGuiBackground</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>hasCustomStyleSheet</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>QStringList</name></type> <name>getPrinterNames</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QString</name></type> <name>getDefaultPrinterName</name><parameter_list>()</parameter_list>;</function_decl>
+
+    <function_decl><type><name>static</name> <name>void</name></type> <name>appendOpenGLMessage</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>msg</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>QStringList</name></type> <name>getOpenGLMessages</name><parameter_list>()</parameter_list>;</function_decl>
+
+</public><private>private:
+    <function_decl><type><name>static</name> <name>bool</name></type> <name>isInitialized</name><parameter_list>()</parameter_list>;</function_decl>
+    <function_decl><type><name>static</name> <name>void</name></type> <name>shortenRecentFiles</name><parameter_list>()</parameter_list>;</function_decl>
+
+</private><private>private:
+    <decl_stmt><decl><type><name>static</name> <name>bool</name></type> <name>noWrite</name></decl>;</decl_stmt>
+    <comment type="line">// cache for faster access:</comment>
+    <decl_stmt><decl><type><name>static</name> <name>QVariantMap</name></type> <name>cache</name></decl>;</decl_stmt>
+
+    <comment type="line">// variables for very fast access:</comment>
+    <decl_stmt><decl><type><name>static</name> <name>QFont</name>*</type> <name>rulerFont</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>QFont</name>*</type> <name>snapLabelFont</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>QFont</name>*</type> <name>infoLabelFont</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>QFont</name>*</type> <name>statusBarFont</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RColor</name>*</type> <name>selectionColor</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RColor</name>*</type> <name>referencePointColor</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RColor</name>*</type> <name>startReferencePointColor</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RColor</name>*</type> <name>endReferencePointColor</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RColor</name>*</type> <name>secondaryReferencePointColor</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>RColor</name>*</type> <name>tertiaryReferencePointColor</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>darkMode</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>darkGuiBackground</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>snapRange</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>pickRange</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>zeroWeightWeight</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>showCrosshair</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>showLargeCrosshair</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>showLargeOriginAxis</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>concurrentDrawing</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>highResolutionGraphicsView</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>previewEntities</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>limitZoomAndScroll</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>autoScaleLinetypePattern</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>useSolidLineSelection</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>useSecondarySelectionColor</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>mouseThreshold</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>positionByMousePress</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>allowMouseMoveInterruptions</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>double</name></type> <name>arcAngleLengthThreshold</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>double</name></type> <name>minArcAngleStep</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>dashThreshold</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>textRenderedAsText</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>layer0CompatibilityOn</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>selectBlockWithAttribute</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>hideAttributeWithBlock</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>importRecomputedDimBlocks</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>ignoreBlockReferencePoint</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>ignoreAllReferencePoints</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>referencePointSize</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>referencePointShape</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>propertyEditorShowOnRequest</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>QString</name></type> <name>polarCoordinateSeparator</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>QString</name></type> <name>cartesianCoordinateSeparator</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>QString</name></type> <name>relativeCoordinatePrefix</name></decl>;</decl_stmt>
+
+    <decl_stmt><decl><type><name>static</name> <name>QStringList</name></type> <name>recentFiles</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>QLocale</name>*</type> <name>numberLocale</name></decl>;</decl_stmt>
+
+    <decl_stmt><decl><type><name>static</name> <name>QString</name></type> <name>applicationNameOverride</name></decl>;</decl_stmt>
+
+    <decl_stmt><decl><type><name>static</name> <name>QString</name></type> <name>launchPath</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>QString</name></type> <name>themePath</name></decl>;</decl_stmt>
+
+    <decl_stmt><decl><type><name>static</name> <name>QSettings</name>*</type> <name>qSettings</name></decl>;</decl_stmt>
+
+    <decl_stmt><decl><type><name>static</name> <name>QStringList</name></type> <name>originalArguments</name></decl>;</decl_stmt>
+
+    <decl_stmt><decl><type><name>static</name> <name>bool</name></type> <name>quitFlag</name></decl>;</decl_stmt>
+
+    <decl_stmt><decl><type><name>static</name> <name>bool</name></type> <name>xDataEnabled</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>bool</name></type> <name>nextVersionEnabled</name></decl>;</decl_stmt>
+
+    <decl_stmt><decl><type><name>static</name> <name>bool</name></type> <name>firstStart</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>bool</name></type> <name>newVersion</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>static</name> <name>int</name></type> <name>previousVersion</name></decl>;</decl_stmt>
+
+    <decl_stmt><decl><type><name>static</name> <name>QStringList</name></type> <name>openGLMessages</name></decl>;</decl_stmt>
+</private>}</block>;</class>
+
+<macro><name>Q_DECLARE_METATYPE</name><argument_list>(<argument>RSettings*</argument>)</argument_list></macro>
+
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+</unit>

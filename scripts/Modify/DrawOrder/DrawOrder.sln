@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ToBack", "D:/mywork/lib2/qcad/scripts/Modify/DrawOrder/ToBack\ToBack.vcxproj", "{3494E790-6A6E-3150-ADAE-44ACB94F4804}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ToFront", "D:/mywork/lib2/qcad/scripts/Modify/DrawOrder/ToFront\ToFront.vcxproj", "{152AD265-7B38-3CD0-B3D8-57C06BB45EC5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Modify/DrawOrder/dir\dir.vcxproj", "{E9BB8017-42F6-3F21-8997-DE6AD269A4EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3494E790-6A6E-3150-ADAE-44ACB94F4804}.Debug|x64.ActiveCfg = Debug|x64
+		{3494E790-6A6E-3150-ADAE-44ACB94F4804}.Debug|x64.Build.0 = Debug|x64
+		{3494E790-6A6E-3150-ADAE-44ACB94F4804}.Release|x64.ActiveCfg = Release|x64
+		{3494E790-6A6E-3150-ADAE-44ACB94F4804}.Release|x64.Build.0 = Release|x64
+		{152AD265-7B38-3CD0-B3D8-57C06BB45EC5}.Debug|x64.ActiveCfg = Debug|x64
+		{152AD265-7B38-3CD0-B3D8-57C06BB45EC5}.Debug|x64.Build.0 = Debug|x64
+		{152AD265-7B38-3CD0-B3D8-57C06BB45EC5}.Release|x64.ActiveCfg = Release|x64
+		{152AD265-7B38-3CD0-B3D8-57C06BB45EC5}.Release|x64.Build.0 = Release|x64
+		{E9BB8017-42F6-3F21-8997-DE6AD269A4EE}.Debug|x64.ActiveCfg = Debug|x64
+		{E9BB8017-42F6-3F21-8997-DE6AD269A4EE}.Debug|x64.Build.0 = Debug|x64
+		{E9BB8017-42F6-3F21-8997-DE6AD269A4EE}.Release|x64.ActiveCfg = Release|x64
+		{E9BB8017-42F6-3F21-8997-DE6AD269A4EE}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

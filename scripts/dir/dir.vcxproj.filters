@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AddOn.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Apollonius.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DbConnection.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DefaultAction.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EAction.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ShapeAlgorithms.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WidgetFactory.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\autostart.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\date.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\hull\grid.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\hull\hull.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\input.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\hull\intersect.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\library.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\map.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simple.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simple_create.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simple_info.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simple_modify.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simple_transaction.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simple_view.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sprintf.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

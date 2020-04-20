@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Misc/MiscDevelopment/dir\dir.vcxproj", "{BAAC5060-BE64-3880-A54D-5B8AF3DEABFD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DevDebug", "D:/mywork/lib2/qcad/scripts/Misc/MiscDevelopment/DevDebug\DevDebug.vcxproj", "{A92CD17A-0C52-3C28-9388-7DD7342D5535}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EcmaScriptShell", "D:/mywork/lib2/qcad/scripts/Misc/MiscDevelopment/EcmaScriptShell\EcmaScriptShell.vcxproj", "{08A63B6F-5D0E-3B1A-BCB2-DF21A5EA7FF9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RunScript", "D:/mywork/lib2/qcad/scripts/Misc/MiscDevelopment/RunScript\RunScript.vcxproj", "{2A904642-9C55-392B-802B-D2E4398638A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAAC5060-BE64-3880-A54D-5B8AF3DEABFD}.Debug|x64.ActiveCfg = Debug|x64
+		{BAAC5060-BE64-3880-A54D-5B8AF3DEABFD}.Debug|x64.Build.0 = Debug|x64
+		{BAAC5060-BE64-3880-A54D-5B8AF3DEABFD}.Release|x64.ActiveCfg = Release|x64
+		{BAAC5060-BE64-3880-A54D-5B8AF3DEABFD}.Release|x64.Build.0 = Release|x64
+		{A92CD17A-0C52-3C28-9388-7DD7342D5535}.Debug|x64.ActiveCfg = Debug|x64
+		{A92CD17A-0C52-3C28-9388-7DD7342D5535}.Debug|x64.Build.0 = Debug|x64
+		{A92CD17A-0C52-3C28-9388-7DD7342D5535}.Release|x64.ActiveCfg = Release|x64
+		{A92CD17A-0C52-3C28-9388-7DD7342D5535}.Release|x64.Build.0 = Release|x64
+		{08A63B6F-5D0E-3B1A-BCB2-DF21A5EA7FF9}.Debug|x64.ActiveCfg = Debug|x64
+		{08A63B6F-5D0E-3B1A-BCB2-DF21A5EA7FF9}.Debug|x64.Build.0 = Debug|x64
+		{08A63B6F-5D0E-3B1A-BCB2-DF21A5EA7FF9}.Release|x64.ActiveCfg = Release|x64
+		{08A63B6F-5D0E-3B1A-BCB2-DF21A5EA7FF9}.Release|x64.Build.0 = Release|x64
+		{2A904642-9C55-392B-802B-D2E4398638A8}.Debug|x64.ActiveCfg = Debug|x64
+		{2A904642-9C55-392B-802B-D2E4398638A8}.Debug|x64.Build.0 = Debug|x64
+		{2A904642-9C55-392B-802B-D2E4398638A8}.Release|x64.ActiveCfg = Release|x64
+		{2A904642-9C55-392B-802B-D2E4398638A8}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

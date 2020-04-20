@@ -1,0 +1,558 @@
+<?xml version="1.0"?>
+<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:rs="http://www.ribbonsoft.com">
+  <class_decl name="RVector" />
+  <class_decl name="RPropertyAttributes" />
+  <class name="RS" xsi:noNamespaceSchemaLocation="../class.xsd"
+  isCopyable="false" hasShell="false" sharedPointerSupport="false"
+  isQObject="false" hasStreamOperator="false" isAbstract="false"
+  isScriptable="true">
+    <enum name="MessageType">
+      <value name="Print" />
+      <value name="Debug" />
+      <value name="Warning" />
+      <value name="Critical" />
+      <value name="Command" />
+    </enum>
+    <enum name="EntityType">
+      <value name="ObjectAll" />
+      <value name="ObjectUnknown" />
+      <value name="ObjectBlock" />
+      <value name="ObjectLayer" />
+      <value name="ObjectLayerState" />
+      <value name="ObjectLinetype" />
+      <value name="ObjectView" />
+      <value name="ObjectLayout" />
+      <value name="ObjectUcs" />
+      <value name="ObjectDocumentVariable" />
+      <value name="EntityAll" />
+      <value name="EntityUnknown" />
+      <value name="EntityAttribute" />
+      <value name="EntityAttributeDefinition" />
+      <value name="EntityBlockRef" />
+      <value name="EntityBlockRefAttr" />
+      <value name="EntityPoint" />
+      <value name="EntityLine" />
+      <value name="EntityXLine" />
+      <value name="EntityRay" />
+      <value name="EntityPolyline" />
+      <value name="EntityArc" />
+      <value name="EntityCircle" />
+      <value name="EntityEllipse" />
+      <value name="EntitySolid" />
+      <value name="Entity3dFace" />
+      <value name="EntityTextBased" />
+      <value name="EntityText" />
+      <value name="EntityTrace" />
+      <value name="EntityFace" />
+      <value name="EntityDimension" />
+      <value name="EntityDimLinear" />
+      <value name="EntityDimAligned" />
+      <value name="EntityDimRotated" />
+      <value name="EntityDimRadial" />
+      <value name="EntityDimDiametric" />
+      <value name="EntityDimAngular" />
+      <value name="EntityDimAngular2L" />
+      <value name="EntityDimAngular3P" />
+      <value name="EntityDimArcLength" />
+      <value name="EntityDimOrdinate" />
+      <value name="EntityHatch" />
+      <value name="EntityImage" />
+      <value name="EntityLeader" />
+      <value name="EntitySpline" />
+      <value name="EntityViewport" />
+      <value name="EntityUser" />
+    </enum>
+    <enum name="ProjectionRenderingHint">
+      <value name="RenderTop" />
+      <value name="RenderSide" />
+      <value name="RenderFront" />
+      <value name="RenderThreeD" />
+    </enum>
+    <enum name="OrthoMode">
+      <value name="OrthoVertical" />
+      <value name="OrthoHorizonal" />
+      <value name="Orthogonal" />
+    </enum>
+    <enum name="Side">
+      <value name="NoSide" />
+      <value name="LeftHand" />
+      <value name="RightHand" />
+      <value name="BothSides" />
+    </enum>
+    <enum name="Ending">
+      <value name="EndingStart" />
+      <value name="EndingEnd" />
+      <value name="EndingNone" />
+    </enum>
+    <enum name="VAlign">
+      <value name="VAlignTop" />
+      <value name="VAlignMiddle" />
+      <value name="VAlignBase" />
+      <value name="VAlignBottom" />
+    </enum>
+    <enum name="HAlign">
+      <value name="HAlignLeft" />
+      <value name="HAlignCenter" />
+      <value name="HAlignRight" />
+      <value name="HAlignAlign" />
+      <value name="HAlignMid" />
+      <value name="HAlignFit" />
+    </enum>
+    <enum name="TextDrawingDirection">
+      <value name="LeftToRight" />
+      <value name="TopToBottom" />
+      <value name="ByStyle" />
+    </enum>
+    <enum name="TextLineSpacingStyle">
+      <value name="AtLeast" />
+      <value name="Exact" />
+    </enum>
+    <enum name="From">
+      <value name="FromStart" />
+      <value name="FromEnd" />
+      <value name="FromAny" />
+      <value name="AlongPolyline" />
+    </enum>
+    <enum name="IsoProjectionType">
+      <value name="NoProjection" />
+      <value name="Top" />
+      <value name="Bottom" />
+      <value name="Left" />
+      <value name="LeftBack" />
+      <value name="Right" />
+      <value name="RightBack" />
+      <value name="Isometric" />
+      <value name="IsometricTrue" />
+      <value name="Planometric" />
+      <value name="Dimetric" />
+      <value name="Cabinet" />
+      <value name="Cabinet30" />
+      <value name="Cavalier" />
+      <value name="User1" />
+      <value name="User2" />
+      <value name="User3" />
+      <value name="User4" />
+      <value name="IsoTop" />
+      <value name="IsoBottom" />
+      <value name="IsoLeft" />
+      <value name="IsoLeftBack" />
+      <value name="IsoRight" />
+      <value name="IsoRightBack" />
+    </enum>
+    <enum name="Measurement">
+      <value name="UnknownMeasurement" />
+      <value name="Imperial" />
+      <value name="Metric" />
+    </enum>
+    <enum name="Unit">
+      <value name="None" />
+      <value name="Inch" />
+      <value name="Foot" />
+      <value name="Mile" />
+      <value name="Millimeter" />
+      <value name="Centimeter" />
+      <value name="Meter" />
+      <value name="Kilometer" />
+      <value name="Microinch" />
+      <value name="Mil" />
+      <value name="Yard" />
+      <value name="Angstrom" />
+      <value name="Nanometer" />
+      <value name="Micron" />
+      <value name="Decimeter" />
+      <value name="Decameter" />
+      <value name="Hectometer" />
+      <value name="Gigameter" />
+      <value name="Astro" />
+      <value name="Lightyear" />
+      <value name="Parsec" />
+      <value name="MaxUnit" />
+    </enum>
+    <enum name="AngleFormat">
+      <value name="DegreesDecimal" />
+      <value name="DegreesMinutesSeconds" />
+      <value name="Gradians" />
+      <value name="Radians" />
+      <value name="Surveyors" />
+    </enum>
+    <enum name="LinearFormat">
+      <value name="Scientific" />
+      <value name="Decimal" />
+      <value name="Engineering" />
+      <value name="ArchitecturalStacked" />
+      <value name="FractionalStacked" />
+      <value name="Architectural" />
+      <value name="Fractional" />
+      <value name="WindowsDesktop" />
+    </enum>
+    <enum name="AngleUnit">
+      <value name="Deg" />
+      <value name="Rad" />
+      <value name="Gra" />
+    </enum>
+    <enum name="KnownVariable">
+      <value name="ANGBASE" />
+      <value name="ANGDIR" />
+      <value name="ATTMODE" />
+      <value name="AUNITS" />
+      <value name="AUPREC" />
+      <value name="CECOLOR" />
+      <value name="CELTSCALE" />
+      <value name="CHAMFERA" />
+      <value name="CHAMFERB" />
+      <value name="CHAMFERC" />
+      <value name="CHAMFERD" />
+      <value name="CLAYER" />
+      <value name="CMLJUST" />
+      <value name="CMLSCALE" />
+      <value name="DIMADEC" />
+      <value name="DIMALT" />
+      <value name="DIMALTD" />
+      <value name="DIMALTF" />
+      <value name="DIMALTRND" />
+      <value name="DIMALTTD" />
+      <value name="DIMALTTZ" />
+      <value name="DIMALTU" />
+      <value name="DIMALTZ" />
+      <value name="DIMAPOST" />
+      <value name="DIMASZ" />
+      <value name="DIMATFIT" />
+      <value name="DIMAUNIT" />
+      <value name="DIMAZIN" />
+      <value name="DIMBLK" />
+      <value name="DIMBLK1" />
+      <value name="DIMBLK2" />
+      <value name="DIMCEN" />
+      <value name="DIMCLRD" />
+      <value name="DIMCLRE" />
+      <value name="DIMCLRT" />
+      <value name="DIMDEC" />
+      <value name="DIMDLE" />
+      <value name="DIMDLI" />
+      <value name="DIMDSEP" />
+      <value name="DIMEXE" />
+      <value name="DIMEXO" />
+      <value name="DIMFRAC" />
+      <value name="DIMGAP" />
+      <value name="DIMJUST" />
+      <value name="DIMLDRBLK" />
+      <value name="DIMLFAC" />
+      <value name="DIMLIM" />
+      <value name="DIMLUNIT" />
+      <value name="DIMLWD" />
+      <value name="DIMLWE" />
+      <value name="DIMPOST" />
+      <value name="DIMRND" />
+      <value name="DIMSAH" />
+      <value name="DIMSCALE" />
+      <value name="DIMSD1" />
+      <value name="DIMSD2" />
+      <value name="DIMSE1" />
+      <value name="DIMSE2" />
+      <value name="DIMSOXD" />
+      <value name="DIMTAD" />
+      <value name="DIMTDEC" />
+      <value name="DIMTFAC" />
+      <value name="DIMTIH" />
+      <value name="DIMTIX" />
+      <value name="DIMTM" />
+      <value name="DIMTOFL" />
+      <value name="DIMTOH" />
+      <value name="DIMTOL" />
+      <value name="DIMTOLJ" />
+      <value name="DIMTP" />
+      <value name="DIMTSZ" />
+      <value name="DIMTVP" />
+      <value name="DIMTXSTY" />
+      <value name="DIMTXT" />
+      <value name="DIMTZIN" />
+      <value name="DIMUPT" />
+      <value name="DIMZIN" />
+      <value name="DISPSILH" />
+      <value name="DWGCODEPAGE" />
+      <value name="DRAWORDERCTL" />
+      <value name="ELEVATION" />
+      <value name="EXTMAX" />
+      <value name="EXTMIN" />
+      <value name="FACETRES" />
+      <value name="FILLETRAD" />
+      <value name="FILLMODE" />
+      <value name="INSBASE" />
+      <value name="INSUNITS" />
+      <value name="ISOLINES" />
+      <value name="LIMCHECK" />
+      <value name="LIMMAX" />
+      <value name="LIMMIN" />
+      <value name="LTSCALE" />
+      <value name="LUNITS" />
+      <value name="LUPREC" />
+      <value name="MAXACTVP" />
+      <value name="MEASUREMENT" />
+      <value name="MIRRTEXT" />
+      <value name="ORTHOMODE" />
+      <value name="PDMODE" />
+      <value name="PDSIZE" />
+      <value name="PELEVATION" />
+      <value name="PELLIPSE" />
+      <value name="PEXTMAX" />
+      <value name="PEXTMIN" />
+      <value name="PINSBASE" />
+      <value name="PLIMCHECK" />
+      <value name="PLIMMAX" />
+      <value name="PLIMMIN" />
+      <value name="PLINEGEN" />
+      <value name="PLINEWID" />
+      <value name="PROXYGRAPHICS" />
+      <value name="PSLTSCALE" />
+      <value name="PUCSNAME" />
+      <value name="PUCSORG" />
+      <value name="PUCSXDIR" />
+      <value name="PUCSYDIR" />
+      <value name="QTEXTMODE" />
+      <value name="REGENMODE" />
+      <value name="SHADEDGE" />
+      <value name="SHADEDIF" />
+      <value name="SKETCHINC" />
+      <value name="SKPOLY" />
+      <value name="SPLFRAME" />
+      <value name="SPLINESEGS" />
+      <value name="SPLINETYPE" />
+      <value name="SURFTAB1" />
+      <value name="SURFTAB2" />
+      <value name="SURFTYPE" />
+      <value name="SURFU" />
+      <value name="SURFV" />
+      <value name="TEXTQLTY" />
+      <value name="TEXTSIZE" />
+      <value name="TEXTSTYLE" />
+      <value name="THICKNESS" />
+      <value name="TILEMODE" />
+      <value name="TRACEWID" />
+      <value name="TREEDEPTH" />
+      <value name="UCSNAME" />
+      <value name="UCSORG" />
+      <value name="UCSXDIR" />
+      <value name="UCSYDIR" />
+      <value name="UNITMODE" />
+      <value name="USERI1" />
+      <value name="USERI2" />
+      <value name="USERI3" />
+      <value name="USERI4" />
+      <value name="USERI5" />
+      <value name="USERR1" />
+      <value name="USERR2" />
+      <value name="USERR3" />
+      <value name="USERR4" />
+      <value name="USERR5" />
+      <value name="USRTIMER" />
+      <value name="VISRETAIN" />
+      <value name="WORLDVIEW" />
+      <value name="MaxKnownVariable" />
+      <value name="INVALID" />
+    </enum>
+    <enum name="BooleanOperation">
+      <value name="Intersection" />
+      <value name="Union" />
+      <value name="Difference" />
+      <value name="Xor" />
+    </enum>
+    <enum name="FillType">
+      <value name="EvenOdd" />
+      <value name="NonZero" />
+      <value name="Positive" />
+      <value name="Negative" />
+    </enum>
+    <enum name="Orientation">
+      <value name="UnknownOrientation" />
+      <value name="Any" />
+      <value name="CW" />
+      <value name="CCW" />
+    </enum>
+    <enum name="JoinType">
+      <value name="JoinBevel" />
+      <value name="JoinRound" />
+      <value name="JoinMiter" />
+    </enum>
+    <enum name="EndType">
+      <value name="EndClosedPolygon" />
+      <value name="EndClosedLine" />
+      <value name="EndOpenButt" />
+      <value name="EndOpenSquare" />
+      <value name="EndOpenRound" />
+      <value name="EndOpenSingle" />
+    </enum>
+    <enum name="Easing">
+      <value name="Linear" />
+      <value name="InQuad" />
+      <value name="OutQuad" />
+      <value name="InOutQuad" />
+      <value name="OutInQuad" />
+      <value name="InCubic" />
+      <value name="OutCubic" />
+      <value name="InOutCubic" />
+      <value name="OutInCubic" />
+      <value name="InQuart" />
+      <value name="OutQuart" />
+      <value name="InOutQuart" />
+      <value name="OutInQuart" />
+      <value name="InQuint" />
+      <value name="OutQuint" />
+      <value name="InOutQuint" />
+      <value name="OutInQuint" />
+      <value name="InSine" />
+      <value name="OutSine" />
+      <value name="InOutSine" />
+      <value name="OutInSine" />
+      <value name="InExpo" />
+      <value name="OutExpo" />
+      <value name="InOutExpo" />
+      <value name="OutInExpo" />
+      <value name="InCirc" />
+      <value name="OutCirc" />
+      <value name="InOutCirc" />
+      <value name="OutInCirc" />
+      <value name="InElastic" />
+      <value name="OutElastic" />
+      <value name="InOutElastic" />
+      <value name="OutInElastic" />
+      <value name="InBack" />
+      <value name="OutBack" />
+      <value name="InOutBack" />
+      <value name="OutInBack" />
+      <value name="InBounce" />
+      <value name="OutBounce" />
+      <value name="InOutBounce" />
+      <value name="OutInBounce" />
+    </enum>
+    <method name="compare" cppName="compare" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="QVariant &amp;" typeName="QVariant" name="v1"
+        isConst="true" />
+        <arg type="QVariant &amp;" typeName="QVariant" name="v2"
+        isConst="true" />
+        <arg type="bool" typeName="bool" name="noTolerance"
+        hasDefault="true" default="false" isConst="false" />
+      </variant>
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="QPair &lt; QVariant , RPropertyAttributes &gt; &amp;"
+        typeName="QPair &lt; QVariant , RPropertyAttributes &gt;"
+        name="p1" isConst="true" />
+        <arg type="QPair &lt; QVariant , RPropertyAttributes &gt; &amp;"
+        typeName="QPair &lt; QVariant , RPropertyAttributes &gt;"
+        name="p2" isConst="true" />
+        <arg type="bool" typeName="bool" name="noTolerance"
+        hasDefault="true" default="false" isConst="false" />
+      </variant>
+    </method>
+    <method name="getCpuCores" cppName="getCpuCores"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getIdealThreadCount"
+    cppName="getIdealThreadCount" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getBuildCpuArchitecture"
+    cppName="getBuildCpuArchitecture" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getHostId" cppName="getHostId" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getSystemId" cppName="getSystemId"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getWindowManagerId" cppName="getWindowManagerId"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getDirectoryList" cppName="getDirectoryList"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QStringList" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="subDirectory" isConst="true" />
+      </variant>
+    </method>
+    <method name="getFileList" cppName="getFileList"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QStringList" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="subDirectory" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="fileExtension" isConst="true" />
+      </variant>
+    </method>
+    <method name="getFontList" cppName="getFontList"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QStringList" isPureVirtual="false" />
+    </method>
+    <method name="getPatternList" cppName="getPatternList"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QStringList" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="metric"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="getLinetypeList" cppName="getLinetypeList"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QStringList" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="metric"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="sortAlphanumerical" cppName="sortAlphanumerical"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QStringList" isPureVirtual="false">
+        <arg type="QStringList &amp;" typeName="QStringList"
+        name="list" isConst="true" />
+      </variant>
+    </method>
+    <method name="compareChunkify" cppName="compareChunkify"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QStringList" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="s"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="compareAlphanumerical"
+    cppName="compareAlphanumerical" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="s1"
+        isConst="true" />
+        <arg type="QString &amp;" typeName="QString" name="s2"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="lessThanAlphanumerical"
+    cppName="lessThanAlphanumerical" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="s1"
+        isConst="true" />
+        <arg type="QString &amp;" typeName="QString" name="s2"
+        isConst="true" />
+      </variant>
+    </method>
+    <property name="PointTolerance" type="double" isConst="true"
+    isStatic="true" />
+    <property name="AngleTolerance" type="double" isConst="true"
+    isStatic="true" />
+  </class>
+</unit>

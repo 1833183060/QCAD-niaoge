@@ -1,0 +1,80 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Draw/Dimension/dir\dir.vcxproj", "{73B5C07E-F101-3C8D-A1AB-884C9C6CCE0A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DimAligned", "D:/mywork/lib2/qcad/scripts/Draw/Dimension/DimAligned\DimAligned.vcxproj", "{6D6BFE61-CC08-32C3-BB12-E9BAA421FC53}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DimAngular", "D:/mywork/lib2/qcad/scripts/Draw/Dimension/DimAngular\DimAngular.vcxproj", "{BE44D10C-D266-381B-8EF1-27C3EE34A047}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DimDiametric", "D:/mywork/lib2/qcad/scripts/Draw/Dimension/DimDiametric\DimDiametric.vcxproj", "{D2564393-22FD-3C40-9523-54780678E689}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DimHorizontal", "D:/mywork/lib2/qcad/scripts/Draw/Dimension/DimHorizontal\DimHorizontal.vcxproj", "{775ABE82-C3FD-34FC-B20A-B7A5890E897C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DimRadial", "D:/mywork/lib2/qcad/scripts/Draw/Dimension/DimRadial\DimRadial.vcxproj", "{73C19980-492C-3D04-944B-BD165338E7E4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DimRegen", "D:/mywork/lib2/qcad/scripts/Draw/Dimension/DimRegen\DimRegen.vcxproj", "{02671809-8B2E-392A-A2E3-9D919FFB4C70}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DimRotated", "D:/mywork/lib2/qcad/scripts/Draw/Dimension/DimRotated\DimRotated.vcxproj", "{827544CF-0325-3335-824E-356C55ED2125}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DimOrdinate", "D:/mywork/lib2/qcad/scripts/Draw/Dimension/DimOrdinate\DimOrdinate.vcxproj", "{5AD61FDE-3580-3232-9479-5229417D1BD3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DimVertical", "D:/mywork/lib2/qcad/scripts/Draw/Dimension/DimVertical\DimVertical.vcxproj", "{53D37B80-4ADF-317A-BABC-B20AA76583D0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Leader", "D:/mywork/lib2/qcad/scripts/Draw/Dimension/Leader\Leader.vcxproj", "{4E26430A-E38D-3154-A535-4FB6697D63B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73B5C07E-F101-3C8D-A1AB-884C9C6CCE0A}.Debug|x64.ActiveCfg = Debug|x64
+		{73B5C07E-F101-3C8D-A1AB-884C9C6CCE0A}.Debug|x64.Build.0 = Debug|x64
+		{73B5C07E-F101-3C8D-A1AB-884C9C6CCE0A}.Release|x64.ActiveCfg = Release|x64
+		{73B5C07E-F101-3C8D-A1AB-884C9C6CCE0A}.Release|x64.Build.0 = Release|x64
+		{6D6BFE61-CC08-32C3-BB12-E9BAA421FC53}.Debug|x64.ActiveCfg = Debug|x64
+		{6D6BFE61-CC08-32C3-BB12-E9BAA421FC53}.Debug|x64.Build.0 = Debug|x64
+		{6D6BFE61-CC08-32C3-BB12-E9BAA421FC53}.Release|x64.ActiveCfg = Release|x64
+		{6D6BFE61-CC08-32C3-BB12-E9BAA421FC53}.Release|x64.Build.0 = Release|x64
+		{BE44D10C-D266-381B-8EF1-27C3EE34A047}.Debug|x64.ActiveCfg = Debug|x64
+		{BE44D10C-D266-381B-8EF1-27C3EE34A047}.Debug|x64.Build.0 = Debug|x64
+		{BE44D10C-D266-381B-8EF1-27C3EE34A047}.Release|x64.ActiveCfg = Release|x64
+		{BE44D10C-D266-381B-8EF1-27C3EE34A047}.Release|x64.Build.0 = Release|x64
+		{D2564393-22FD-3C40-9523-54780678E689}.Debug|x64.ActiveCfg = Debug|x64
+		{D2564393-22FD-3C40-9523-54780678E689}.Debug|x64.Build.0 = Debug|x64
+		{D2564393-22FD-3C40-9523-54780678E689}.Release|x64.ActiveCfg = Release|x64
+		{D2564393-22FD-3C40-9523-54780678E689}.Release|x64.Build.0 = Release|x64
+		{775ABE82-C3FD-34FC-B20A-B7A5890E897C}.Debug|x64.ActiveCfg = Debug|x64
+		{775ABE82-C3FD-34FC-B20A-B7A5890E897C}.Debug|x64.Build.0 = Debug|x64
+		{775ABE82-C3FD-34FC-B20A-B7A5890E897C}.Release|x64.ActiveCfg = Release|x64
+		{775ABE82-C3FD-34FC-B20A-B7A5890E897C}.Release|x64.Build.0 = Release|x64
+		{73C19980-492C-3D04-944B-BD165338E7E4}.Debug|x64.ActiveCfg = Debug|x64
+		{73C19980-492C-3D04-944B-BD165338E7E4}.Debug|x64.Build.0 = Debug|x64
+		{73C19980-492C-3D04-944B-BD165338E7E4}.Release|x64.ActiveCfg = Release|x64
+		{73C19980-492C-3D04-944B-BD165338E7E4}.Release|x64.Build.0 = Release|x64
+		{02671809-8B2E-392A-A2E3-9D919FFB4C70}.Debug|x64.ActiveCfg = Debug|x64
+		{02671809-8B2E-392A-A2E3-9D919FFB4C70}.Debug|x64.Build.0 = Debug|x64
+		{02671809-8B2E-392A-A2E3-9D919FFB4C70}.Release|x64.ActiveCfg = Release|x64
+		{02671809-8B2E-392A-A2E3-9D919FFB4C70}.Release|x64.Build.0 = Release|x64
+		{827544CF-0325-3335-824E-356C55ED2125}.Debug|x64.ActiveCfg = Debug|x64
+		{827544CF-0325-3335-824E-356C55ED2125}.Debug|x64.Build.0 = Debug|x64
+		{827544CF-0325-3335-824E-356C55ED2125}.Release|x64.ActiveCfg = Release|x64
+		{827544CF-0325-3335-824E-356C55ED2125}.Release|x64.Build.0 = Release|x64
+		{5AD61FDE-3580-3232-9479-5229417D1BD3}.Debug|x64.ActiveCfg = Debug|x64
+		{5AD61FDE-3580-3232-9479-5229417D1BD3}.Debug|x64.Build.0 = Debug|x64
+		{5AD61FDE-3580-3232-9479-5229417D1BD3}.Release|x64.ActiveCfg = Release|x64
+		{5AD61FDE-3580-3232-9479-5229417D1BD3}.Release|x64.Build.0 = Release|x64
+		{53D37B80-4ADF-317A-BABC-B20AA76583D0}.Debug|x64.ActiveCfg = Debug|x64
+		{53D37B80-4ADF-317A-BABC-B20AA76583D0}.Debug|x64.Build.0 = Debug|x64
+		{53D37B80-4ADF-317A-BABC-B20AA76583D0}.Release|x64.ActiveCfg = Release|x64
+		{53D37B80-4ADF-317A-BABC-B20AA76583D0}.Release|x64.Build.0 = Release|x64
+		{4E26430A-E38D-3154-A535-4FB6697D63B3}.Debug|x64.ActiveCfg = Debug|x64
+		{4E26430A-E38D-3154-A535-4FB6697D63B3}.Debug|x64.Build.0 = Debug|x64
+		{4E26430A-E38D-3154-A535-4FB6697D63B3}.Release|x64.ActiveCfg = Release|x64
+		{4E26430A-E38D-3154-A535-4FB6697D63B3}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

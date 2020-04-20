@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:rs="http://www.ribbonsoft.com">
+  <class_decl name="RBox" />
+  <class_decl name="RPolyline" />
+  <class name="RRay" xsi:noNamespaceSchemaLocation="../class.xsd"
+  isCopyable="true" hasShell="false" sharedPointerSupport="true"
+  isQObject="false" hasStreamOperator="true" isAbstract="false"
+  isScriptable="true">
+    <baseClass name="RXLine" specifier="public" />
+    <constructor>
+      <variant />
+      <variant>
+        <arg type="RLine &amp;" typeName="RLine" name="line"
+        isConst="true" />
+      </variant>
+      <variant>
+        <arg type="RVector &amp;" typeName="RVector"
+        name="basePoint" isConst="true" />
+        <arg type="RVector &amp;" typeName="RVector"
+        name="directionVector" isConst="true" />
+      </variant>
+      <variant>
+        <arg type="RVector &amp;" typeName="RVector"
+        name="basePoint" isConst="true" />
+        <arg type="double" typeName="double" name="angle"
+        isConst="false" />
+        <arg type="double" typeName="double" name="distance"
+        isConst="false" />
+      </variant>
+    </constructor>
+    <method name="getShapeType" cppName="getShapeType"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RShape::Type" isPureVirtual="false" />
+    </method>
+    <method name="clone" cppName="clone" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="RRay *" isPureVirtual="false" />
+    </method>
+    <method name="getVectorProperties"
+    cppName="getVectorProperties" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QList &lt; RVector &gt;"
+      isPureVirtual="false" />
+    </method>
+    <method name="trimEndPoint" cppName="trimEndPoint"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="RVector &amp;" typeName="RVector"
+        name="trimPoint" isConst="true" />
+        <arg type="RVector &amp;" typeName="RVector"
+        name="clickPoint" hasDefault="true"
+        default="RVector :: invalid" isConst="true" />
+        <arg type="bool" typeName="bool" name="extend"
+        hasDefault="true" default="false" isConst="false" />
+      </variant>
+    </method>
+    <method name="getPointsWithDistanceToEnd"
+    cppName="getPointsWithDistanceToEnd" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QList &lt; RVector &gt;"
+      isPureVirtual="false">
+        <arg type="double" typeName="double" name="distance"
+        isConst="false" />
+        <arg type="int" typeName="int" name="from"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="reverse" cppName="reverse" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getClippedLine" cppName="getClippedLine"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RLine" isPureVirtual="false">
+        <arg type="RBox &amp;" typeName="RBox" name="box"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getVectorTo" cppName="getVectorTo"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RVector" isPureVirtual="false">
+        <arg type="RVector &amp;" typeName="RVector" name="point"
+        isConst="true" />
+        <arg type="bool" typeName="bool" name="limited"
+        hasDefault="true" default="true" isConst="false" />
+        <arg type="double" typeName="double" name="strictRange"
+        hasDefault="true" default="RMAXDOUBLE" isConst="false" />
+      </variant>
+    </method>
+    <method name="stretch" cppName="stretch" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="RPolyline &amp;" typeName="RPolyline"
+        name="area" isConst="true" />
+        <arg type="RVector &amp;" typeName="RVector" name="offset"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="splitAt" cppName="splitAt" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QList &lt; QSharedPointer &lt; RShape &gt; &gt;"
+      isPureVirtual="false">
+        <arg type="QList &lt; RVector &gt; &amp;"
+        typeName="QList &lt; RVector &gt;" name="points"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="print" cppName="print" specifier="protected"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QDebug" typeName="QDebug" name="dbg"
+        isConst="false" />
+      </variant>
+    </method>
+  </class>
+</unit>

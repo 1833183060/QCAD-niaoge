@@ -1,0 +1,30 @@
+/* 
+QCAD Dark Theme
+IconPostfix:inverse
+RequiresPlugin:true
+
+Dark theme for QCAD on Windows / Linux.
+This is mostly defined in plugin "qcaddarkstyle".
+On macOS, the system's dark mode can be used instead.
+
+-- Leave this header intact --
+*/
+
+QToolTip { 
+    color: #ffffff; background-color: #363636; border: 1px solid #070707; 
+}
+
+/* Current tool icon in options tool bar */
+QToolBar#Options QLabel#Icon {
+    border-radius: 6px;
+    background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #444444, stop: 0.5 #666666, stop: 1 #666666 );
+    border: 1px solid #27292a;
+    border-top: 1px solid #797B7E;
+    border-right: 1px solid #797B7E;
+    margin: 3px 3px 3px 3px;
+}
+
+/* Background of text field in text editor */
+QDialog#TextDialog QTextEdit#Text {
+    background-color: white;
+}

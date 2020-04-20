@@ -1,0 +1,10 @@
+#ifndef QCAD_RC
+#define QCAD_RC
+
+IDI_ICON1               ICON    DISCARDABLE     "qcad.ico"
+IDI_ICON2               ICON    DISCARDABLE     "qcaddoc.ico"
+
+#define VER_ORIGINALFILENAME_STR    "qcad.exe"
+#include "../../shared.rc"
+
+#endif // QCAD_RC

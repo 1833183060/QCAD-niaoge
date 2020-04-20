@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Misc/Examples/QtExamples/dir\dir.vcxproj", "{450153F1-49A6-31DC-A27E-F44239C6BF33}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExDirListing", "D:/mywork/lib2/qcad/scripts/Misc/Examples/QtExamples/ExDirListing\ExDirListing.vcxproj", "{1ACA0DC9-3923-307C-85F0-3974822F836F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExMainWindow", "D:/mywork/lib2/qcad/scripts/Misc/Examples/QtExamples/ExMainWindow\ExMainWindow.vcxproj", "{2B00AF2C-F1FB-32F2-99B4-8D77B4067B07}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExResizeWindow", "D:/mywork/lib2/qcad/scripts/Misc/Examples/QtExamples/ExResizeWindow\ExResizeWindow.vcxproj", "{90ED75B6-7C3F-333C-B945-DDEC79BB2CF7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExProcess", "D:/mywork/lib2/qcad/scripts/Misc/Examples/QtExamples/ExProcess\ExProcess.vcxproj", "{0B12F65E-4A59-35F5-8D15-DBD47F8ED47E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExWidget", "D:/mywork/lib2/qcad/scripts/Misc/Examples/QtExamples/ExWidget\ExWidget.vcxproj", "{163854D2-8E65-3390-8C40-CE1BD3609F64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{450153F1-49A6-31DC-A27E-F44239C6BF33}.Debug|x64.ActiveCfg = Debug|x64
+		{450153F1-49A6-31DC-A27E-F44239C6BF33}.Debug|x64.Build.0 = Debug|x64
+		{450153F1-49A6-31DC-A27E-F44239C6BF33}.Release|x64.ActiveCfg = Release|x64
+		{450153F1-49A6-31DC-A27E-F44239C6BF33}.Release|x64.Build.0 = Release|x64
+		{1ACA0DC9-3923-307C-85F0-3974822F836F}.Debug|x64.ActiveCfg = Debug|x64
+		{1ACA0DC9-3923-307C-85F0-3974822F836F}.Debug|x64.Build.0 = Debug|x64
+		{1ACA0DC9-3923-307C-85F0-3974822F836F}.Release|x64.ActiveCfg = Release|x64
+		{1ACA0DC9-3923-307C-85F0-3974822F836F}.Release|x64.Build.0 = Release|x64
+		{2B00AF2C-F1FB-32F2-99B4-8D77B4067B07}.Debug|x64.ActiveCfg = Debug|x64
+		{2B00AF2C-F1FB-32F2-99B4-8D77B4067B07}.Debug|x64.Build.0 = Debug|x64
+		{2B00AF2C-F1FB-32F2-99B4-8D77B4067B07}.Release|x64.ActiveCfg = Release|x64
+		{2B00AF2C-F1FB-32F2-99B4-8D77B4067B07}.Release|x64.Build.0 = Release|x64
+		{90ED75B6-7C3F-333C-B945-DDEC79BB2CF7}.Debug|x64.ActiveCfg = Debug|x64
+		{90ED75B6-7C3F-333C-B945-DDEC79BB2CF7}.Debug|x64.Build.0 = Debug|x64
+		{90ED75B6-7C3F-333C-B945-DDEC79BB2CF7}.Release|x64.ActiveCfg = Release|x64
+		{90ED75B6-7C3F-333C-B945-DDEC79BB2CF7}.Release|x64.Build.0 = Release|x64
+		{0B12F65E-4A59-35F5-8D15-DBD47F8ED47E}.Debug|x64.ActiveCfg = Debug|x64
+		{0B12F65E-4A59-35F5-8D15-DBD47F8ED47E}.Debug|x64.Build.0 = Debug|x64
+		{0B12F65E-4A59-35F5-8D15-DBD47F8ED47E}.Release|x64.ActiveCfg = Release|x64
+		{0B12F65E-4A59-35F5-8D15-DBD47F8ED47E}.Release|x64.Build.0 = Release|x64
+		{163854D2-8E65-3390-8C40-CE1BD3609F64}.Debug|x64.ActiveCfg = Debug|x64
+		{163854D2-8E65-3390-8C40-CE1BD3609F64}.Debug|x64.Build.0 = Debug|x64
+		{163854D2-8E65-3390-8C40-CE1BD3609F64}.Release|x64.ActiveCfg = Release|x64
+		{163854D2-8E65-3390-8C40-CE1BD3609F64}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

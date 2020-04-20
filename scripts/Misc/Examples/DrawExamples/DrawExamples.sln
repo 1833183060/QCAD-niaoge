@@ -1,0 +1,44 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Misc/Examples/DrawExamples/dir\dir.vcxproj", "{6418C16D-2DE9-3524-9B86-11BDC51BA988}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExDrawColors", "D:/mywork/lib2/qcad/scripts/Misc/Examples/DrawExamples/ExDrawColors\ExDrawColors.vcxproj", "{052F5602-714E-39DB-9ECC-60283E8D4958}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExLineDove", "D:/mywork/lib2/qcad/scripts/Misc/Examples/DrawExamples/ExLineDove\ExLineDove.vcxproj", "{2C1A1C0F-B2A9-37E0-BF48-24CD6852A9CC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExText", "D:/mywork/lib2/qcad/scripts/Misc/Examples/DrawExamples/ExText\ExText.vcxproj", "{4099E8A9-70AB-39BD-8D25-3929EEE15D0E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExThreePoints", "D:/mywork/lib2/qcad/scripts/Misc/Examples/DrawExamples/ExThreePoints\ExThreePoints.vcxproj", "{AE1916D0-BAC6-341D-9389-E1577DD7440D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6418C16D-2DE9-3524-9B86-11BDC51BA988}.Debug|x64.ActiveCfg = Debug|x64
+		{6418C16D-2DE9-3524-9B86-11BDC51BA988}.Debug|x64.Build.0 = Debug|x64
+		{6418C16D-2DE9-3524-9B86-11BDC51BA988}.Release|x64.ActiveCfg = Release|x64
+		{6418C16D-2DE9-3524-9B86-11BDC51BA988}.Release|x64.Build.0 = Release|x64
+		{052F5602-714E-39DB-9ECC-60283E8D4958}.Debug|x64.ActiveCfg = Debug|x64
+		{052F5602-714E-39DB-9ECC-60283E8D4958}.Debug|x64.Build.0 = Debug|x64
+		{052F5602-714E-39DB-9ECC-60283E8D4958}.Release|x64.ActiveCfg = Release|x64
+		{052F5602-714E-39DB-9ECC-60283E8D4958}.Release|x64.Build.0 = Release|x64
+		{2C1A1C0F-B2A9-37E0-BF48-24CD6852A9CC}.Debug|x64.ActiveCfg = Debug|x64
+		{2C1A1C0F-B2A9-37E0-BF48-24CD6852A9CC}.Debug|x64.Build.0 = Debug|x64
+		{2C1A1C0F-B2A9-37E0-BF48-24CD6852A9CC}.Release|x64.ActiveCfg = Release|x64
+		{2C1A1C0F-B2A9-37E0-BF48-24CD6852A9CC}.Release|x64.Build.0 = Release|x64
+		{4099E8A9-70AB-39BD-8D25-3929EEE15D0E}.Debug|x64.ActiveCfg = Debug|x64
+		{4099E8A9-70AB-39BD-8D25-3929EEE15D0E}.Debug|x64.Build.0 = Debug|x64
+		{4099E8A9-70AB-39BD-8D25-3929EEE15D0E}.Release|x64.ActiveCfg = Release|x64
+		{4099E8A9-70AB-39BD-8D25-3929EEE15D0E}.Release|x64.Build.0 = Release|x64
+		{AE1916D0-BAC6-341D-9389-E1577DD7440D}.Debug|x64.ActiveCfg = Debug|x64
+		{AE1916D0-BAC6-341D-9389-E1577DD7440D}.Debug|x64.Build.0 = Debug|x64
+		{AE1916D0-BAC6-341D-9389-E1577DD7440D}.Release|x64.ActiveCfg = Release|x64
+		{AE1916D0-BAC6-341D-9389-E1577DD7440D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

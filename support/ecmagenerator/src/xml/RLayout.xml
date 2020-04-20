@@ -1,0 +1,512 @@
+<?xml version="1.0"?>
+<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:rs="http://www.ribbonsoft.com">
+  <class_decl name="RDocument" />
+  <class_decl name="RTransaction" />
+  <class name="RLayout"
+  xsi:noNamespaceSchemaLocation="../class.xsd" isCopyable="false"
+  hasShell="false" sharedPointerSupport="true" isQObject="false"
+  hasStreamOperator="false" isAbstract="false" isScriptable="true">
+    <baseClass name="RObject" specifier="public" />
+    <enum name="PlotPaperUnits">
+      <value name="Inches" />
+      <value name="Millimeters" />
+      <value name="Pixels" />
+    </enum>
+    <enum name="PlotRotation">
+      <value name="Zero" />
+      <value name="CounterClockWise" />
+      <value name="Inverted" />
+      <value name="ClockWise" />
+    </enum>
+    <enum name="PlotType">
+      <value name="Display" />
+      <value name="Extents" />
+      <value name="Limits" />
+      <value name="View" />
+      <value name="Window" />
+      <value name="Layout" />
+    </enum>
+    <enum name="StandardScaleType">
+      <value name="Scale_ScaleToFit" />
+      <value name="Scale_1_128in_1ft" />
+      <value name="Scale_1_64in_1ft" />
+      <value name="Scale_1_32in_1ft" />
+      <value name="Scale_1_16in_1ft" />
+      <value name="Scale_3_32in_1ft" />
+      <value name="Scale_1_8in_1ft" />
+      <value name="Scale_3_16in_1ft" />
+      <value name="Scale_1_4in_1ft" />
+      <value name="Scale_3_8in_1ft" />
+      <value name="Scale_1_2in_1ft" />
+      <value name="Scale_3_4in_1ft" />
+      <value name="Scale_1in_1ft" />
+      <value name="Scale_3in_1ft" />
+      <value name="Scale_6in_1ft" />
+      <value name="Scale_1ft_1ft" />
+      <value name="Scale_1_1" />
+      <value name="Scale_1_2" />
+      <value name="Scale_1_4" />
+      <value name="Scale_1_5" />
+      <value name="Scale_1_8" />
+      <value name="Scale_1_10" />
+      <value name="Scale_1_16" />
+      <value name="Scale_1_20" />
+      <value name="Scale_1_30" />
+      <value name="Scale_1_40" />
+      <value name="Scale_1_50" />
+      <value name="Scale_1_100" />
+      <value name="Scale_2_1" />
+      <value name="Scale_4_1" />
+      <value name="Scale_8_1" />
+      <value name="Scale_10_1" />
+      <value name="Scale_100_1" />
+      <value name="Scale_1000_1" />
+      <value name="Scale_1and1_2in_1ft" />
+    </enum>
+    <constructor>
+      <variant />
+      <variant>
+        <arg type="RDocument *" typeName="RDocument *"
+        name="document" isConst="false" />
+        <arg type="QString &amp;" typeName="QString" name="name"
+        isConst="true" />
+      </variant>
+    </constructor>
+    <method name="init" cppName="init" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false" />
+    </method>
+    <method name="getType" cppName="getType" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="RS::EntityType" isPureVirtual="false" />
+    </method>
+    <method name="clone" cppName="clone" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="RLayout *" isPureVirtual="false" />
+    </method>
+    <method name="getName" cppName="getName" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="setName" cppName="setName" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="n"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getTabOrder" cppName="getTabOrder"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="setTabOrder" cppName="setTabOrder"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="int" typeName="int" name="to" isConst="false" />
+      </variant>
+    </method>
+    <method name="setMinLimits" cppName="setMinLimits"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RVector &amp;" typeName="RVector"
+        name="minLimits" isConst="true" />
+      </variant>
+    </method>
+    <method name="getMinLimits" cppName="getMinLimits"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RVector" isPureVirtual="false" />
+    </method>
+    <method name="setMaxLimits" cppName="setMaxLimits"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RVector &amp;" typeName="RVector"
+        name="maxLimits" isConst="true" />
+      </variant>
+    </method>
+    <method name="getMaxLimits" cppName="getMaxLimits"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RVector" isPureVirtual="false" />
+    </method>
+    <method name="setInsertionBase" cppName="setInsertionBase"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RVector &amp;" typeName="RVector"
+        name="insertionBase" isConst="true" />
+      </variant>
+    </method>
+    <method name="getInsertionBase" cppName="getInsertionBase"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RVector" isPureVirtual="false" />
+    </method>
+    <method name="setMinExtents" cppName="setMinExtents"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RVector &amp;" typeName="RVector"
+        name="minExtents" isConst="true" />
+      </variant>
+    </method>
+    <method name="getMinExtents" cppName="getMinExtents"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RVector" isPureVirtual="false" />
+    </method>
+    <method name="setMaxExtents" cppName="setMaxExtents"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RVector &amp;" typeName="RVector"
+        name="maxExtents" isConst="true" />
+      </variant>
+    </method>
+    <method name="getMaxExtents" cppName="getMaxExtents"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RVector" isPureVirtual="false" />
+    </method>
+    <method name="setPlotPaperMarginLeftMM"
+    cppName="setPlotPaperMarginLeftMM" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="double" typeName="double" name="v"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="setPlotPaperMarginBottomMM"
+    cppName="setPlotPaperMarginBottomMM" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="double" typeName="double" name="v"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="setPlotPaperMarginRightMM"
+    cppName="setPlotPaperMarginRightMM" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="double" typeName="double" name="v"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="setPlotPaperMarginTopMM"
+    cppName="setPlotPaperMarginTopMM" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="double" typeName="double" name="v"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="setPlotPaperSize" cppName="setPlotPaperSize"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RVector &amp;" typeName="RVector" name="v"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="setPlotOrigin" cppName="setPlotOrigin"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RVector &amp;" typeName="RVector" name="v"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="setPlotWindowAreaMin"
+    cppName="setPlotWindowAreaMin" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RVector &amp;" typeName="RVector" name="v"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="setPlotWindowAreaMax"
+    cppName="setPlotWindowAreaMax" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RVector &amp;" typeName="RVector" name="v"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="setNumeratorCustomScale"
+    cppName="setNumeratorCustomScale" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="double" typeName="double" name="v"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="setDenominatorCustomScale"
+    cppName="setDenominatorCustomScale" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="double" typeName="double" name="v"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="setPlotPaperUnits" cppName="setPlotPaperUnits"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RLayout::PlotPaperUnits"
+        typeName="RLayout::PlotPaperUnits" name="v"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="setPlotRotation" cppName="setPlotRotation"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RLayout::PlotRotation"
+        typeName="RLayout::PlotRotation" name="v"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="setPlotType" cppName="setPlotType"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RLayout::PlotType" typeName="RLayout::PlotType"
+        name="v" isConst="false" />
+      </variant>
+    </method>
+    <method name="setUseStandardScale"
+    cppName="setUseStandardScale" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="v"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="setStandardScale" cppName="setStandardScale"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="double" typeName="double" name="v"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="setStandardScaleType"
+    cppName="setStandardScaleType" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RLayout::StandardScaleType"
+        typeName="RLayout::StandardScaleType" name="v"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="setCanonicalMediaName"
+    cppName="setCanonicalMediaName" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="v"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getPlotPaperMarginLeftMM"
+    cppName="getPlotPaperMarginLeftMM" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="double" isPureVirtual="false" />
+    </method>
+    <method name="getPlotPaperMarginBottomMM"
+    cppName="getPlotPaperMarginBottomMM" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="double" isPureVirtual="false" />
+    </method>
+    <method name="getPlotPaperMarginRightMM"
+    cppName="getPlotPaperMarginRightMM" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="double" isPureVirtual="false" />
+    </method>
+    <method name="getPlotPaperMarginTopMM"
+    cppName="getPlotPaperMarginTopMM" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="double" isPureVirtual="false" />
+    </method>
+    <method name="getPlotPaperSize" cppName="getPlotPaperSize"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RVector" isPureVirtual="false" />
+    </method>
+    <method name="getPlotOrigin" cppName="getPlotOrigin"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RVector" isPureVirtual="false" />
+    </method>
+    <method name="getPlotWindowAreaMin"
+    cppName="getPlotWindowAreaMin" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="RVector" isPureVirtual="false" />
+    </method>
+    <method name="getPlotWindowAreaMax"
+    cppName="getPlotWindowAreaMax" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="RVector" isPureVirtual="false" />
+    </method>
+    <method name="getNumeratorCustomScale"
+    cppName="getNumeratorCustomScale" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="double" isPureVirtual="false" />
+    </method>
+    <method name="getDenominatorCustomScale"
+    cppName="getDenominatorCustomScale" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="double" isPureVirtual="false" />
+    </method>
+    <method name="getPlotPaperUnits" cppName="getPlotPaperUnits"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RLayout::PlotPaperUnits"
+      isPureVirtual="false" />
+    </method>
+    <method name="getPlotRotation" cppName="getPlotRotation"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RLayout::PlotRotation"
+      isPureVirtual="false" />
+    </method>
+    <method name="getPlotType" cppName="getPlotType"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RLayout::PlotType"
+      isPureVirtual="false" />
+    </method>
+    <method name="getUseStandardScale"
+    cppName="getUseStandardScale" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getStandardScale" cppName="getStandardScale"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="double" isPureVirtual="false" />
+    </method>
+    <method name="getStandardScaleType"
+    cppName="getStandardScaleType" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="RLayout::StandardScaleType"
+      isPureVirtual="false" />
+    </method>
+    <method name="getCanonicalMediaName"
+    cppName="getCanonicalMediaName" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getProperty" cppName="getProperty"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QPair &lt; QVariant , RPropertyAttributes &gt;"
+      isPureVirtual="false">
+        <arg type="RPropertyTypeId &amp;"
+        typeName="RPropertyTypeId" name="propertyTypeId"
+        isConst="false" />
+        <arg type="bool" typeName="bool" name="humanReadable"
+        hasDefault="true" default="false" isConst="false" />
+        <arg type="bool" typeName="bool" name="noAttributes"
+        hasDefault="true" default="false" isConst="false" />
+        <arg type="bool" typeName="bool" name="showOnRequest"
+        hasDefault="true" default="false" isConst="false" />
+      </variant>
+    </method>
+    <method name="setProperty" cppName="setProperty"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="RPropertyTypeId" typeName="RPropertyTypeId"
+        name="propertyTypeId" isConst="false" />
+        <arg type="QVariant &amp;" typeName="QVariant" name="value"
+        isConst="true" />
+        <arg type="RTransaction *" typeName="RTransaction *"
+        name="transaction" hasDefault="true" default="NULL"
+        isConst="false" />
+      </variant>
+    </method>
+    <property name="PropertyCustom" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyName" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyTabOrder" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyMinLimitsX" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyMinLimitsY" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyMinLimitsZ" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyMaxLimitsX" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyMaxLimitsY" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyMaxLimitsZ" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyInsertionBaseX" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyInsertionBaseY" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyInsertionBaseZ" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyMinExtentsX" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyMinExtentsY" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyMinExtentsZ" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyMaxExtentsX" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyMaxExtentsY" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyMaxExtentsZ" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyPlotPaperMarginLeftMM"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+    <property name="PropertyPlotPaperMarginBottomMM"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+    <property name="PropertyPlotPaperMarginRightMM"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+    <property name="PropertyPlotPaperMarginTopMM"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+    <property name="PropertyPlotPaperSizeWidth"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+    <property name="PropertyPlotPaperSizeHeight"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+    <property name="PropertyPlotOriginX" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyPlotOriginY" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyPlotWindowAreaMinX"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+    <property name="PropertyPlotWindowAreaMinY"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+    <property name="PropertyPlotWindowAreaMaxX"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+    <property name="PropertyPlotWindowAreaMaxY"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+    <property name="PropertyNumeratorCustomScale"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+    <property name="PropertyDenominatorCustomScale"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+    <property name="PropertyPlotPaperUnits" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyPlotRotation" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyPlotType" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyUseStandardScale"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+    <property name="PropertyStandardScale" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyStandardScaleType"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+    <property name="PropertyCanonicalMediaName"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+  </class>
+</unit>

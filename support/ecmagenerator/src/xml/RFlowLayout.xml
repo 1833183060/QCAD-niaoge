@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:rs="http://www.ribbonsoft.com">
+  <class name="RFlowLayout"
+  xsi:noNamespaceSchemaLocation="../class.xsd" isCopyable="false"
+  hasShell="true" sharedPointerSupport="false" isQObject="true"
+  hasStreamOperator="false" isAbstract="false" isScriptable="true">
+    <baseClass name="QLayout" specifier="public" />
+    <constructor>
+      <variant>
+        <arg type="QWidget *" typeName="QWidget *" name="parent"
+        isConst="false" />
+        <arg type="int" typeName="int" name="margin"
+        hasDefault="true" default="RDEFAULT_MIN1"
+        isConst="false" />
+        <arg type="int" typeName="int" name="hSpacing"
+        hasDefault="true" default="RDEFAULT_MIN1"
+        isConst="false" />
+        <arg type="int" typeName="int" name="vSpacing"
+        hasDefault="true" default="RDEFAULT_MIN1"
+        isConst="false" />
+      </variant>
+      <variant>
+        <arg type="int" typeName="int" name="margin"
+        hasDefault="true" default="RDEFAULT_MIN1"
+        isConst="false" />
+        <arg type="int" typeName="int" name="hSpacing"
+        hasDefault="true" default="RDEFAULT_MIN1"
+        isConst="false" />
+        <arg type="int" typeName="int" name="vSpacing"
+        hasDefault="true" default="RDEFAULT_MIN1"
+        isConst="false" />
+      </variant>
+    </constructor>
+    <method name="setIconSize" cppName="setIconSize"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QSize &amp;" typeName="QSize" name="s"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="setListViewMode" cppName="setListViewMode"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="on"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="addItem" cppName="addItem" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QLayoutItem *" typeName="QLayoutItem *"
+        name="item" isConst="false" />
+      </variant>
+    </method>
+    <method name="horizontalSpacing" cppName="horizontalSpacing"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="verticalSpacing" cppName="verticalSpacing"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="expandingDirections"
+    cppName="expandingDirections" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="Qt::Orientations"
+      isPureVirtual="false" />
+    </method>
+    <method name="hasHeightForWidth" cppName="hasHeightForWidth"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="heightForWidth" cppName="heightForWidth"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false">
+        <arg type="int" typeName="int" name="" isConst="false" />
+      </variant>
+    </method>
+    <method name="count" cppName="count" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="itemAt" cppName="itemAt" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QLayoutItem *" isPureVirtual="false">
+        <arg type="int" typeName="int" name="index"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="minimumSize" cppName="minimumSize"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QSize" isPureVirtual="false" />
+    </method>
+    <method name="setGeometry" cppName="setGeometry"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QRect &amp;" typeName="QRect" name="rect"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="sizeHint" cppName="sizeHint" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QSize" isPureVirtual="false" />
+    </method>
+    <method name="takeAt" cppName="takeAt" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QLayoutItem *" isPureVirtual="false">
+        <arg type="int" typeName="int" name="index"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="insertAction" cppName="insertAction"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="int" typeName="int" name="index"
+        isConst="false" />
+        <arg type="QAction *" typeName="QAction *" name="action"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="indexOf" cppName="indexOf" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false">
+        <arg type="QAction *" typeName="QAction *" name="action"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="invalidate" cppName="invalidate"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false" />
+    </method>
+  </class>
+</unit>

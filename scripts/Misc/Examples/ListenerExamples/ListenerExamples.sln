@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Misc/Examples/ListenerExamples/dir\dir.vcxproj", "{3F8ED149-216C-3F21-855B-1D582A81E55A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExExportListener", "D:/mywork/lib2/qcad/scripts/Misc/Examples/ListenerExamples/ExExportListener\ExExportListener.vcxproj", "{75424ADE-33D2-3BE7-90F0-E7EF3BDF58FC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExTransactionListener", "D:/mywork/lib2/qcad/scripts/Misc/Examples/ListenerExamples/ExTransactionListener\ExTransactionListener.vcxproj", "{E29E2E4D-871E-3356-887F-77695A7A2A38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F8ED149-216C-3F21-855B-1D582A81E55A}.Debug|x64.ActiveCfg = Debug|x64
+		{3F8ED149-216C-3F21-855B-1D582A81E55A}.Debug|x64.Build.0 = Debug|x64
+		{3F8ED149-216C-3F21-855B-1D582A81E55A}.Release|x64.ActiveCfg = Release|x64
+		{3F8ED149-216C-3F21-855B-1D582A81E55A}.Release|x64.Build.0 = Release|x64
+		{75424ADE-33D2-3BE7-90F0-E7EF3BDF58FC}.Debug|x64.ActiveCfg = Debug|x64
+		{75424ADE-33D2-3BE7-90F0-E7EF3BDF58FC}.Debug|x64.Build.0 = Debug|x64
+		{75424ADE-33D2-3BE7-90F0-E7EF3BDF58FC}.Release|x64.ActiveCfg = Release|x64
+		{75424ADE-33D2-3BE7-90F0-E7EF3BDF58FC}.Release|x64.Build.0 = Release|x64
+		{E29E2E4D-871E-3356-887F-77695A7A2A38}.Debug|x64.ActiveCfg = Debug|x64
+		{E29E2E4D-871E-3356-887F-77695A7A2A38}.Debug|x64.Build.0 = Debug|x64
+		{E29E2E4D-871E-3356-887F-77695A7A2A38}.Release|x64.ActiveCfg = Release|x64
+		{E29E2E4D-871E-3356-887F-77695A7A2A38}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:rs="http://www.ribbonsoft.com">
+  <class name="RMathComboBox"
+  xsi:noNamespaceSchemaLocation="../class.xsd" isCopyable="false"
+  hasShell="false" sharedPointerSupport="false" isQObject="false"
+  hasStreamOperator="false" isAbstract="false" isScriptable="true">
+    <baseClass name="QComboBox" specifier="public" />
+    <method name="slotTextChanged" cppName="slotTextChanged"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="text"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="slotValueChanged" cppName="slotValueChanged"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="double" typeName="double" name="value"
+        isConst="false" />
+        <arg type="QString &amp;" typeName="QString" name="error"
+        isConst="true" />
+      </variant>
+    </method>
+  </class>
+</unit>

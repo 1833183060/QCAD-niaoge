@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.sdml.info/srcML/src" xmlns:cpp="http://www.sdml.info/srcML/cpp" language="C++" dir="./gui" filename="RToolMatrixItemDelegate.h"><comment type="block">/**
+ * Copyright (C) 2015 The Qt Company Ltd.
+ * Copyright (c) 2016 by Andrew Mustun.
+ * 
+ * This file is part of the QCAD project.
+ *
+ * QCAD is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * QCAD is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with QCAD.
+ *
+ * GNU Lesser General Public License Usage
+ * Alternatively, this file may be used under the terms of the GNU Lesser
+ * General Public License version 2.1 or version 3 as published by the Free
+ * Software Foundation and appearing in the file LICENSE.LGPLv21 and
+ * LICENSE.LGPLv3 included in the packaging of this file. Please review the
+ * following information to ensure the GNU Lesser General Public License
+ * requirements will be met: https://www.gnu.org/licenses/lgpl.html and
+ * http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
+ *
+ * Derived from qttools/src/designer/src/lib/shared/sheet_delegate_p.h
+ */</comment>
+
+<cpp:ifndef>#<cpp:directive>ifndef</cpp:directive> <name>RTOOLMATRIXITEMDELEGATE_H_</name></cpp:ifndef>
+<cpp:define>#<cpp:directive>define</cpp:directive> <name>RTOOLMATRIXITEMDELEGATE_H_</name></cpp:define>
+
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"gui_global.h"</cpp:file></cpp:include>
+
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>&lt;QItemDelegate&gt;</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>&lt;QMetaType&gt;</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>&lt;QTreeWidget&gt;</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>&lt;QTreeWidgetItem&gt;</cpp:file></cpp:include>
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>&lt;QWidget&gt;</cpp:file></cpp:include>
+
+<comment type="block">/**
+ * Tree widget item delegate. Decorates root items of QTreeWidget tool matrices.
+ *
+ * \ingroup gui
+ * \scriptable
+ * \generateScriptShell
+ */</comment>
+<class>class <macro><name>QCADGUI_EXPORT</name></macro> <name>RToolMatrixItemDelegate</name><super>: <specifier>public</specifier> <name>QItemDelegate</name></super> <block>{<private type="default">
+    <macro><name>Q_OBJECT</name></macro>
+</private><public>public:
+    <constructor_decl><name>RToolMatrixItemDelegate</name><parameter_list>(<param><decl><type><name>QTreeView</name>*</type> <name>view</name></decl></param>, <param><decl><type><name>QWidget</name>*</type> <name>parent</name></decl></param>)</parameter_list>;</constructor_decl>
+
+    <function_decl><type><name>void</name></type> <name>paint</name><parameter_list>(<param><decl><type><name>QPainter</name>*</type> <name>painter</name></decl></param>, <param><decl><type><name>const</name> <name>QStyleOptionViewItem</name>&amp;</type> <name>option</name></decl></param>, <param><decl><type><name>const</name> <name>QModelIndex</name>&amp;</type> <name>index</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
+    <function_decl><type><name>QSize</name></type> <name>sizeHint</name><parameter_list>(<param><decl><type><name>const</name> <name>QStyleOptionViewItem</name>&amp;</type> <name>opt</name></decl></param>, <param><decl><type><name>const</name> <name>QModelIndex</name>&amp;</type> <name>index</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
+
+</public><private>private:
+    <decl_stmt><decl><type><name>QTreeView</name>*</type> <name>treeView</name></decl>;</decl_stmt>
+</private>}</block>;</class>
+
+<macro><name>Q_DECLARE_METATYPE</name><argument_list>(<argument>RToolMatrixItemDelegate*</argument>)</argument_list></macro>
+
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+</unit>

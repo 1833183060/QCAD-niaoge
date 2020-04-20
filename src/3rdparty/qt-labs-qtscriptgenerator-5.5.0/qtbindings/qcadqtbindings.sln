@@ -1,0 +1,74 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qtscript_core", "D:/mywork/lib2/qcad/src/3rdparty/qt-labs-qtscriptgenerator-5.5.0/qtbindings/qtscript_core\qtscript_core.vcxproj", "{96C105E7-230B-35D2-B3B0-2205A7A154C7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qtscript_gui", "D:/mywork/lib2/qcad/src/3rdparty/qt-labs-qtscriptgenerator-5.5.0/qtbindings/qtscript_gui\qtscript_gui.vcxproj", "{0872CEDB-21D2-3BD1-8849-2AE0434E036E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qtscript_widgets", "D:/mywork/lib2/qcad/src/3rdparty/qt-labs-qtscriptgenerator-5.5.0/qtbindings/qtscript_widgets\qtscript_widgets.vcxproj", "{799C508E-E633-382A-AD24-4BFB6A2EE040}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qtscript_printsupport", "D:/mywork/lib2/qcad/src/3rdparty/qt-labs-qtscriptgenerator-5.5.0/qtbindings/qtscript_printsupport\qtscript_printsupport.vcxproj", "{134BBFDA-8468-3B18-B726-377629E24AF3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qtscript_network", "D:/mywork/lib2/qcad/src/3rdparty/qt-labs-qtscriptgenerator-5.5.0/qtbindings/qtscript_network\qtscript_network.vcxproj", "{5E2A9FFE-85AD-313A-AC20-B57E3F088039}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qtscript_opengl", "D:/mywork/lib2/qcad/src/3rdparty/qt-labs-qtscriptgenerator-5.5.0/qtbindings/qtscript_opengl\qtscript_opengl.vcxproj", "{729DC255-2A0F-3792-8C32-05F0D201AF0F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qtscript_sql", "D:/mywork/lib2/qcad/src/3rdparty/qt-labs-qtscriptgenerator-5.5.0/qtbindings/qtscript_sql\qtscript_sql.vcxproj", "{FB219C71-9F51-3CAF-A32D-E77830455B2E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qtscript_uitools", "D:/mywork/lib2/qcad/src/3rdparty/qt-labs-qtscriptgenerator-5.5.0/qtbindings/qtscript_uitools\qtscript_uitools.vcxproj", "{DF71520D-35D8-36A4-BD89-93DA7DCE0E4F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qtscript_xml", "D:/mywork/lib2/qcad/src/3rdparty/qt-labs-qtscriptgenerator-5.5.0/qtbindings/qtscript_xml\qtscript_xml.vcxproj", "{0D2FE4C6-1084-3C9B-8916-7AA949BA86DA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qtscript_xmlpatterns", "D:/mywork/lib2/qcad/src/3rdparty/qt-labs-qtscriptgenerator-5.5.0/qtbindings/qtscript_xmlpatterns\qtscript_xmlpatterns.vcxproj", "{EBFF12E4-A725-3D0B-B7DD-FD383760F1B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96C105E7-230B-35D2-B3B0-2205A7A154C7}.Debug|x64.ActiveCfg = Debug|x64
+		{96C105E7-230B-35D2-B3B0-2205A7A154C7}.Debug|x64.Build.0 = Debug|x64
+		{96C105E7-230B-35D2-B3B0-2205A7A154C7}.Release|x64.ActiveCfg = Release|x64
+		{96C105E7-230B-35D2-B3B0-2205A7A154C7}.Release|x64.Build.0 = Release|x64
+		{0872CEDB-21D2-3BD1-8849-2AE0434E036E}.Debug|x64.ActiveCfg = Debug|x64
+		{0872CEDB-21D2-3BD1-8849-2AE0434E036E}.Debug|x64.Build.0 = Debug|x64
+		{0872CEDB-21D2-3BD1-8849-2AE0434E036E}.Release|x64.ActiveCfg = Release|x64
+		{0872CEDB-21D2-3BD1-8849-2AE0434E036E}.Release|x64.Build.0 = Release|x64
+		{799C508E-E633-382A-AD24-4BFB6A2EE040}.Debug|x64.ActiveCfg = Debug|x64
+		{799C508E-E633-382A-AD24-4BFB6A2EE040}.Debug|x64.Build.0 = Debug|x64
+		{799C508E-E633-382A-AD24-4BFB6A2EE040}.Release|x64.ActiveCfg = Release|x64
+		{799C508E-E633-382A-AD24-4BFB6A2EE040}.Release|x64.Build.0 = Release|x64
+		{134BBFDA-8468-3B18-B726-377629E24AF3}.Debug|x64.ActiveCfg = Debug|x64
+		{134BBFDA-8468-3B18-B726-377629E24AF3}.Debug|x64.Build.0 = Debug|x64
+		{134BBFDA-8468-3B18-B726-377629E24AF3}.Release|x64.ActiveCfg = Release|x64
+		{134BBFDA-8468-3B18-B726-377629E24AF3}.Release|x64.Build.0 = Release|x64
+		{5E2A9FFE-85AD-313A-AC20-B57E3F088039}.Debug|x64.ActiveCfg = Debug|x64
+		{5E2A9FFE-85AD-313A-AC20-B57E3F088039}.Debug|x64.Build.0 = Debug|x64
+		{5E2A9FFE-85AD-313A-AC20-B57E3F088039}.Release|x64.ActiveCfg = Release|x64
+		{5E2A9FFE-85AD-313A-AC20-B57E3F088039}.Release|x64.Build.0 = Release|x64
+		{729DC255-2A0F-3792-8C32-05F0D201AF0F}.Debug|x64.ActiveCfg = Debug|x64
+		{729DC255-2A0F-3792-8C32-05F0D201AF0F}.Debug|x64.Build.0 = Debug|x64
+		{729DC255-2A0F-3792-8C32-05F0D201AF0F}.Release|x64.ActiveCfg = Release|x64
+		{729DC255-2A0F-3792-8C32-05F0D201AF0F}.Release|x64.Build.0 = Release|x64
+		{FB219C71-9F51-3CAF-A32D-E77830455B2E}.Debug|x64.ActiveCfg = Debug|x64
+		{FB219C71-9F51-3CAF-A32D-E77830455B2E}.Debug|x64.Build.0 = Debug|x64
+		{FB219C71-9F51-3CAF-A32D-E77830455B2E}.Release|x64.ActiveCfg = Release|x64
+		{FB219C71-9F51-3CAF-A32D-E77830455B2E}.Release|x64.Build.0 = Release|x64
+		{DF71520D-35D8-36A4-BD89-93DA7DCE0E4F}.Debug|x64.ActiveCfg = Debug|x64
+		{DF71520D-35D8-36A4-BD89-93DA7DCE0E4F}.Debug|x64.Build.0 = Debug|x64
+		{DF71520D-35D8-36A4-BD89-93DA7DCE0E4F}.Release|x64.ActiveCfg = Release|x64
+		{DF71520D-35D8-36A4-BD89-93DA7DCE0E4F}.Release|x64.Build.0 = Release|x64
+		{0D2FE4C6-1084-3C9B-8916-7AA949BA86DA}.Debug|x64.ActiveCfg = Debug|x64
+		{0D2FE4C6-1084-3C9B-8916-7AA949BA86DA}.Debug|x64.Build.0 = Debug|x64
+		{0D2FE4C6-1084-3C9B-8916-7AA949BA86DA}.Release|x64.ActiveCfg = Release|x64
+		{0D2FE4C6-1084-3C9B-8916-7AA949BA86DA}.Release|x64.Build.0 = Release|x64
+		{EBFF12E4-A725-3D0B-B7DD-FD383760F1B1}.Debug|x64.ActiveCfg = Debug|x64
+		{EBFF12E4-A725-3D0B-B7DD-FD383760F1B1}.Debug|x64.Build.0 = Debug|x64
+		{EBFF12E4-A725-3D0B-B7DD-FD383760F1B1}.Release|x64.ActiveCfg = Release|x64
+		{EBFF12E4-A725-3D0B-B7DD-FD383760F1B1}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

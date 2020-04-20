@@ -1,0 +1,86 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Information/dir\dir.vcxproj", "{430CCB0A-D0D4-33FD-8774-D5F75F438BDC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoAngle", "D:/mywork/lib2/qcad/scripts/Information/InfoAngle\InfoAngle.vcxproj", "{D7E4A0A1-5D0F-3773-9EE0-3FE8CD1F73BB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoArcCircleArea", "D:/mywork/lib2/qcad/scripts/Information/InfoArcCircleArea\InfoArcCircleArea.vcxproj", "{AC4AC7EE-98B4-3865-A373-7B4A8D7D032D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoArea", "D:/mywork/lib2/qcad/scripts/Information/InfoArea\InfoArea.vcxproj", "{6BF368ED-F0A5-3CCC-9C1B-6E4D724DB1BA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoDistanceEE", "D:/mywork/lib2/qcad/scripts/Information/InfoDistanceEE\InfoDistanceEE.vcxproj", "{AC5D546A-5B81-3608-8779-DDF401F29EFA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoDistanceEP", "D:/mywork/lib2/qcad/scripts/Information/InfoDistanceEP\InfoDistanceEP.vcxproj", "{35E92C2D-768C-3E99-9152-91D0B5D22A13}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoDistancePP", "D:/mywork/lib2/qcad/scripts/Information/InfoDistancePP\InfoDistancePP.vcxproj", "{9DC707FD-C9D7-3CD3-8327-5E588FBF5B9A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoPolylineArea", "D:/mywork/lib2/qcad/scripts/Information/InfoPolylineArea\InfoPolylineArea.vcxproj", "{C8CA5690-B80B-3480-B904-77137B069800}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoPosition", "D:/mywork/lib2/qcad/scripts/Information/InfoPosition\InfoPosition.vcxproj", "{B88A6B2A-3573-30C4-B4B4-1102F685DC54}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoPositionRel", "D:/mywork/lib2/qcad/scripts/Information/InfoPositionRel\InfoPositionRel.vcxproj", "{667C57BD-555A-3A56-A70A-E3B52B1F6F32}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoPositionPol", "D:/mywork/lib2/qcad/scripts/Information/InfoPositionPol\InfoPositionPol.vcxproj", "{E9C9354A-A6F8-3D8E-8E3F-4023BE2309FA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoPositionPolRel", "D:/mywork/lib2/qcad/scripts/Information/InfoPositionPolRel\InfoPositionPolRel.vcxproj", "{58291E0B-DFF3-378F-B7C8-10049C1C17A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{430CCB0A-D0D4-33FD-8774-D5F75F438BDC}.Debug|x64.ActiveCfg = Debug|x64
+		{430CCB0A-D0D4-33FD-8774-D5F75F438BDC}.Debug|x64.Build.0 = Debug|x64
+		{430CCB0A-D0D4-33FD-8774-D5F75F438BDC}.Release|x64.ActiveCfg = Release|x64
+		{430CCB0A-D0D4-33FD-8774-D5F75F438BDC}.Release|x64.Build.0 = Release|x64
+		{D7E4A0A1-5D0F-3773-9EE0-3FE8CD1F73BB}.Debug|x64.ActiveCfg = Debug|x64
+		{D7E4A0A1-5D0F-3773-9EE0-3FE8CD1F73BB}.Debug|x64.Build.0 = Debug|x64
+		{D7E4A0A1-5D0F-3773-9EE0-3FE8CD1F73BB}.Release|x64.ActiveCfg = Release|x64
+		{D7E4A0A1-5D0F-3773-9EE0-3FE8CD1F73BB}.Release|x64.Build.0 = Release|x64
+		{AC4AC7EE-98B4-3865-A373-7B4A8D7D032D}.Debug|x64.ActiveCfg = Debug|x64
+		{AC4AC7EE-98B4-3865-A373-7B4A8D7D032D}.Debug|x64.Build.0 = Debug|x64
+		{AC4AC7EE-98B4-3865-A373-7B4A8D7D032D}.Release|x64.ActiveCfg = Release|x64
+		{AC4AC7EE-98B4-3865-A373-7B4A8D7D032D}.Release|x64.Build.0 = Release|x64
+		{6BF368ED-F0A5-3CCC-9C1B-6E4D724DB1BA}.Debug|x64.ActiveCfg = Debug|x64
+		{6BF368ED-F0A5-3CCC-9C1B-6E4D724DB1BA}.Debug|x64.Build.0 = Debug|x64
+		{6BF368ED-F0A5-3CCC-9C1B-6E4D724DB1BA}.Release|x64.ActiveCfg = Release|x64
+		{6BF368ED-F0A5-3CCC-9C1B-6E4D724DB1BA}.Release|x64.Build.0 = Release|x64
+		{AC5D546A-5B81-3608-8779-DDF401F29EFA}.Debug|x64.ActiveCfg = Debug|x64
+		{AC5D546A-5B81-3608-8779-DDF401F29EFA}.Debug|x64.Build.0 = Debug|x64
+		{AC5D546A-5B81-3608-8779-DDF401F29EFA}.Release|x64.ActiveCfg = Release|x64
+		{AC5D546A-5B81-3608-8779-DDF401F29EFA}.Release|x64.Build.0 = Release|x64
+		{35E92C2D-768C-3E99-9152-91D0B5D22A13}.Debug|x64.ActiveCfg = Debug|x64
+		{35E92C2D-768C-3E99-9152-91D0B5D22A13}.Debug|x64.Build.0 = Debug|x64
+		{35E92C2D-768C-3E99-9152-91D0B5D22A13}.Release|x64.ActiveCfg = Release|x64
+		{35E92C2D-768C-3E99-9152-91D0B5D22A13}.Release|x64.Build.0 = Release|x64
+		{9DC707FD-C9D7-3CD3-8327-5E588FBF5B9A}.Debug|x64.ActiveCfg = Debug|x64
+		{9DC707FD-C9D7-3CD3-8327-5E588FBF5B9A}.Debug|x64.Build.0 = Debug|x64
+		{9DC707FD-C9D7-3CD3-8327-5E588FBF5B9A}.Release|x64.ActiveCfg = Release|x64
+		{9DC707FD-C9D7-3CD3-8327-5E588FBF5B9A}.Release|x64.Build.0 = Release|x64
+		{C8CA5690-B80B-3480-B904-77137B069800}.Debug|x64.ActiveCfg = Debug|x64
+		{C8CA5690-B80B-3480-B904-77137B069800}.Debug|x64.Build.0 = Debug|x64
+		{C8CA5690-B80B-3480-B904-77137B069800}.Release|x64.ActiveCfg = Release|x64
+		{C8CA5690-B80B-3480-B904-77137B069800}.Release|x64.Build.0 = Release|x64
+		{B88A6B2A-3573-30C4-B4B4-1102F685DC54}.Debug|x64.ActiveCfg = Debug|x64
+		{B88A6B2A-3573-30C4-B4B4-1102F685DC54}.Debug|x64.Build.0 = Debug|x64
+		{B88A6B2A-3573-30C4-B4B4-1102F685DC54}.Release|x64.ActiveCfg = Release|x64
+		{B88A6B2A-3573-30C4-B4B4-1102F685DC54}.Release|x64.Build.0 = Release|x64
+		{667C57BD-555A-3A56-A70A-E3B52B1F6F32}.Debug|x64.ActiveCfg = Debug|x64
+		{667C57BD-555A-3A56-A70A-E3B52B1F6F32}.Debug|x64.Build.0 = Debug|x64
+		{667C57BD-555A-3A56-A70A-E3B52B1F6F32}.Release|x64.ActiveCfg = Release|x64
+		{667C57BD-555A-3A56-A70A-E3B52B1F6F32}.Release|x64.Build.0 = Release|x64
+		{E9C9354A-A6F8-3D8E-8E3F-4023BE2309FA}.Debug|x64.ActiveCfg = Debug|x64
+		{E9C9354A-A6F8-3D8E-8E3F-4023BE2309FA}.Debug|x64.Build.0 = Debug|x64
+		{E9C9354A-A6F8-3D8E-8E3F-4023BE2309FA}.Release|x64.ActiveCfg = Release|x64
+		{E9C9354A-A6F8-3D8E-8E3F-4023BE2309FA}.Release|x64.Build.0 = Release|x64
+		{58291E0B-DFF3-378F-B7C8-10049C1C17A4}.Debug|x64.ActiveCfg = Debug|x64
+		{58291E0B-DFF3-378F-B7C8-10049C1C17A4}.Debug|x64.Build.0 = Debug|x64
+		{58291E0B-DFF3-378F-B7C8-10049C1C17A4}.Release|x64.ActiveCfg = Release|x64
+		{58291E0B-DFF3-378F-B7C8-10049C1C17A4}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

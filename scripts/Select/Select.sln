@@ -1,0 +1,62 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DeselectAll", "D:/mywork/lib2/qcad/scripts/Select/DeselectAll\DeselectAll.vcxproj", "{999B40F1-13F1-357D-BDA3-E8D297FACE7B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InvertSelection", "D:/mywork/lib2/qcad/scripts/Select/InvertSelection\InvertSelection.vcxproj", "{51044DE4-914B-3AE1-83DE-89BD0F745FA1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelectAll", "D:/mywork/lib2/qcad/scripts/Select/SelectAll\SelectAll.vcxproj", "{EE3140E0-11C8-30EE-8F54-61B6EEFA34FF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelectContour", "D:/mywork/lib2/qcad/scripts/Select/SelectContour\SelectContour.vcxproj", "{047CA1C2-CFEE-3A0D-9A9E-2022064C68A0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelectIntersectedEntities", "D:/mywork/lib2/qcad/scripts/Select/SelectIntersectedEntities\SelectIntersectedEntities.vcxproj", "{AB47A4C1-41B3-31C3-8AFC-A31B7A1872BD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelectLayerByEntity", "D:/mywork/lib2/qcad/scripts/Select/SelectLayerByEntity\SelectLayerByEntity.vcxproj", "{9797179B-E304-34EE-8CE4-3051A2FA009E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelectRectangle", "D:/mywork/lib2/qcad/scripts/Select/SelectRectangle\SelectRectangle.vcxproj", "{906CDEFB-00A1-3B80-AAEE-3C7F035A37F7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Select/dir\dir.vcxproj", "{A19BF6C3-9D72-35DF-9AD2-1ACF423E57CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{999B40F1-13F1-357D-BDA3-E8D297FACE7B}.Debug|x64.ActiveCfg = Debug|x64
+		{999B40F1-13F1-357D-BDA3-E8D297FACE7B}.Debug|x64.Build.0 = Debug|x64
+		{999B40F1-13F1-357D-BDA3-E8D297FACE7B}.Release|x64.ActiveCfg = Release|x64
+		{999B40F1-13F1-357D-BDA3-E8D297FACE7B}.Release|x64.Build.0 = Release|x64
+		{51044DE4-914B-3AE1-83DE-89BD0F745FA1}.Debug|x64.ActiveCfg = Debug|x64
+		{51044DE4-914B-3AE1-83DE-89BD0F745FA1}.Debug|x64.Build.0 = Debug|x64
+		{51044DE4-914B-3AE1-83DE-89BD0F745FA1}.Release|x64.ActiveCfg = Release|x64
+		{51044DE4-914B-3AE1-83DE-89BD0F745FA1}.Release|x64.Build.0 = Release|x64
+		{EE3140E0-11C8-30EE-8F54-61B6EEFA34FF}.Debug|x64.ActiveCfg = Debug|x64
+		{EE3140E0-11C8-30EE-8F54-61B6EEFA34FF}.Debug|x64.Build.0 = Debug|x64
+		{EE3140E0-11C8-30EE-8F54-61B6EEFA34FF}.Release|x64.ActiveCfg = Release|x64
+		{EE3140E0-11C8-30EE-8F54-61B6EEFA34FF}.Release|x64.Build.0 = Release|x64
+		{047CA1C2-CFEE-3A0D-9A9E-2022064C68A0}.Debug|x64.ActiveCfg = Debug|x64
+		{047CA1C2-CFEE-3A0D-9A9E-2022064C68A0}.Debug|x64.Build.0 = Debug|x64
+		{047CA1C2-CFEE-3A0D-9A9E-2022064C68A0}.Release|x64.ActiveCfg = Release|x64
+		{047CA1C2-CFEE-3A0D-9A9E-2022064C68A0}.Release|x64.Build.0 = Release|x64
+		{AB47A4C1-41B3-31C3-8AFC-A31B7A1872BD}.Debug|x64.ActiveCfg = Debug|x64
+		{AB47A4C1-41B3-31C3-8AFC-A31B7A1872BD}.Debug|x64.Build.0 = Debug|x64
+		{AB47A4C1-41B3-31C3-8AFC-A31B7A1872BD}.Release|x64.ActiveCfg = Release|x64
+		{AB47A4C1-41B3-31C3-8AFC-A31B7A1872BD}.Release|x64.Build.0 = Release|x64
+		{9797179B-E304-34EE-8CE4-3051A2FA009E}.Debug|x64.ActiveCfg = Debug|x64
+		{9797179B-E304-34EE-8CE4-3051A2FA009E}.Debug|x64.Build.0 = Debug|x64
+		{9797179B-E304-34EE-8CE4-3051A2FA009E}.Release|x64.ActiveCfg = Release|x64
+		{9797179B-E304-34EE-8CE4-3051A2FA009E}.Release|x64.Build.0 = Release|x64
+		{906CDEFB-00A1-3B80-AAEE-3C7F035A37F7}.Debug|x64.ActiveCfg = Debug|x64
+		{906CDEFB-00A1-3B80-AAEE-3C7F035A37F7}.Debug|x64.Build.0 = Debug|x64
+		{906CDEFB-00A1-3B80-AAEE-3C7F035A37F7}.Release|x64.ActiveCfg = Release|x64
+		{906CDEFB-00A1-3B80-AAEE-3C7F035A37F7}.Release|x64.Build.0 = Release|x64
+		{A19BF6C3-9D72-35DF-9AD2-1ACF423E57CA}.Debug|x64.ActiveCfg = Debug|x64
+		{A19BF6C3-9D72-35DF-9AD2-1ACF423E57CA}.Debug|x64.Build.0 = Debug|x64
+		{A19BF6C3-9D72-35DF-9AD2-1ACF423E57CA}.Release|x64.ActiveCfg = Release|x64
+		{A19BF6C3-9D72-35DF-9AD2-1ACF423E57CA}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

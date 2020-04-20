@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:rs="http://www.ribbonsoft.com">
+  <class name="RTreeWidget"
+  xsi:noNamespaceSchemaLocation="../class.xsd" isCopyable="false"
+  hasShell="true" sharedPointerSupport="false" isQObject="true"
+  hasStreamOperator="false" isAbstract="false" isScriptable="true">
+    <baseClass name="QTreeWidget" specifier="public" />
+    <constructor>
+      <variant>
+        <arg type="QWidget *" typeName="QWidget *" name="parent"
+        hasDefault="true" default="0" isConst="false" />
+      </variant>
+    </constructor>
+    <method name="setSelectableColumn"
+    cppName="setSelectableColumn" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="int" typeName="int" name="c" isConst="false" />
+      </variant>
+    </method>
+    <method name="getIndex" cppName="getIndex" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QModelIndex" isPureVirtual="false">
+        <arg type="QTreeWidgetItem *" typeName="QTreeWidgetItem *"
+        name="item" isConst="false" />
+        <arg type="int" typeName="int" name="column"
+        hasDefault="true" default="0" isConst="false" />
+      </variant>
+    </method>
+    <method name="getActiveItem" cppName="getActiveItem"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QTreeWidgetItem *"
+      isPureVirtual="false" />
+    </method>
+    <method name="contextMenuEvent" cppName="contextMenuEvent"
+    specifier="protected" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QContextMenuEvent *"
+        typeName="QContextMenuEvent *" name="e" isConst="false" />
+      </variant>
+    </method>
+    <method name="mousePressEvent" cppName="mousePressEvent"
+    specifier="protected" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QMouseEvent *" typeName="QMouseEvent *" name="e"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="mouseReleaseEvent" cppName="mouseReleaseEvent"
+    specifier="protected" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QMouseEvent *" typeName="QMouseEvent *" name="e"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="mouseMoveEvent" cppName="mouseMoveEvent"
+    specifier="protected" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QMouseEvent *" typeName="QMouseEvent *" name="e"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="resizeEvent" cppName="resizeEvent"
+    specifier="protected" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QResizeEvent *" typeName="QResizeEvent *"
+        name="event" isConst="false" />
+      </variant>
+    </method>
+  </class>
+</unit>

@@ -1,0 +1,98 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Draw/Circle/dir\dir.vcxproj", "{73A3AA15-32A8-3644-876D-28E56A9452CD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Circle2P", "D:/mywork/lib2/qcad/scripts/Draw/Circle/Circle2P\Circle2P.vcxproj", "{0765F939-054B-3DB4-A423-C8E3D9EED67B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Circle2PR", "D:/mywork/lib2/qcad/scripts/Draw/Circle/Circle2PR\Circle2PR.vcxproj", "{9F28D445-B2C7-3D0F-B4AD-6B10A442190F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Circle2TR", "D:/mywork/lib2/qcad/scripts/Draw/Circle/Circle2TR\Circle2TR.vcxproj", "{BDB1CE9B-0BD3-3BDF-9CA3-F7C3F3DA8CDC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Circle2TP", "D:/mywork/lib2/qcad/scripts/Draw/Circle/Circle2TP\Circle2TP.vcxproj", "{1A917361-DC89-353A-9636-B03413FFF303}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Circle3P", "D:/mywork/lib2/qcad/scripts/Draw/Circle/Circle3P\Circle3P.vcxproj", "{822F0F6C-23F7-3265-B791-FB39FC88212B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Circle3T", "D:/mywork/lib2/qcad/scripts/Draw/Circle/Circle3T\Circle3T.vcxproj", "{8DB0B1A9-E4CE-3CC9-9E13-D24B5725F31F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CircleCD", "D:/mywork/lib2/qcad/scripts/Draw/Circle/CircleCD\CircleCD.vcxproj", "{28AC5023-638E-354A-8291-C343C912242F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CircleCP", "D:/mywork/lib2/qcad/scripts/Draw/Circle/CircleCP\CircleCP.vcxproj", "{B5EDEE4B-541D-3095-824F-390EA83F1FBF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CircleCR", "D:/mywork/lib2/qcad/scripts/Draw/Circle/CircleCR\CircleCR.vcxproj", "{14D5D78C-99EF-39E4-8B36-319BA1128740}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CircleT2P", "D:/mywork/lib2/qcad/scripts/Draw/Circle/CircleT2P\CircleT2P.vcxproj", "{75E91500-025D-3D8C-ADB2-653AEF931EC1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CircleTPR", "D:/mywork/lib2/qcad/scripts/Draw/Circle/CircleTPR\CircleTPR.vcxproj", "{BC2DF3D1-7D15-3224-AD8F-DA5B6B87EBEF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CircleConcentric", "D:/mywork/lib2/qcad/scripts/Draw/Circle/CircleConcentric\CircleConcentric.vcxproj", "{E61FC4BF-0866-3FF1-AA59-19FB8B455E2E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CircleConcentricThrough", "D:/mywork/lib2/qcad/scripts/Draw/Circle/CircleConcentricThrough\CircleConcentricThrough.vcxproj", "{8F2676CD-F682-3E69-A7A1-E98AB5482FC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73A3AA15-32A8-3644-876D-28E56A9452CD}.Debug|x64.ActiveCfg = Debug|x64
+		{73A3AA15-32A8-3644-876D-28E56A9452CD}.Debug|x64.Build.0 = Debug|x64
+		{73A3AA15-32A8-3644-876D-28E56A9452CD}.Release|x64.ActiveCfg = Release|x64
+		{73A3AA15-32A8-3644-876D-28E56A9452CD}.Release|x64.Build.0 = Release|x64
+		{0765F939-054B-3DB4-A423-C8E3D9EED67B}.Debug|x64.ActiveCfg = Debug|x64
+		{0765F939-054B-3DB4-A423-C8E3D9EED67B}.Debug|x64.Build.0 = Debug|x64
+		{0765F939-054B-3DB4-A423-C8E3D9EED67B}.Release|x64.ActiveCfg = Release|x64
+		{0765F939-054B-3DB4-A423-C8E3D9EED67B}.Release|x64.Build.0 = Release|x64
+		{9F28D445-B2C7-3D0F-B4AD-6B10A442190F}.Debug|x64.ActiveCfg = Debug|x64
+		{9F28D445-B2C7-3D0F-B4AD-6B10A442190F}.Debug|x64.Build.0 = Debug|x64
+		{9F28D445-B2C7-3D0F-B4AD-6B10A442190F}.Release|x64.ActiveCfg = Release|x64
+		{9F28D445-B2C7-3D0F-B4AD-6B10A442190F}.Release|x64.Build.0 = Release|x64
+		{BDB1CE9B-0BD3-3BDF-9CA3-F7C3F3DA8CDC}.Debug|x64.ActiveCfg = Debug|x64
+		{BDB1CE9B-0BD3-3BDF-9CA3-F7C3F3DA8CDC}.Debug|x64.Build.0 = Debug|x64
+		{BDB1CE9B-0BD3-3BDF-9CA3-F7C3F3DA8CDC}.Release|x64.ActiveCfg = Release|x64
+		{BDB1CE9B-0BD3-3BDF-9CA3-F7C3F3DA8CDC}.Release|x64.Build.0 = Release|x64
+		{1A917361-DC89-353A-9636-B03413FFF303}.Debug|x64.ActiveCfg = Debug|x64
+		{1A917361-DC89-353A-9636-B03413FFF303}.Debug|x64.Build.0 = Debug|x64
+		{1A917361-DC89-353A-9636-B03413FFF303}.Release|x64.ActiveCfg = Release|x64
+		{1A917361-DC89-353A-9636-B03413FFF303}.Release|x64.Build.0 = Release|x64
+		{822F0F6C-23F7-3265-B791-FB39FC88212B}.Debug|x64.ActiveCfg = Debug|x64
+		{822F0F6C-23F7-3265-B791-FB39FC88212B}.Debug|x64.Build.0 = Debug|x64
+		{822F0F6C-23F7-3265-B791-FB39FC88212B}.Release|x64.ActiveCfg = Release|x64
+		{822F0F6C-23F7-3265-B791-FB39FC88212B}.Release|x64.Build.0 = Release|x64
+		{8DB0B1A9-E4CE-3CC9-9E13-D24B5725F31F}.Debug|x64.ActiveCfg = Debug|x64
+		{8DB0B1A9-E4CE-3CC9-9E13-D24B5725F31F}.Debug|x64.Build.0 = Debug|x64
+		{8DB0B1A9-E4CE-3CC9-9E13-D24B5725F31F}.Release|x64.ActiveCfg = Release|x64
+		{8DB0B1A9-E4CE-3CC9-9E13-D24B5725F31F}.Release|x64.Build.0 = Release|x64
+		{28AC5023-638E-354A-8291-C343C912242F}.Debug|x64.ActiveCfg = Debug|x64
+		{28AC5023-638E-354A-8291-C343C912242F}.Debug|x64.Build.0 = Debug|x64
+		{28AC5023-638E-354A-8291-C343C912242F}.Release|x64.ActiveCfg = Release|x64
+		{28AC5023-638E-354A-8291-C343C912242F}.Release|x64.Build.0 = Release|x64
+		{B5EDEE4B-541D-3095-824F-390EA83F1FBF}.Debug|x64.ActiveCfg = Debug|x64
+		{B5EDEE4B-541D-3095-824F-390EA83F1FBF}.Debug|x64.Build.0 = Debug|x64
+		{B5EDEE4B-541D-3095-824F-390EA83F1FBF}.Release|x64.ActiveCfg = Release|x64
+		{B5EDEE4B-541D-3095-824F-390EA83F1FBF}.Release|x64.Build.0 = Release|x64
+		{14D5D78C-99EF-39E4-8B36-319BA1128740}.Debug|x64.ActiveCfg = Debug|x64
+		{14D5D78C-99EF-39E4-8B36-319BA1128740}.Debug|x64.Build.0 = Debug|x64
+		{14D5D78C-99EF-39E4-8B36-319BA1128740}.Release|x64.ActiveCfg = Release|x64
+		{14D5D78C-99EF-39E4-8B36-319BA1128740}.Release|x64.Build.0 = Release|x64
+		{75E91500-025D-3D8C-ADB2-653AEF931EC1}.Debug|x64.ActiveCfg = Debug|x64
+		{75E91500-025D-3D8C-ADB2-653AEF931EC1}.Debug|x64.Build.0 = Debug|x64
+		{75E91500-025D-3D8C-ADB2-653AEF931EC1}.Release|x64.ActiveCfg = Release|x64
+		{75E91500-025D-3D8C-ADB2-653AEF931EC1}.Release|x64.Build.0 = Release|x64
+		{BC2DF3D1-7D15-3224-AD8F-DA5B6B87EBEF}.Debug|x64.ActiveCfg = Debug|x64
+		{BC2DF3D1-7D15-3224-AD8F-DA5B6B87EBEF}.Debug|x64.Build.0 = Debug|x64
+		{BC2DF3D1-7D15-3224-AD8F-DA5B6B87EBEF}.Release|x64.ActiveCfg = Release|x64
+		{BC2DF3D1-7D15-3224-AD8F-DA5B6B87EBEF}.Release|x64.Build.0 = Release|x64
+		{E61FC4BF-0866-3FF1-AA59-19FB8B455E2E}.Debug|x64.ActiveCfg = Debug|x64
+		{E61FC4BF-0866-3FF1-AA59-19FB8B455E2E}.Debug|x64.Build.0 = Debug|x64
+		{E61FC4BF-0866-3FF1-AA59-19FB8B455E2E}.Release|x64.ActiveCfg = Release|x64
+		{E61FC4BF-0866-3FF1-AA59-19FB8B455E2E}.Release|x64.Build.0 = Release|x64
+		{8F2676CD-F682-3E69-A7A1-E98AB5482FC5}.Debug|x64.ActiveCfg = Debug|x64
+		{8F2676CD-F682-3E69-A7A1-E98AB5482FC5}.Debug|x64.Build.0 = Debug|x64
+		{8F2676CD-F682-3E69-A7A1-E98AB5482FC5}.Release|x64.ActiveCfg = Release|x64
+		{8F2676CD-F682-3E69-A7A1-E98AB5482FC5}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

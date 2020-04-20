@@ -1,0 +1,44 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Edit/AppPreferences/GraphicsViewPreferences/dir\dir.vcxproj", "{8CD205D8-96D7-3397-8D98-F185DD1B522E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BehaviorPreferences", "D:/mywork/lib2/qcad/scripts/Edit/AppPreferences/GraphicsViewPreferences/BehaviorPreferences\BehaviorPreferences.vcxproj", "{16CE3CE2-163D-36E4-BE90-C5921539B061}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ColorPreferences", "D:/mywork/lib2/qcad/scripts/Edit/AppPreferences/GraphicsViewPreferences/ColorPreferences\ColorPreferences.vcxproj", "{98595663-9E8F-33B2-9C6A-DDB5D12F7671}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FontPreferences", "D:/mywork/lib2/qcad/scripts/Edit/AppPreferences/GraphicsViewPreferences/FontPreferences\FontPreferences.vcxproj", "{AB9D1B90-3011-303F-9FA8-5A667FF57213}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GridPreferences", "D:/mywork/lib2/qcad/scripts/Edit/AppPreferences/GraphicsViewPreferences/GridPreferences\GridPreferences.vcxproj", "{FAD36FB1-EF2D-3861-BA36-AC1460369424}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CD205D8-96D7-3397-8D98-F185DD1B522E}.Debug|x64.ActiveCfg = Debug|x64
+		{8CD205D8-96D7-3397-8D98-F185DD1B522E}.Debug|x64.Build.0 = Debug|x64
+		{8CD205D8-96D7-3397-8D98-F185DD1B522E}.Release|x64.ActiveCfg = Release|x64
+		{8CD205D8-96D7-3397-8D98-F185DD1B522E}.Release|x64.Build.0 = Release|x64
+		{16CE3CE2-163D-36E4-BE90-C5921539B061}.Debug|x64.ActiveCfg = Debug|x64
+		{16CE3CE2-163D-36E4-BE90-C5921539B061}.Debug|x64.Build.0 = Debug|x64
+		{16CE3CE2-163D-36E4-BE90-C5921539B061}.Release|x64.ActiveCfg = Release|x64
+		{16CE3CE2-163D-36E4-BE90-C5921539B061}.Release|x64.Build.0 = Release|x64
+		{98595663-9E8F-33B2-9C6A-DDB5D12F7671}.Debug|x64.ActiveCfg = Debug|x64
+		{98595663-9E8F-33B2-9C6A-DDB5D12F7671}.Debug|x64.Build.0 = Debug|x64
+		{98595663-9E8F-33B2-9C6A-DDB5D12F7671}.Release|x64.ActiveCfg = Release|x64
+		{98595663-9E8F-33B2-9C6A-DDB5D12F7671}.Release|x64.Build.0 = Release|x64
+		{AB9D1B90-3011-303F-9FA8-5A667FF57213}.Debug|x64.ActiveCfg = Debug|x64
+		{AB9D1B90-3011-303F-9FA8-5A667FF57213}.Debug|x64.Build.0 = Debug|x64
+		{AB9D1B90-3011-303F-9FA8-5A667FF57213}.Release|x64.ActiveCfg = Release|x64
+		{AB9D1B90-3011-303F-9FA8-5A667FF57213}.Release|x64.Build.0 = Release|x64
+		{FAD36FB1-EF2D-3861-BA36-AC1460369424}.Debug|x64.ActiveCfg = Debug|x64
+		{FAD36FB1-EF2D-3861-BA36-AC1460369424}.Debug|x64.Build.0 = Debug|x64
+		{FAD36FB1-EF2D-3861-BA36-AC1460369424}.Release|x64.ActiveCfg = Release|x64
+		{FAD36FB1-EF2D-3861-BA36-AC1460369424}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:rs="http://www.ribbonsoft.com">
+  <class_decl name="RDocument" />
+  <class_decl name="RExporter" />
+  <class name="RTextEntity"
+  xsi:noNamespaceSchemaLocation="../class.xsd" isCopyable="false"
+  hasShell="false" sharedPointerSupport="true" isQObject="false"
+  hasStreamOperator="false" isAbstract="false" isScriptable="true">
+    <baseClass name="RTextBasedEntity" specifier="public" />
+    <constructor>
+      <variant>
+        <arg type="RDocument *" typeName="RDocument *"
+        name="document" isConst="false" />
+        <arg type="RTextData &amp;" typeName="RTextData"
+        name="data" isConst="true" />
+      </variant>
+    </constructor>
+    <method name="init" cppName="init" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false" />
+    </method>
+    <method name="getStaticPropertyTypeIds"
+    cppName="getStaticPropertyTypeIds" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QSet &lt; RPropertyTypeId &gt;"
+      isPureVirtual="false" />
+    </method>
+    <method name="clone" cppName="clone" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="RTextEntity *" isPureVirtual="false" />
+    </method>
+    <method name="getData" cppName="getData" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="RTextData &amp;"
+      isPureVirtual="false" />
+      <variant returnType="const RTextData &amp;"
+      isPureVirtual="false" />
+    </method>
+    <method name="setData" cppName="setData" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RTextData &amp;" typeName="RTextData" name="d"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="print" cppName="print" specifier="protected"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QDebug" typeName="QDebug" name="dbg"
+        isConst="false" />
+      </variant>
+    </method>
+    <property name="PropertyCustom" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyHandle" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyProtected" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyType" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyBlock" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyLayer" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyLinetype" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyLinetypeScale" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyLineweight" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyColor" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyDisplayedColor" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyDrawOrder" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertySimple" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyPositionX" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyPositionY" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyPositionZ" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyText" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyPlainText" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyFontName" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyHeight" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyAngle" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyXScale" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyBold" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyItalic" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyLineSpacingFactor"
+    type="RPropertyTypeId" isConst="false" isStatic="true" />
+    <property name="PropertyHAlign" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+    <property name="PropertyVAlign" type="RPropertyTypeId"
+    isConst="false" isStatic="true" />
+  </class>
+</unit>

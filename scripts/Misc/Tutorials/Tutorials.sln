@@ -1,0 +1,74 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Misc/Tutorials/dir\dir.vcxproj", "{46544A29-961C-37D3-A814-3BA7B7B9CAE2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LaunchCommandLineTool", "D:/mywork/lib2/qcad/scripts/Misc/Tutorials/CommandLineTools/LaunchCommandLineTool\LaunchCommandLineTool.vcxproj", "{FC7EC950-257C-3617-89C8-62739889D988}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CreatingDrawing", "D:/mywork/lib2/qcad/scripts/Misc/Tutorials/CommandLineTools/CreatingDrawing\CreatingDrawing.vcxproj", "{20BD1A72-6833-3E6D-B55A-57FD1499F3AF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExPdfExport", "D:/mywork/lib2/qcad/scripts/Misc/Tutorials/CommandLineTools/ExPdfExport\ExPdfExport.vcxproj", "{89118847-CC21-3D30-9792-5116CD2DB686}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExSvgExport", "D:/mywork/lib2/qcad/scripts/Misc/Tutorials/CommandLineTools/ExSvgExport\ExSvgExport.vcxproj", "{1339559D-EF14-3286-A219-6B7A58EE5FBB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Misc/Tutorials/CommandLineTools/dir\dir.vcxproj", "{3DD19458-AE33-3E3C-BC37-06507966627B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CreatingNewTool", "D:/mywork/lib2/qcad/scripts/Misc/Tutorials/CreatingNewTool\CreatingNewTool.vcxproj", "{990C6AD2-2D1C-3303-8546-7D4D904BEDA8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibraryBrowserScripts", "D:/mywork/lib2/qcad/scripts/Misc/Tutorials/LibraryBrowserScripts\LibraryBrowserScripts.vcxproj", "{C0F40B92-12D0-3D8C-A41A-36958A33A4F1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MenusAndToolBars", "D:/mywork/lib2/qcad/scripts/Misc/Tutorials/MenusAndToolBars\MenusAndToolBars.vcxproj", "{4D010DAF-96B0-343A-9EF2-9FD1E1477958}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PersistentWidgets", "D:/mywork/lib2/qcad/scripts/Misc/Tutorials/PersistentWidgets\PersistentWidgets.vcxproj", "{A8F15F67-8568-329C-8360-83EEED15102D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46544A29-961C-37D3-A814-3BA7B7B9CAE2}.Debug|x64.ActiveCfg = Debug|x64
+		{46544A29-961C-37D3-A814-3BA7B7B9CAE2}.Debug|x64.Build.0 = Debug|x64
+		{46544A29-961C-37D3-A814-3BA7B7B9CAE2}.Release|x64.ActiveCfg = Release|x64
+		{46544A29-961C-37D3-A814-3BA7B7B9CAE2}.Release|x64.Build.0 = Release|x64
+		{FC7EC950-257C-3617-89C8-62739889D988}.Debug|x64.ActiveCfg = Debug|x64
+		{FC7EC950-257C-3617-89C8-62739889D988}.Debug|x64.Build.0 = Debug|x64
+		{FC7EC950-257C-3617-89C8-62739889D988}.Release|x64.ActiveCfg = Release|x64
+		{FC7EC950-257C-3617-89C8-62739889D988}.Release|x64.Build.0 = Release|x64
+		{20BD1A72-6833-3E6D-B55A-57FD1499F3AF}.Debug|x64.ActiveCfg = Debug|x64
+		{20BD1A72-6833-3E6D-B55A-57FD1499F3AF}.Debug|x64.Build.0 = Debug|x64
+		{20BD1A72-6833-3E6D-B55A-57FD1499F3AF}.Release|x64.ActiveCfg = Release|x64
+		{20BD1A72-6833-3E6D-B55A-57FD1499F3AF}.Release|x64.Build.0 = Release|x64
+		{89118847-CC21-3D30-9792-5116CD2DB686}.Debug|x64.ActiveCfg = Debug|x64
+		{89118847-CC21-3D30-9792-5116CD2DB686}.Debug|x64.Build.0 = Debug|x64
+		{89118847-CC21-3D30-9792-5116CD2DB686}.Release|x64.ActiveCfg = Release|x64
+		{89118847-CC21-3D30-9792-5116CD2DB686}.Release|x64.Build.0 = Release|x64
+		{1339559D-EF14-3286-A219-6B7A58EE5FBB}.Debug|x64.ActiveCfg = Debug|x64
+		{1339559D-EF14-3286-A219-6B7A58EE5FBB}.Debug|x64.Build.0 = Debug|x64
+		{1339559D-EF14-3286-A219-6B7A58EE5FBB}.Release|x64.ActiveCfg = Release|x64
+		{1339559D-EF14-3286-A219-6B7A58EE5FBB}.Release|x64.Build.0 = Release|x64
+		{3DD19458-AE33-3E3C-BC37-06507966627B}.Debug|x64.ActiveCfg = Debug|x64
+		{3DD19458-AE33-3E3C-BC37-06507966627B}.Debug|x64.Build.0 = Debug|x64
+		{3DD19458-AE33-3E3C-BC37-06507966627B}.Release|x64.ActiveCfg = Release|x64
+		{3DD19458-AE33-3E3C-BC37-06507966627B}.Release|x64.Build.0 = Release|x64
+		{990C6AD2-2D1C-3303-8546-7D4D904BEDA8}.Debug|x64.ActiveCfg = Debug|x64
+		{990C6AD2-2D1C-3303-8546-7D4D904BEDA8}.Debug|x64.Build.0 = Debug|x64
+		{990C6AD2-2D1C-3303-8546-7D4D904BEDA8}.Release|x64.ActiveCfg = Release|x64
+		{990C6AD2-2D1C-3303-8546-7D4D904BEDA8}.Release|x64.Build.0 = Release|x64
+		{C0F40B92-12D0-3D8C-A41A-36958A33A4F1}.Debug|x64.ActiveCfg = Debug|x64
+		{C0F40B92-12D0-3D8C-A41A-36958A33A4F1}.Debug|x64.Build.0 = Debug|x64
+		{C0F40B92-12D0-3D8C-A41A-36958A33A4F1}.Release|x64.ActiveCfg = Release|x64
+		{C0F40B92-12D0-3D8C-A41A-36958A33A4F1}.Release|x64.Build.0 = Release|x64
+		{4D010DAF-96B0-343A-9EF2-9FD1E1477958}.Debug|x64.ActiveCfg = Debug|x64
+		{4D010DAF-96B0-343A-9EF2-9FD1E1477958}.Debug|x64.Build.0 = Debug|x64
+		{4D010DAF-96B0-343A-9EF2-9FD1E1477958}.Release|x64.ActiveCfg = Release|x64
+		{4D010DAF-96B0-343A-9EF2-9FD1E1477958}.Release|x64.Build.0 = Release|x64
+		{A8F15F67-8568-329C-8360-83EEED15102D}.Debug|x64.ActiveCfg = Debug|x64
+		{A8F15F67-8568-329C-8360-83EEED15102D}.Debug|x64.Build.0 = Debug|x64
+		{A8F15F67-8568-329C-8360-83EEED15102D}.Release|x64.ActiveCfg = Release|x64
+		{A8F15F67-8568-329C-8360-83EEED15102D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

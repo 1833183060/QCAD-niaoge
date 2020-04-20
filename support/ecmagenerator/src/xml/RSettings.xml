@@ -1,0 +1,949 @@
+<?xml version="1.0"?>
+<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:rs="http://www.ribbonsoft.com">
+  <class name="RSettings"
+  xsi:noNamespaceSchemaLocation="../class.xsd" isCopyable="false"
+  hasShell="false" sharedPointerSupport="false" isQObject="false"
+  hasStreamOperator="false" isAbstract="false" isScriptable="true">
+    <method name="uninit" cppName="uninit" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false" />
+    </method>
+    <method name="setNoWrite" cppName="setNoWrite"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="on"
+        hasDefault="true" default="true" isConst="false" />
+      </variant>
+    </method>
+    <method name="getAppId" cppName="getAppId" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getDevicePixelRatio"
+    cppName="getDevicePixelRatio" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="double" isPureVirtual="false" />
+    </method>
+    <method name="getLocale" cppName="getLocale" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="loadTranslations" cppName="loadTranslations"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="module"
+        isConst="true" />
+        <arg type="QStringList &amp;" typeName="QStringList"
+        name="dirs" hasDefault="true"
+        default="RDEFAULT_QSTRINGLIST" isConst="true" />
+      </variant>
+    </method>
+    <method name="translate" cppName="translate" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="context"
+        isConst="true" />
+        <arg type="QString &amp;" typeName="QString" name="str"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getOriginalArguments"
+    cppName="getOriginalArguments" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QStringList" isPureVirtual="false" />
+    </method>
+    <method name="setOriginalArguments"
+    cppName="setOriginalArguments" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QStringList &amp;" typeName="QStringList"
+        name="a" isConst="true" />
+      </variant>
+    </method>
+    <method name="getArgument" cppName="getArgument"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false">
+        <arg type="QStringList &amp;" typeName="QStringList"
+        name="args" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="shortFlag" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="longFlag" isConst="true" />
+        <arg type="QString &amp;" typeName="QString" name="def"
+        hasDefault="true" default="RDEFAULT_QSTRING"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getArguments" cppName="getArguments"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QStringList" isPureVirtual="false">
+        <arg type="QStringList &amp;" typeName="QStringList"
+        name="args" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="shortFlag" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="longFlag" isConst="true" />
+      </variant>
+    </method>
+    <method name="getIntArgument" cppName="getIntArgument"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false">
+        <arg type="QStringList &amp;" typeName="QStringList"
+        name="args" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="shortFlag" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="longFlag" isConst="true" />
+        <arg type="int" typeName="int" name="def"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="getIntListArgument" cppName="getIntListArgument"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QList &lt; int &gt;"
+      isPureVirtual="false">
+        <arg type="QStringList &amp;" typeName="QStringList"
+        name="args" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="shortFlag" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="longFlag" isConst="true" />
+        <arg type="QList &lt; int &gt;"
+        typeName="QList &lt; int &gt;" name="def" hasDefault="true"
+        default="RDEFAULT_QLISTINT" isConst="false" />
+      </variant>
+    </method>
+    <method name="getFloatArgument" cppName="getFloatArgument"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="double" isPureVirtual="false">
+        <arg type="QStringList &amp;" typeName="QStringList"
+        name="args" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="shortFlag" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="longFlag" isConst="true" />
+        <arg type="double" typeName="double" name="def"
+        hasDefault="true" default="RNANDOUBLE" isConst="false" />
+      </variant>
+    </method>
+    <method name="getColorArgument" cppName="getColorArgument"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RColor" isPureVirtual="false">
+        <arg type="QStringList &amp;" typeName="QStringList"
+        name="args" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="shortFlag" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="longFlag" isConst="true" />
+        <arg type="RColor &amp;" typeName="RColor" name="def"
+        hasDefault="true" default="RDEFAULT_RCOLOR"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getVectorArgument" cppName="getVectorArgument"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RVector" isPureVirtual="false">
+        <arg type="QStringList &amp;" typeName="QStringList"
+        name="args" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="shortFlag" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="longFlag" isConst="true" />
+        <arg type="RVector &amp;" typeName="RVector" name="def"
+        hasDefault="true" default="RDEFAULT_RVECTOR"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getBoxArgument" cppName="getBoxArgument"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RBox" isPureVirtual="false">
+        <arg type="QStringList &amp;" typeName="QStringList"
+        name="args" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="shortFlag" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="longFlag" isConst="true" />
+        <arg type="RBox &amp;" typeName="RBox" name="def"
+        hasDefault="true" default="RDEFAULT_RBOX" isConst="true" />
+      </variant>
+    </method>
+    <method name="testArgument" cppName="testArgument"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="QStringList &amp;" typeName="QStringList"
+        name="args" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="shortFlag" isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="longFlag" isConst="true" />
+      </variant>
+    </method>
+    <method name="isDeployed" cppName="isDeployed"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getApplicationPath" cppName="getApplicationPath"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getPluginPaths" cppName="getPluginPaths"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QStringList" isPureVirtual="false" />
+    </method>
+    <method name="getPluginPath" cppName="getPluginPath"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getThemePath" cppName="getThemePath"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getStandardLocation"
+    cppName="getStandardLocation" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false">
+        <arg type="int" typeName="int" name="sl" isConst="false" />
+      </variant>
+    </method>
+    <method name="getCacheLocation" cppName="getCacheLocation"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getDataLocation" cppName="getDataLocation"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getTempLocation" cppName="getTempLocation"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getDesktopLocation" cppName="getDesktopLocation"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getDocumentsLocation"
+    cppName="getDocumentsLocation" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getHomeLocation" cppName="getHomeLocation"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="isGuiEnabled" cppName="isGuiEnabled"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="isDebuggerEnabled" cppName="isDebuggerEnabled"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="hasQuitFlag" cppName="hasQuitFlag"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="setQuitFlag" cppName="setQuitFlag"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false" />
+    </method>
+    <method name="getFileName" cppName="getFileName"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getPath" cppName="getPath" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getLaunchPath" cppName="getLaunchPath"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="setLaunchPath" cppName="setLaunchPath"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="launchPath" isConst="true" />
+      </variant>
+    </method>
+    <method name="setRulerFont" cppName="setRulerFont"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QFont &amp;" typeName="QFont" name="font"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getRulerFont" cppName="getRulerFont"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QFont" isPureVirtual="false" />
+    </method>
+    <method name="setSnapLabelFont" cppName="setSnapLabelFont"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QFont &amp;" typeName="QFont" name="font"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getSnapLabelFont" cppName="getSnapLabelFont"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QFont" isPureVirtual="false" />
+    </method>
+    <method name="getInfoLabelFont" cppName="getInfoLabelFont"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QFont" isPureVirtual="false" />
+    </method>
+    <method name="getStatusBarFont" cppName="getStatusBarFont"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QFont" isPureVirtual="false" />
+    </method>
+    <method name="getSelectionColor" cppName="getSelectionColor"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RColor" isPureVirtual="false" />
+    </method>
+    <method name="getReferencePointColor"
+    cppName="getReferencePointColor" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="RColor" isPureVirtual="false" />
+    </method>
+    <method name="getStartReferencePointColor"
+    cppName="getStartReferencePointColor" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="RColor" isPureVirtual="false" />
+    </method>
+    <method name="getEndReferencePointColor"
+    cppName="getEndReferencePointColor" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="RColor" isPureVirtual="false" />
+    </method>
+    <method name="getSecondaryReferencePointColor"
+    cppName="getSecondaryReferencePointColor" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="RColor" isPureVirtual="false" />
+    </method>
+    <method name="getTertiaryReferencePointColor"
+    cppName="getTertiaryReferencePointColor" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="RColor" isPureVirtual="false" />
+    </method>
+    <method name="getHighResolutionGraphicsView"
+    cppName="getHighResolutionGraphicsView" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getAutoScaleGrid" cppName="getAutoScaleGrid"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getAutoScaleMetaGrid"
+    cppName="getAutoScaleMetaGrid" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getAutoScalePatterns"
+    cppName="getAutoScalePatterns" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getAutoZoomOnLoad" cppName="getAutoZoomOnLoad"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getColorCorrection" cppName="getColorCorrection"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getColorCorrectionDisableForPrinting"
+    cppName="getColorCorrectionDisableForPrinting"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getColorThreshold" cppName="getColorThreshold"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getTextHeightThreshold"
+    cppName="getTextHeightThreshold" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getArcAngleLengthThreshold"
+    cppName="getArcAngleLengthThreshold" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="double" isPureVirtual="false" />
+    </method>
+    <method name="getMinArcAngleStep" cppName="getMinArcAngleStep"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="double" isPureVirtual="false" />
+    </method>
+    <method name="getDashThreshold" cppName="getDashThreshold"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getQtVersion" cppName="getQtVersion"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getQtVersionString" cppName="getQtVersionString"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="isQt" cppName="isQt" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="int" typeName="int" name="majorVersion"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="getCompilerVersion" cppName="getCompilerVersion"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getOSVersion" cppName="getOSVersion"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getReleaseDate" cppName="getReleaseDate"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getVersionString" cppName="getVersionString"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getNumericalVersionString"
+    cppName="getNumericalVersionString" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getMajorVersion" cppName="getMajorVersion"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getMinorVersion" cppName="getMinorVersion"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getRevisionVersion" cppName="getRevisionVersion"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getBuildVersion" cppName="getBuildVersion"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getRevisionString" cppName="getRevisionString"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="setFirstStart" cppName="setFirstStart"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="on"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="isFirstStart" cppName="isFirstStart"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="setNewVersion" cppName="setNewVersion"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="on"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="isNewVersion" cppName="isNewVersion"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="setPreviousVersion" cppName="setPreviousVersion"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="int" typeName="int" name="pv" isConst="false" />
+      </variant>
+    </method>
+    <method name="getCurrentVersion" cppName="getCurrentVersion"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getPreviousVersion" cppName="getPreviousVersion"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getSnapRange" cppName="getSnapRange"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getPickRange" cppName="getPickRange"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getZeroWeightWeight"
+    cppName="getZeroWeightWeight" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getPreviewEntities" cppName="getPreviewEntities"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getLimitZoomAndScroll"
+    cppName="getLimitZoomAndScroll" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getShowCrosshair" cppName="getShowCrosshair"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="setShowCrosshair" cppName="setShowCrosshair"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="on"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="getShowLargeCrosshair"
+    cppName="getShowLargeCrosshair" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="setShowLargeCrosshair"
+    cppName="setShowLargeCrosshair" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="on"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="getShowLargeOriginAxis"
+    cppName="getShowLargeOriginAxis" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="setShowLargeOriginAxis"
+    cppName="setShowLargeOriginAxis" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="on"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="getConcurrentDrawing"
+    cppName="getConcurrentDrawing" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="setConcurrentDrawing"
+    cppName="setConcurrentDrawing" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="on"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="getNumberLocale" cppName="getNumberLocale"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QLocale" isPureVirtual="false" />
+    </method>
+    <method name="initRecentFiles" cppName="initRecentFiles"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false" />
+    </method>
+    <method name="addRecentFile" cppName="addRecentFile"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="fileName" isConst="true" />
+      </variant>
+    </method>
+    <method name="removeRecentFile" cppName="removeRecentFile"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="fileName" isConst="true" />
+      </variant>
+    </method>
+    <method name="getRecentFiles" cppName="getRecentFiles"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QStringList" isPureVirtual="false" />
+    </method>
+    <method name="clearRecentFiles" cppName="clearRecentFiles"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false" />
+    </method>
+    <method name="getColor" cppName="getColor" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="RColor" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="key"
+        isConst="true" />
+        <arg type="RColor &amp;" typeName="RColor"
+        name="defaultValue" hasDefault="true"
+        default="RDEFAULT_RCOLOR" isConst="true" />
+      </variant>
+    </method>
+    <method name="hasValue" cppName="hasValue" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="key"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getValue" cppName="getValue" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QVariant" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="key"
+        isConst="true" />
+        <arg type="QVariant &amp;" typeName="QVariant"
+        name="defaultValue" hasDefault="true"
+        default="RDEFAULT_QVARIANT" isConst="true" />
+      </variant>
+    </method>
+    <method name="getColorValue" cppName="getColorValue"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RColor" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="key"
+        isConst="true" />
+        <arg type="RColor &amp;" typeName="RColor"
+        name="defaultValue" isConst="true" />
+      </variant>
+    </method>
+    <method name="getBoolValue" cppName="getBoolValue"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="key"
+        isConst="true" />
+        <arg type="bool" typeName="bool" name="defaultValue"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="getDoubleValue" cppName="getDoubleValue"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="double" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="key"
+        isConst="true" />
+        <arg type="double" typeName="double" name="defaultValue"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="getIntValue" cppName="getIntValue"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="key"
+        isConst="true" />
+        <arg type="int" typeName="int" name="defaultValue"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="getStringValue" cppName="getStringValue"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="key"
+        isConst="true" />
+        <arg type="QString &amp;" typeName="QString"
+        name="defaultValue" isConst="true" />
+      </variant>
+    </method>
+    <method name="getStringListValue" cppName="getStringListValue"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QStringList" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="key"
+        isConst="true" />
+        <arg type="QStringList &amp;" typeName="QStringList"
+        name="defaultValue" isConst="true" />
+      </variant>
+    </method>
+    <method name="setValue" cppName="setValue" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="key"
+        isConst="true" />
+        <arg type="QVariant &amp;" typeName="QVariant" name="value"
+        isConst="true" />
+        <arg type="bool" typeName="bool" name="overwrite"
+        hasDefault="true" default="true" isConst="false" />
+      </variant>
+    </method>
+    <method name="removeValue" cppName="removeValue"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="key"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="setApplicationNameOverride"
+    cppName="setApplicationNameOverride" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="n"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getApplicationNameOverride"
+    cppName="getApplicationNameOverride" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="hasApplicationNameOverride"
+    cppName="hasApplicationNameOverride" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getAllKeys" cppName="getAllKeys"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QStringList" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="group"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getQSettings" cppName="getQSettings"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QSettings *" isPureVirtual="false" />
+    </method>
+    <method name="resetCache" cppName="resetCache"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false" />
+    </method>
+    <method name="setXDataEnabled" cppName="setXDataEnabled"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="on"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="isXDataEnabled" cppName="isXDataEnabled"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="setNextVersionEnabled"
+    cppName="setNextVersionEnabled" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="on"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="isNextVersionEnabled"
+    cppName="isNextVersionEnabled" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getAutoScaleLinetypePatterns"
+    cppName="getAutoScaleLinetypePatterns" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getUseSecondarySelectionColor"
+    cppName="getUseSecondarySelectionColor" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getUseSolidLineSelection"
+    cppName="getUseSolidLineSelection" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getMouseThreshold" cppName="getMouseThreshold"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getPositionByMousePress"
+    cppName="getPositionByMousePress" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getAllowMouseMoveInterruptions"
+    cppName="getAllowMouseMoveInterruptions" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="isTextRenderedAsText"
+    cppName="isTextRenderedAsText" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="isLayer0CompatibilityOn"
+    cppName="isLayer0CompatibilityOn" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getSelectBlockWithAttribute"
+    cppName="getSelectBlockWithAttribute" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getHideAttributeWithBlock"
+    cppName="getHideAttributeWithBlock" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getImportRecomputedDimBlocks"
+    cppName="getImportRecomputedDimBlocks" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getIgnoreBlockReferencePoint"
+    cppName="getIgnoreBlockReferencePoint" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getIgnoreAllReferencePoints"
+    cppName="getIgnoreAllReferencePoints" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getReferencePointSize"
+    cppName="getReferencePointSize" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getReferencePointShape"
+    cppName="getReferencePointShape" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="int" isPureVirtual="false" />
+    </method>
+    <method name="getPropertyEditorShowOnRequest"
+    cppName="getPropertyEditorShowOnRequest" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getPolarCoordinateSeparator"
+    cppName="getPolarCoordinateSeparator" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getCartesianCoordinateSeparator"
+    cppName="getCartesianCoordinateSeparator" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getRelativeCoordinatePrefix"
+    cppName="getRelativeCoordinatePrefix" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="isDarkMode" cppName="isDarkMode"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="hasDarkGuiBackground"
+    cppName="hasDarkGuiBackground" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="hasCustomStyleSheet"
+    cppName="hasCustomStyleSheet" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="getPrinterNames" cppName="getPrinterNames"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QStringList" isPureVirtual="false" />
+    </method>
+    <method name="getDefaultPrinterName"
+    cppName="getDefaultPrinterName" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="appendOpenGLMessage"
+    cppName="appendOpenGLMessage" specifier="public"
+    isStatic="true" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="msg"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getOpenGLMessages" cppName="getOpenGLMessages"
+    specifier="public" isStatic="true" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QStringList" isPureVirtual="false" />
+    </method>
+  </class>
+</unit>

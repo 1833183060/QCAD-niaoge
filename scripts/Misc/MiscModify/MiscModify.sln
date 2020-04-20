@@ -1,0 +1,44 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Misc/MiscModify/dir\dir.vcxproj", "{7BE44515-A9C1-3BF2-AF07-E465B9AAF8AD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChangeFontToArial", "D:/mywork/lib2/qcad/scripts/Misc/MiscModify/ChangeFontToArial\ChangeFontToArial.vcxproj", "{D0D2B9EB-B98F-3595-AB11-18FAC2458F64}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlushBackLog", "D:/mywork/lib2/qcad/scripts/Misc/MiscModify/FlushBackLog\FlushBackLog.vcxproj", "{3B443764-809E-3FB6-A970-D9E6D99AAEDB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReloadLinetypes", "D:/mywork/lib2/qcad/scripts/Misc/MiscModify/ReloadLinetypes\ReloadLinetypes.vcxproj", "{23064028-F67B-3FD7-A78D-948D573F31EA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SplineToLine", "D:/mywork/lib2/qcad/scripts/Misc/MiscModify/SplineToLine\SplineToLine.vcxproj", "{6F9B1305-C7F1-3A17-B7D1-EBC8DD4FFEC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BE44515-A9C1-3BF2-AF07-E465B9AAF8AD}.Debug|x64.ActiveCfg = Debug|x64
+		{7BE44515-A9C1-3BF2-AF07-E465B9AAF8AD}.Debug|x64.Build.0 = Debug|x64
+		{7BE44515-A9C1-3BF2-AF07-E465B9AAF8AD}.Release|x64.ActiveCfg = Release|x64
+		{7BE44515-A9C1-3BF2-AF07-E465B9AAF8AD}.Release|x64.Build.0 = Release|x64
+		{D0D2B9EB-B98F-3595-AB11-18FAC2458F64}.Debug|x64.ActiveCfg = Debug|x64
+		{D0D2B9EB-B98F-3595-AB11-18FAC2458F64}.Debug|x64.Build.0 = Debug|x64
+		{D0D2B9EB-B98F-3595-AB11-18FAC2458F64}.Release|x64.ActiveCfg = Release|x64
+		{D0D2B9EB-B98F-3595-AB11-18FAC2458F64}.Release|x64.Build.0 = Release|x64
+		{3B443764-809E-3FB6-A970-D9E6D99AAEDB}.Debug|x64.ActiveCfg = Debug|x64
+		{3B443764-809E-3FB6-A970-D9E6D99AAEDB}.Debug|x64.Build.0 = Debug|x64
+		{3B443764-809E-3FB6-A970-D9E6D99AAEDB}.Release|x64.ActiveCfg = Release|x64
+		{3B443764-809E-3FB6-A970-D9E6D99AAEDB}.Release|x64.Build.0 = Release|x64
+		{23064028-F67B-3FD7-A78D-948D573F31EA}.Debug|x64.ActiveCfg = Debug|x64
+		{23064028-F67B-3FD7-A78D-948D573F31EA}.Debug|x64.Build.0 = Debug|x64
+		{23064028-F67B-3FD7-A78D-948D573F31EA}.Release|x64.ActiveCfg = Release|x64
+		{23064028-F67B-3FD7-A78D-948D573F31EA}.Release|x64.Build.0 = Release|x64
+		{6F9B1305-C7F1-3A17-B7D1-EBC8DD4FFEC4}.Debug|x64.ActiveCfg = Debug|x64
+		{6F9B1305-C7F1-3A17-B7D1-EBC8DD4FFEC4}.Debug|x64.Build.0 = Debug|x64
+		{6F9B1305-C7F1-3A17-B7D1-EBC8DD4FFEC4}.Release|x64.ActiveCfg = Release|x64
+		{6F9B1305-C7F1-3A17-B7D1-EBC8DD4FFEC4}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

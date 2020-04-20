@@ -1,0 +1,7 @@
+#ifndef CORE_RC
+#define CORE_RC
+
+#define VER_ORIGINALFILENAME_STR    "qcadcore.dll"
+#include "../../shared.rc"
+
+#endif // CORE_RC

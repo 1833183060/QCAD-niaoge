@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.sdml.info/srcML/src" xmlns:cpp="http://www.sdml.info/srcML/cpp" language="C++" dir="./core/math" filename="RDirected.h"><comment type="block">/**
+ * Copyright (c) 2011-2018 by Andrew Mustun. All rights reserved.
+ * 
+ * This file is part of the QCAD project.
+ *
+ * QCAD is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * QCAD is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with QCAD.
+ */</comment>
+
+<cpp:ifndef>#<cpp:directive>ifndef</cpp:directive> <name>RDIRECTED_H</name></cpp:ifndef>
+<cpp:define>#<cpp:directive>define</cpp:directive> <name>RDIRECTED_H</name></cpp:define>
+
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"../core_global.h"</cpp:file></cpp:include>
+
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>&lt;QSharedPointer&gt;</cpp:file></cpp:include>
+
+<cpp:include>#<cpp:directive>include</cpp:directive> <cpp:file>"RShape.h"</cpp:file></cpp:include>
+
+<comment type="block">/**
+ * Interface for directed shape classes.
+ *
+ * \ingroup math
+ * \scriptable
+ * \sharedPointerSupport
+ */</comment>
+<class>class <macro><name>QCADCORE_EXPORT</name></macro> <name>RDirected</name> <block>{<private type="default">
+</private><public>public:
+    <destructor><specifier>virtual</specifier> <name>~RDirected</name><parameter_list>()</parameter_list> <block>{}</block></destructor>
+
+<comment type="line">//    virtual double getDirection1() const = 0;</comment>
+<comment type="line">//    virtual double getDirection2() const = 0;</comment>
+
+<comment type="line">//    virtual RS::Side getSideOfPoint(const RVector&amp; point) const = 0;</comment>
+
+<comment type="line">//    virtual RVector getStartPoint() const = 0;</comment>
+<comment type="line">//    virtual RVector getEndPoint() const = 0;</comment>
+<comment type="line">//    virtual RVector getMiddlePoint() const = 0;</comment>
+
+<comment type="line">//    virtual bool reverse() = 0;</comment>
+
+<comment type="line">//    /**</comment>
+<comment type="line">//     * \param trimPoint Trim start point or end point to this coordinate.</comment>
+<comment type="line">//     * \param clickPoint Point that was clicked by user.</comment>
+<comment type="line">//     * \param extend True if the shape is to be extended.</comment>
+<comment type="line">//     * Used for polylines to determine that the first segment has to be trimmed even if another segment was clicked.</comment>
+<comment type="line">//     */</comment>
+<comment type="line">//    virtual bool trimStartPoint(const RVector&amp; trimPoint, const RVector&amp; clickPoint = RVector::invalid, bool extend = false) = 0;</comment>
+<comment type="line">//    virtual bool trimStartPoint(double trimDist) {</comment>
+<comment type="line">//        return trimStartPoint();</comment>
+<comment type="line">//    }</comment>
+
+<comment type="line">//    /**</comment>
+<comment type="line">//     * \param trimPoint Trim start point or end point to this coordinate.</comment>
+<comment type="line">//     * \param clickPoint Point that was clicked by user.</comment>
+<comment type="line">//     * \param extend True if the shape is to be extended.</comment>
+<comment type="line">//     * Used for polylines to determine that the last segment has to be trimmed even if another segment was clicked.</comment>
+<comment type="line">//     */</comment>
+<comment type="line">//    virtual bool trimEndPoint(const RVector&amp; trimPoint, const RVector&amp; clickPoint = RVector::invalid, bool extend = false) = 0;</comment>
+
+<comment type="line">//    /**</comment>
+<comment type="line">//     * \param trimPoint Trim start point or end point to this coordinate.</comment>
+<comment type="line">//     * \param clickPoint Point that was clicked by user.</comment>
+<comment type="line">//     */</comment>
+<comment type="line">//    virtual RS::Ending getTrimEnd(const RVector&amp; trimPoint, const RVector&amp; clickPoint) = 0;</comment>
+
+<comment type="line">//    /**</comment>
+<comment type="line">//     * \return Distance of given point to start point of shape along shape.</comment>
+<comment type="line">//     * \param p Point (assumed to be on shape).</comment>
+<comment type="line">//     */</comment>
+<comment type="line">//    virtual double getDistanceFromStart(const RVector&amp; p) const {</comment>
+<comment type="line">//        Q_UNUSED(p)</comment>
+<comment type="line">//        return RMAXDOUBLE;</comment>
+<comment type="line">//    }</comment>
+
+<comment type="line">//    /**</comment>
+<comment type="line">//     * \return All possible distances of given point to start point of shape along shape.</comment>
+<comment type="line">//     * \param p Point (assumed to be on shape).</comment>
+<comment type="line">//     */</comment>
+<comment type="line">//    virtual QList&lt;double&gt; getDistancesFromStart(const RVector&amp; p) const {</comment>
+<comment type="line">//        return QList&lt;double&gt;() &lt;&lt; getDistanceFromStart(p);</comment>
+<comment type="line">//    }</comment>
+</public>}</block>;</class>
+
+<macro><name>Q_DECLARE_METATYPE</name><argument_list>(<argument>RDirected*</argument>)</argument_list></macro>
+<macro><name>Q_DECLARE_METATYPE</name><argument_list>(<argument>const RDirected*</argument>)</argument_list></macro>
+<macro><name>Q_DECLARE_METATYPE</name><argument_list>(<argument>QSharedPointer&lt;RDirected&gt;</argument>)</argument_list></macro>
+<macro><name>Q_DECLARE_METATYPE</name><argument_list>(<argument>QSharedPointer&lt;RDirected&gt;*</argument>)</argument_list></macro>
+
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+</unit>

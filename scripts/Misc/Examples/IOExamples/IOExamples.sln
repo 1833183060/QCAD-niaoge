@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Misc/Examples/IOExamples/dir\dir.vcxproj", "{BCE64208-D8BD-30D3-B3AA-AA1626810C63}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExDumpPolyline", "D:/mywork/lib2/qcad/scripts/Misc/Examples/IOExamples/ExDumpPolyline\ExDumpPolyline.vcxproj", "{B25C2A31-FEA2-3253-99A9-CE369EC7084A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExRegisterFileExporter", "D:/mywork/lib2/qcad/scripts/Misc/Examples/IOExamples/ExRegisterFileExporter\ExRegisterFileExporter.vcxproj", "{FAFA5A6A-F588-3687-BAA8-86441CBD6274}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExRegisterFileImporter", "D:/mywork/lib2/qcad/scripts/Misc/Examples/IOExamples/ExRegisterFileImporter\ExRegisterFileImporter.vcxproj", "{687D7C1A-C9F7-3F45-9A2F-796188256124}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExXmlImport", "D:/mywork/lib2/qcad/scripts/Misc/Examples/IOExamples/ExXmlImport\ExXmlImport.vcxproj", "{1D0714EF-1249-392B-AD93-D95188376770}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExXmlExport", "D:/mywork/lib2/qcad/scripts/Misc/Examples/IOExamples/ExXmlExport\ExXmlExport.vcxproj", "{38E90567-2B7F-3468-BE1D-F4F64142823F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCE64208-D8BD-30D3-B3AA-AA1626810C63}.Debug|x64.ActiveCfg = Debug|x64
+		{BCE64208-D8BD-30D3-B3AA-AA1626810C63}.Debug|x64.Build.0 = Debug|x64
+		{BCE64208-D8BD-30D3-B3AA-AA1626810C63}.Release|x64.ActiveCfg = Release|x64
+		{BCE64208-D8BD-30D3-B3AA-AA1626810C63}.Release|x64.Build.0 = Release|x64
+		{B25C2A31-FEA2-3253-99A9-CE369EC7084A}.Debug|x64.ActiveCfg = Debug|x64
+		{B25C2A31-FEA2-3253-99A9-CE369EC7084A}.Debug|x64.Build.0 = Debug|x64
+		{B25C2A31-FEA2-3253-99A9-CE369EC7084A}.Release|x64.ActiveCfg = Release|x64
+		{B25C2A31-FEA2-3253-99A9-CE369EC7084A}.Release|x64.Build.0 = Release|x64
+		{FAFA5A6A-F588-3687-BAA8-86441CBD6274}.Debug|x64.ActiveCfg = Debug|x64
+		{FAFA5A6A-F588-3687-BAA8-86441CBD6274}.Debug|x64.Build.0 = Debug|x64
+		{FAFA5A6A-F588-3687-BAA8-86441CBD6274}.Release|x64.ActiveCfg = Release|x64
+		{FAFA5A6A-F588-3687-BAA8-86441CBD6274}.Release|x64.Build.0 = Release|x64
+		{687D7C1A-C9F7-3F45-9A2F-796188256124}.Debug|x64.ActiveCfg = Debug|x64
+		{687D7C1A-C9F7-3F45-9A2F-796188256124}.Debug|x64.Build.0 = Debug|x64
+		{687D7C1A-C9F7-3F45-9A2F-796188256124}.Release|x64.ActiveCfg = Release|x64
+		{687D7C1A-C9F7-3F45-9A2F-796188256124}.Release|x64.Build.0 = Release|x64
+		{1D0714EF-1249-392B-AD93-D95188376770}.Debug|x64.ActiveCfg = Debug|x64
+		{1D0714EF-1249-392B-AD93-D95188376770}.Debug|x64.Build.0 = Debug|x64
+		{1D0714EF-1249-392B-AD93-D95188376770}.Release|x64.ActiveCfg = Release|x64
+		{1D0714EF-1249-392B-AD93-D95188376770}.Release|x64.Build.0 = Release|x64
+		{38E90567-2B7F-3468-BE1D-F4F64142823F}.Debug|x64.ActiveCfg = Debug|x64
+		{38E90567-2B7F-3468-BE1D-F4F64142823F}.Debug|x64.Build.0 = Debug|x64
+		{38E90567-2B7F-3468-BE1D-F4F64142823F}.Release|x64.ActiveCfg = Release|x64
+		{38E90567-2B7F-3468-BE1D-F4F64142823F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

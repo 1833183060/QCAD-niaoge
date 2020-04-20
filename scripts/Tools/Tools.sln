@@ -1,0 +1,26 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Tools/dir\dir.vcxproj", "{EBA705A2-AFBA-3F37-8795-94300B1CBCC3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergeDrawings", "D:/mywork/lib2/qcad/scripts/Tools/MergeDrawings\MergeDrawings.vcxproj", "{C70B3C1D-1E15-33F1-BD33-E5B16BB19FCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBA705A2-AFBA-3F37-8795-94300B1CBCC3}.Debug|x64.ActiveCfg = Debug|x64
+		{EBA705A2-AFBA-3F37-8795-94300B1CBCC3}.Debug|x64.Build.0 = Debug|x64
+		{EBA705A2-AFBA-3F37-8795-94300B1CBCC3}.Release|x64.ActiveCfg = Release|x64
+		{EBA705A2-AFBA-3F37-8795-94300B1CBCC3}.Release|x64.Build.0 = Release|x64
+		{C70B3C1D-1E15-33F1-BD33-E5B16BB19FCF}.Debug|x64.ActiveCfg = Debug|x64
+		{C70B3C1D-1E15-33F1-BD33-E5B16BB19FCF}.Debug|x64.Build.0 = Debug|x64
+		{C70B3C1D-1E15-33F1-BD33-E5B16BB19FCF}.Release|x64.ActiveCfg = Release|x64
+		{C70B3C1D-1E15-33F1-BD33-E5B16BB19FCF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

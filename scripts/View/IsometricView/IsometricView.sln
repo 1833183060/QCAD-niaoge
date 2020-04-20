@@ -1,0 +1,44 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/View/IsometricView/dir\dir.vcxproj", "{19259CEA-13AB-3F24-8341-FB7F22B89731}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IsometricGridLeft", "D:/mywork/lib2/qcad/scripts/View/IsometricView/IsometricGridLeft\IsometricGridLeft.vcxproj", "{457F5442-24FD-3957-8C21-7C85E9AF87FC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IsometricGridOff", "D:/mywork/lib2/qcad/scripts/View/IsometricView/IsometricGridOff\IsometricGridOff.vcxproj", "{BE862425-2B9E-35CA-96CE-77654D70AACB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IsometricGridRight", "D:/mywork/lib2/qcad/scripts/View/IsometricView/IsometricGridRight\IsometricGridRight.vcxproj", "{0D55E0D7-81D7-3438-86F0-866EA8E54B07}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IsometricGridTop", "D:/mywork/lib2/qcad/scripts/View/IsometricView/IsometricGridTop\IsometricGridTop.vcxproj", "{81A5013B-137F-38F4-BBE8-69DD7D8D21F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19259CEA-13AB-3F24-8341-FB7F22B89731}.Debug|x64.ActiveCfg = Debug|x64
+		{19259CEA-13AB-3F24-8341-FB7F22B89731}.Debug|x64.Build.0 = Debug|x64
+		{19259CEA-13AB-3F24-8341-FB7F22B89731}.Release|x64.ActiveCfg = Release|x64
+		{19259CEA-13AB-3F24-8341-FB7F22B89731}.Release|x64.Build.0 = Release|x64
+		{457F5442-24FD-3957-8C21-7C85E9AF87FC}.Debug|x64.ActiveCfg = Debug|x64
+		{457F5442-24FD-3957-8C21-7C85E9AF87FC}.Debug|x64.Build.0 = Debug|x64
+		{457F5442-24FD-3957-8C21-7C85E9AF87FC}.Release|x64.ActiveCfg = Release|x64
+		{457F5442-24FD-3957-8C21-7C85E9AF87FC}.Release|x64.Build.0 = Release|x64
+		{BE862425-2B9E-35CA-96CE-77654D70AACB}.Debug|x64.ActiveCfg = Debug|x64
+		{BE862425-2B9E-35CA-96CE-77654D70AACB}.Debug|x64.Build.0 = Debug|x64
+		{BE862425-2B9E-35CA-96CE-77654D70AACB}.Release|x64.ActiveCfg = Release|x64
+		{BE862425-2B9E-35CA-96CE-77654D70AACB}.Release|x64.Build.0 = Release|x64
+		{0D55E0D7-81D7-3438-86F0-866EA8E54B07}.Debug|x64.ActiveCfg = Debug|x64
+		{0D55E0D7-81D7-3438-86F0-866EA8E54B07}.Debug|x64.Build.0 = Debug|x64
+		{0D55E0D7-81D7-3438-86F0-866EA8E54B07}.Release|x64.ActiveCfg = Release|x64
+		{0D55E0D7-81D7-3438-86F0-866EA8E54B07}.Release|x64.Build.0 = Release|x64
+		{81A5013B-137F-38F4-BBE8-69DD7D8D21F4}.Debug|x64.ActiveCfg = Debug|x64
+		{81A5013B-137F-38F4-BBE8-69DD7D8D21F4}.Debug|x64.Build.0 = Debug|x64
+		{81A5013B-137F-38F4-BBE8-69DD7D8D21F4}.Release|x64.ActiveCfg = Release|x64
+		{81A5013B-137F-38F4-BBE8-69DD7D8D21F4}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

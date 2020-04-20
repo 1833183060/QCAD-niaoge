@@ -1,0 +1,62 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Draw/Ellipse/dir\dir.vcxproj", "{4907633A-8639-3D4F-AB29-2A8D49574BD2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EllipseArcCPPA", "D:/mywork/lib2/qcad/scripts/Draw/Ellipse/EllipseArcCPPA\EllipseArcCPPA.vcxproj", "{49C09975-3375-3F8D-8A54-369125AB668B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EllipseCPP", "D:/mywork/lib2/qcad/scripts/Draw/Ellipse/EllipseCPP\EllipseCPP.vcxproj", "{17F49EF7-58AE-3C79-AF8F-4A71C33C518A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EllipseOffset", "D:/mywork/lib2/qcad/scripts/Draw/Ellipse/EllipseOffset\EllipseOffset.vcxproj", "{BC6E9730-149B-3166-8444-9BE9927BD64C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EllipseOffsetThrough", "D:/mywork/lib2/qcad/scripts/Draw/Ellipse/EllipseOffsetThrough\EllipseOffsetThrough.vcxproj", "{1F060711-8ECE-30DA-B73C-334C914BEC16}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EllipseDD", "D:/mywork/lib2/qcad/scripts/Draw/Ellipse/EllipseDD\EllipseDD.vcxproj", "{D295A148-2E53-33CD-9011-758A04D887A1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EllipseInscribedQuad", "D:/mywork/lib2/qcad/scripts/Draw/Ellipse/EllipseInscribedQuad\EllipseInscribedQuad.vcxproj", "{D2CB240A-8FC4-3520-BECE-01C4D84C372E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EllipseRR", "D:/mywork/lib2/qcad/scripts/Draw/Ellipse/EllipseRR\EllipseRR.vcxproj", "{E8E6A92C-85EA-3A41-AAA2-FBF4B8D447F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4907633A-8639-3D4F-AB29-2A8D49574BD2}.Debug|x64.ActiveCfg = Debug|x64
+		{4907633A-8639-3D4F-AB29-2A8D49574BD2}.Debug|x64.Build.0 = Debug|x64
+		{4907633A-8639-3D4F-AB29-2A8D49574BD2}.Release|x64.ActiveCfg = Release|x64
+		{4907633A-8639-3D4F-AB29-2A8D49574BD2}.Release|x64.Build.0 = Release|x64
+		{49C09975-3375-3F8D-8A54-369125AB668B}.Debug|x64.ActiveCfg = Debug|x64
+		{49C09975-3375-3F8D-8A54-369125AB668B}.Debug|x64.Build.0 = Debug|x64
+		{49C09975-3375-3F8D-8A54-369125AB668B}.Release|x64.ActiveCfg = Release|x64
+		{49C09975-3375-3F8D-8A54-369125AB668B}.Release|x64.Build.0 = Release|x64
+		{17F49EF7-58AE-3C79-AF8F-4A71C33C518A}.Debug|x64.ActiveCfg = Debug|x64
+		{17F49EF7-58AE-3C79-AF8F-4A71C33C518A}.Debug|x64.Build.0 = Debug|x64
+		{17F49EF7-58AE-3C79-AF8F-4A71C33C518A}.Release|x64.ActiveCfg = Release|x64
+		{17F49EF7-58AE-3C79-AF8F-4A71C33C518A}.Release|x64.Build.0 = Release|x64
+		{BC6E9730-149B-3166-8444-9BE9927BD64C}.Debug|x64.ActiveCfg = Debug|x64
+		{BC6E9730-149B-3166-8444-9BE9927BD64C}.Debug|x64.Build.0 = Debug|x64
+		{BC6E9730-149B-3166-8444-9BE9927BD64C}.Release|x64.ActiveCfg = Release|x64
+		{BC6E9730-149B-3166-8444-9BE9927BD64C}.Release|x64.Build.0 = Release|x64
+		{1F060711-8ECE-30DA-B73C-334C914BEC16}.Debug|x64.ActiveCfg = Debug|x64
+		{1F060711-8ECE-30DA-B73C-334C914BEC16}.Debug|x64.Build.0 = Debug|x64
+		{1F060711-8ECE-30DA-B73C-334C914BEC16}.Release|x64.ActiveCfg = Release|x64
+		{1F060711-8ECE-30DA-B73C-334C914BEC16}.Release|x64.Build.0 = Release|x64
+		{D295A148-2E53-33CD-9011-758A04D887A1}.Debug|x64.ActiveCfg = Debug|x64
+		{D295A148-2E53-33CD-9011-758A04D887A1}.Debug|x64.Build.0 = Debug|x64
+		{D295A148-2E53-33CD-9011-758A04D887A1}.Release|x64.ActiveCfg = Release|x64
+		{D295A148-2E53-33CD-9011-758A04D887A1}.Release|x64.Build.0 = Release|x64
+		{D2CB240A-8FC4-3520-BECE-01C4D84C372E}.Debug|x64.ActiveCfg = Debug|x64
+		{D2CB240A-8FC4-3520-BECE-01C4D84C372E}.Debug|x64.Build.0 = Debug|x64
+		{D2CB240A-8FC4-3520-BECE-01C4D84C372E}.Release|x64.ActiveCfg = Release|x64
+		{D2CB240A-8FC4-3520-BECE-01C4D84C372E}.Release|x64.Build.0 = Release|x64
+		{E8E6A92C-85EA-3A41-AAA2-FBF4B8D447F4}.Debug|x64.ActiveCfg = Debug|x64
+		{E8E6A92C-85EA-3A41-AAA2-FBF4B8D447F4}.Debug|x64.Build.0 = Debug|x64
+		{E8E6A92C-85EA-3A41-AAA2-FBF4B8D447F4}.Release|x64.ActiveCfg = Release|x64
+		{E8E6A92C-85EA-3A41-AAA2-FBF4B8D447F4}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

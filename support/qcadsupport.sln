@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qcadexample", "D:/mywork/lib2/qcad/support/examples/exampleplugin\qcadexample.vcxproj", "{8527ECDA-B776-3201-8933-4CF2D9706EBA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mainwindow_prototype", "D:/mywork/lib2/qcad/support/examples/mainwindow\mainwindow_prototype.vcxproj", "{1941EBB2-1E54-3388-A7BE-865CC972511F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qcadtransactionlistener", "D:/mywork/lib2/qcad/support/examples/transactionlistener\qcadtransactionlistener.vcxproj", "{1DE3CCC2-AF07-32BF-A469-A41B979AE27E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8527ECDA-B776-3201-8933-4CF2D9706EBA}.Debug|x64.ActiveCfg = Debug|x64
+		{8527ECDA-B776-3201-8933-4CF2D9706EBA}.Debug|x64.Build.0 = Debug|x64
+		{8527ECDA-B776-3201-8933-4CF2D9706EBA}.Release|x64.ActiveCfg = Release|x64
+		{8527ECDA-B776-3201-8933-4CF2D9706EBA}.Release|x64.Build.0 = Release|x64
+		{1941EBB2-1E54-3388-A7BE-865CC972511F}.Debug|x64.ActiveCfg = Debug|x64
+		{1941EBB2-1E54-3388-A7BE-865CC972511F}.Debug|x64.Build.0 = Debug|x64
+		{1941EBB2-1E54-3388-A7BE-865CC972511F}.Release|x64.ActiveCfg = Release|x64
+		{1941EBB2-1E54-3388-A7BE-865CC972511F}.Release|x64.Build.0 = Release|x64
+		{1DE3CCC2-AF07-32BF-A469-A41B979AE27E}.Debug|x64.ActiveCfg = Debug|x64
+		{1DE3CCC2-AF07-32BF-A469-A41B979AE27E}.Debug|x64.Build.0 = Debug|x64
+		{1DE3CCC2-AF07-32BF-A469-A41B979AE27E}.Release|x64.ActiveCfg = Release|x64
+		{1DE3CCC2-AF07-32BF-A469-A41B979AE27E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

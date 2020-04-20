@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:rs="http://www.ribbonsoft.com">
+  <class_decl name="RAttributeDefinitionData" />
+  <class name="RAttributeData"
+  xsi:noNamespaceSchemaLocation="../class.xsd" isCopyable="true"
+  hasShell="false" sharedPointerSupport="true" isQObject="false"
+  hasStreamOperator="false" isAbstract="false" isScriptable="true">
+    <baseClass name="RTextBasedData" specifier="public" />
+    <constructor>
+      <variant />
+      <variant>
+        <arg type="RTextBasedData &amp;" typeName="RTextBasedData"
+        name="textData" isConst="true" />
+        <arg type="RBlockReferenceEntity::Id"
+        typeName="RBlockReferenceEntity::Id"
+        name="blockReferenceId" isConst="false" />
+        <arg type="QString &amp;" typeName="QString" name="tag"
+        isConst="true" />
+      </variant>
+    </constructor>
+    <method name="getType" cppName="getType" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="RS::EntityType" isPureVirtual="false" />
+    </method>
+    <method name="getRenderedText" cppName="getRenderedText"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="escUnicode"
+        hasDefault="true" default="false" isConst="false" />
+      </variant>
+    </method>
+    <method name="getTag" cppName="getTag" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="setTag" cppName="setTag" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="t"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="isInvisible" cppName="isInvisible"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="setInvisible" cppName="setInvisible"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="i"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="getLinetypeId" cppName="getLinetypeId"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RLinetype::Id" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="resolve"
+        isConst="false" />
+        <arg type="QStack &lt; REntity * &gt; &amp;"
+        typeName="QStack &lt; REntity * &gt;" name="blockRefStack"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getLineweight" cppName="getLineweight"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RLineweight::Lineweight"
+      isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="resolve"
+        isConst="false" />
+        <arg type="QStack &lt; REntity * &gt; &amp;"
+        typeName="QStack &lt; REntity * &gt;" name="blockRefStack"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getColor" cppName="getColor" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="RColor" isPureVirtual="false" />
+      <variant returnType="RColor" isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="resolve"
+        isConst="false" />
+        <arg type="QStack &lt; REntity * &gt; &amp;"
+        typeName="QStack &lt; REntity * &gt;" name="blockRefStack"
+        isConst="true" />
+      </variant>
+    </method>
+  </class>
+</unit>

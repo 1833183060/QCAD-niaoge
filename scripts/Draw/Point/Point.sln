@@ -1,0 +1,26 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Draw/Point/dir\dir.vcxproj", "{8F4B3DC7-30DB-3B9F-ADDF-6C0F68FA2B51}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Point1P", "D:/mywork/lib2/qcad/scripts/Draw/Point/Point1P\Point1P.vcxproj", "{6F5BD50C-91A4-31A6-9CA1-22F768A60E4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F4B3DC7-30DB-3B9F-ADDF-6C0F68FA2B51}.Debug|x64.ActiveCfg = Debug|x64
+		{8F4B3DC7-30DB-3B9F-ADDF-6C0F68FA2B51}.Debug|x64.Build.0 = Debug|x64
+		{8F4B3DC7-30DB-3B9F-ADDF-6C0F68FA2B51}.Release|x64.ActiveCfg = Release|x64
+		{8F4B3DC7-30DB-3B9F-ADDF-6C0F68FA2B51}.Release|x64.Build.0 = Release|x64
+		{6F5BD50C-91A4-31A6-9CA1-22F768A60E4A}.Debug|x64.ActiveCfg = Debug|x64
+		{6F5BD50C-91A4-31A6-9CA1-22F768A60E4A}.Debug|x64.Build.0 = Debug|x64
+		{6F5BD50C-91A4-31A6-9CA1-22F768A60E4A}.Release|x64.ActiveCfg = Release|x64
+		{6F5BD50C-91A4-31A6-9CA1-22F768A60E4A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,672 @@
+<?xml version="1.0"?>
+<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:rs="http://www.ribbonsoft.com">
+  <class name="RLinkedStorage"
+  xsi:noNamespaceSchemaLocation="../class.xsd" isCopyable="false"
+  hasShell="false" sharedPointerSupport="false" isQObject="false"
+  hasStreamOperator="false" isAbstract="false" isScriptable="true">
+    <baseClass name="RMemoryStorage" specifier="public" />
+    <constructor>
+      <variant>
+        <arg type="RStorage &amp;" typeName="RStorage"
+        name="backStorage" isConst="false" />
+      </variant>
+    </constructor>
+    <method name="clear" cppName="clear" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false" />
+    </method>
+    <method name="queryAllObjects" cppName="queryAllObjects"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; RObject::Id &gt;"
+      isPureVirtual="false" />
+    </method>
+    <method name="querySelectedLayers"
+    cppName="querySelectedLayers" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QSet &lt; RObject::Id &gt;"
+      isPureVirtual="false" />
+    </method>
+    <method name="queryAllVisibleEntities"
+    cppName="queryAllVisibleEntities" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QSet &lt; REntity::Id &gt;"
+      isPureVirtual="false" />
+    </method>
+    <method name="queryAllEntities" cppName="queryAllEntities"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; REntity::Id &gt;"
+      isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="undone"
+        hasDefault="true" default="false" isConst="false" />
+        <arg type="bool" typeName="bool" name="allBlocks"
+        hasDefault="true" default="false" isConst="false" />
+        <arg type="RS::EntityType" typeName="RS::EntityType"
+        name="type" hasDefault="true" default="RS :: EntityAll"
+        isConst="false" />
+      </variant>
+      <variant returnType="QSet &lt; REntity::Id &gt;"
+      isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="undone"
+        isConst="false" />
+        <arg type="bool" typeName="bool" name="allBlocks"
+        isConst="false" />
+        <arg type="QList &lt; RS::EntityType &gt;"
+        typeName="QList &lt; RS::EntityType &gt;" name="types"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="queryAllUcs" cppName="queryAllUcs"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; RUcs::Id &gt;"
+      isPureVirtual="false" />
+    </method>
+    <method name="queryAllLayers" cppName="queryAllLayers"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; RLayer::Id &gt;"
+      isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="undone"
+        hasDefault="true" default="false" isConst="false" />
+      </variant>
+    </method>
+    <method name="queryAllLayerStates"
+    cppName="queryAllLayerStates" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QSet &lt; RLayerState::Id &gt;"
+      isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="undone"
+        hasDefault="true" default="false" isConst="false" />
+      </variant>
+    </method>
+    <method name="queryAllBlocks" cppName="queryAllBlocks"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; RBlock::Id &gt;"
+      isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="undone"
+        hasDefault="true" default="false" isConst="false" />
+      </variant>
+    </method>
+    <method name="queryAllLayoutBlocks"
+    cppName="queryAllLayoutBlocks" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QSet &lt; RBlock::Id &gt;"
+      isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="includeModelSpace"
+        hasDefault="true" default="false" isConst="false" />
+        <arg type="bool" typeName="bool" name="undone"
+        hasDefault="true" default="false" isConst="false" />
+      </variant>
+    </method>
+    <method name="queryAllLayouts" cppName="queryAllLayouts"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; RLayout::Id &gt;"
+      isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="undone"
+        hasDefault="true" default="false" isConst="false" />
+      </variant>
+    </method>
+    <method name="queryAllViews" cppName="queryAllViews"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; RView::Id &gt;"
+      isPureVirtual="false">
+        <arg type="bool" typeName="bool" name="undone"
+        hasDefault="true" default="false" isConst="false" />
+      </variant>
+    </method>
+    <method name="queryAllLinetypes" cppName="queryAllLinetypes"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; RLinetype::Id &gt;"
+      isPureVirtual="false" />
+    </method>
+    <method name="queryInfiniteEntities"
+    cppName="queryInfiniteEntities" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QSet &lt; REntity::Id &gt;"
+      isPureVirtual="false" />
+    </method>
+    <method name="querySelectedEntities"
+    cppName="querySelectedEntities" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QSet &lt; REntity::Id &gt;"
+      isPureVirtual="false" />
+    </method>
+    <method name="queryLayerEntities" cppName="queryLayerEntities"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; REntity::Id &gt;"
+      isPureVirtual="false">
+        <arg type="RLayer::Id" typeName="RLayer::Id" name="layerId"
+        isConst="false" />
+        <arg type="bool" typeName="bool" name="allBlocks"
+        hasDefault="true" default="false" isConst="false" />
+      </variant>
+    </method>
+    <method name="hasBlockEntities" cppName="hasBlockEntities"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="RBlock::Id" typeName="RBlock::Id" name="blockId"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="queryBlockEntities" cppName="queryBlockEntities"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; REntity::Id &gt;"
+      isPureVirtual="false">
+        <arg type="RBlock::Id" typeName="RBlock::Id" name="blockId"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="queryLayerBlockEntities"
+    cppName="queryLayerBlockEntities" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QSet &lt; REntity::Id &gt;"
+      isPureVirtual="false">
+        <arg type="RLayer::Id" typeName="RLayer::Id" name="layerId"
+        isConst="false" />
+        <arg type="RBlock::Id" typeName="RBlock::Id" name="blockId"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="queryChildEntities" cppName="queryChildEntities"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; REntity::Id &gt;"
+      isPureVirtual="false">
+        <arg type="REntity::Id" typeName="REntity::Id"
+        name="parentId" isConst="false" />
+        <arg type="RS::EntityType" typeName="RS::EntityType"
+        name="type" hasDefault="true" default="RS :: EntityAll"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="hasChildEntities" cppName="hasChildEntities"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="REntity::Id" typeName="REntity::Id"
+        name="parentId" isConst="false" />
+      </variant>
+    </method>
+    <method name="queryBlockReferences"
+    cppName="queryBlockReferences" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QSet &lt; REntity::Id &gt;"
+      isPureVirtual="false">
+        <arg type="RBlock::Id" typeName="RBlock::Id" name="blockId"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="queryAllBlockReferences"
+    cppName="queryAllBlockReferences" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QSet &lt; REntity::Id &gt;"
+      isPureVirtual="false" />
+    </method>
+    <method name="queryDocumentVariablesDirect"
+    cppName="queryDocumentVariablesDirect" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RDocumentVariables &gt;"
+      isPureVirtual="false" />
+    </method>
+    <method name="queryDocumentVariables"
+    cppName="queryDocumentVariables" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RDocumentVariables &gt;"
+      isPureVirtual="false" />
+    </method>
+    <method name="queryObjectDirect" cppName="queryObjectDirect"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RObject &gt;"
+      isPureVirtual="false">
+        <arg type="RObject::Id" typeName="RObject::Id"
+        name="objectId" isConst="false" />
+      </variant>
+    </method>
+    <method name="queryObject" cppName="queryObject"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RObject &gt;"
+      isPureVirtual="false">
+        <arg type="RObject::Id" typeName="RObject::Id"
+        name="objectId" isConst="false" />
+      </variant>
+    </method>
+    <method name="queryObjectByHandle"
+    cppName="queryObjectByHandle" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RObject &gt;"
+      isPureVirtual="false">
+        <arg type="RObject::Handle" typeName="RObject::Handle"
+        name="objectHandle" isConst="false" />
+      </variant>
+    </method>
+    <method name="queryEntityDirect" cppName="queryEntityDirect"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; REntity &gt;"
+      isPureVirtual="false">
+        <arg type="REntity::Id" typeName="REntity::Id"
+        name="objectId" isConst="false" />
+      </variant>
+    </method>
+    <method name="queryEntity" cppName="queryEntity"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; REntity &gt;"
+      isPureVirtual="false">
+        <arg type="REntity::Id" typeName="REntity::Id"
+        name="objectId" isConst="false" />
+      </variant>
+    </method>
+    <method name="queryLayerDirect" cppName="queryLayerDirect"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RLayer &gt;"
+      isPureVirtual="false">
+        <arg type="RLayer::Id" typeName="RLayer::Id" name="layerId"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="queryLayer" cppName="queryLayer"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RLayer &gt;"
+      isPureVirtual="false">
+        <arg type="RLayer::Id" typeName="RLayer::Id" name="layerId"
+        isConst="false" />
+      </variant>
+      <variant returnType="QSharedPointer &lt; RLayer &gt;"
+      isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="layerName" isConst="true" />
+      </variant>
+    </method>
+    <method name="queryLayerStateDirect"
+    cppName="queryLayerStateDirect" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RLayerState &gt;"
+      isPureVirtual="false">
+        <arg type="RLayerState::Id" typeName="RLayerState::Id"
+        name="layerStateId" isConst="false" />
+      </variant>
+    </method>
+    <method name="queryLayerState" cppName="queryLayerState"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RLayerState &gt;"
+      isPureVirtual="false">
+        <arg type="RLayerState::Id" typeName="RLayerState::Id"
+        name="layerStateId" isConst="false" />
+      </variant>
+      <variant returnType="QSharedPointer &lt; RLayerState &gt;"
+      isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="layerStateName" isConst="true" />
+      </variant>
+    </method>
+    <method name="queryLayoutDirect" cppName="queryLayoutDirect"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RLayout &gt;"
+      isPureVirtual="false">
+        <arg type="RLayout::Id" typeName="RLayout::Id"
+        name="layoutId" isConst="false" />
+      </variant>
+    </method>
+    <method name="queryLayout" cppName="queryLayout"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RLayout &gt;"
+      isPureVirtual="false">
+        <arg type="RLayout::Id" typeName="RLayout::Id"
+        name="layoutId" isConst="false" />
+      </variant>
+      <variant returnType="QSharedPointer &lt; RLayout &gt;"
+      isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="layoutName" isConst="true" />
+      </variant>
+    </method>
+    <method name="queryBlockDirect" cppName="queryBlockDirect"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RBlock &gt;"
+      isPureVirtual="false">
+        <arg type="RBlock::Id" typeName="RBlock::Id" name="blockId"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="queryBlock" cppName="queryBlock"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RBlock &gt;"
+      isPureVirtual="false">
+        <arg type="RBlock::Id" typeName="RBlock::Id" name="blockId"
+        isConst="false" />
+      </variant>
+      <variant returnType="QSharedPointer &lt; RBlock &gt;"
+      isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="blockName" isConst="true" />
+      </variant>
+    </method>
+    <method name="queryView" cppName="queryView" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RView &gt;"
+      isPureVirtual="false">
+        <arg type="RView::Id" typeName="RView::Id" name="viewId"
+        isConst="false" />
+      </variant>
+      <variant returnType="QSharedPointer &lt; RView &gt;"
+      isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="viewName" isConst="true" />
+      </variant>
+    </method>
+    <method name="queryUcsDirect" cppName="queryUcsDirect"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RUcs &gt;"
+      isPureVirtual="false">
+        <arg type="RUcs::Id" typeName="RUcs::Id" name="ucsId"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="queryUcs" cppName="queryUcs" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RUcs &gt;"
+      isPureVirtual="false">
+        <arg type="RUcs::Id" typeName="RUcs::Id" name="ucsId"
+        isConst="false" />
+      </variant>
+      <variant returnType="QSharedPointer &lt; RUcs &gt;"
+      isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="ucsName"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="queryLinetypeDirect"
+    cppName="queryLinetypeDirect" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RLinetype &gt;"
+      isPureVirtual="false">
+        <arg type="RLinetype::Id" typeName="RLinetype::Id"
+        name="linetypeId" isConst="false" />
+      </variant>
+    </method>
+    <method name="queryLinetype" cppName="queryLinetype"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSharedPointer &lt; RLinetype &gt;"
+      isPureVirtual="false">
+        <arg type="RLinetype::Id" typeName="RLinetype::Id"
+        name="linetypeId" isConst="false" />
+      </variant>
+      <variant returnType="QSharedPointer &lt; RLinetype &gt;"
+      isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="linetypeName" isConst="true" />
+      </variant>
+    </method>
+    <method name="getLayerName" cppName="getLayerName"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false">
+        <arg type="RLayer::Id" typeName="RLayer::Id" name="layerId"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="getLayerNames" cppName="getLayerNames"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; QString &gt;"
+      isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="rxStr"
+        hasDefault="true" default="RDEFAULT_QSTRING"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getLayerId" cppName="getLayerId"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RLayer::Id" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="layerName" isConst="true" />
+      </variant>
+    </method>
+    <method name="getLayoutName" cppName="getLayoutName"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false">
+        <arg type="RLayout::Id" typeName="RLayout::Id"
+        name="layoutId" isConst="false" />
+      </variant>
+    </method>
+    <method name="getLayoutNames" cppName="getLayoutNames"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; QString &gt;"
+      isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="rxStr"
+        hasDefault="true" default="RDEFAULT_QSTRING"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getLayoutId" cppName="getLayoutId"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RLayout::Id" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="layoutName" isConst="true" />
+      </variant>
+    </method>
+    <method name="getBlockName" cppName="getBlockName"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false">
+        <arg type="RBlock::Id" typeName="RBlock::Id" name="blockId"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="getBlockNameFromLayout"
+    cppName="getBlockNameFromLayout" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="layoutName" isConst="true" />
+      </variant>
+      <variant returnType="QString" isPureVirtual="false">
+        <arg type="RLayout::Id" typeName="RLayout::Id"
+        name="layoutId" isConst="false" />
+      </variant>
+    </method>
+    <method name="getBlockNames" cppName="getBlockNames"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; QString &gt;"
+      isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString" name="rxStr"
+        hasDefault="true" default="RDEFAULT_QSTRING"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="getBlockId" cppName="getBlockId"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RBlock::Id" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="blockName" isConst="true" />
+      </variant>
+    </method>
+    <method name="getBlockIdAuto" cppName="getBlockIdAuto"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RBlock::Id" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="blockLayoutName" isConst="true" />
+      </variant>
+    </method>
+    <method name="getViewName" cppName="getViewName"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false">
+        <arg type="RView::Id" typeName="RView::Id" name="viewId"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="getViewNames" cppName="getViewNames"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; QString &gt;"
+      isPureVirtual="false" />
+    </method>
+    <method name="getViewId" cppName="getViewId" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="RView::Id" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="viewName" isConst="true" />
+      </variant>
+    </method>
+    <method name="getLinetypeName" cppName="getLinetypeName"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false">
+        <arg type="RLinetype::Id" typeName="RLinetype::Id"
+        name="linetypeId" isConst="false" />
+      </variant>
+    </method>
+    <method name="getLinetypeDescription"
+    cppName="getLinetypeDescription" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false">
+        <arg type="RLinetype::Id" typeName="RLinetype::Id"
+        name="linetypeId" isConst="false" />
+      </variant>
+    </method>
+    <method name="getLinetypeLabel" cppName="getLinetypeLabel"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false">
+        <arg type="RLinetype::Id" typeName="RLinetype::Id"
+        name="linetypeId" isConst="false" />
+      </variant>
+    </method>
+    <method name="getLinetypeNames" cppName="getLinetypeNames"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QSet &lt; QString &gt;"
+      isPureVirtual="false" />
+    </method>
+    <method name="getLinetypePatterns"
+    cppName="getLinetypePatterns" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QList &lt; RLinetypePattern &gt;"
+      isPureVirtual="false" />
+    </method>
+    <method name="getLinetypeId" cppName="getLinetypeId"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RLinetype::Id" isPureVirtual="false">
+        <arg type="QString &amp;" typeName="QString"
+        name="linetypeName" isConst="true" />
+      </variant>
+    </method>
+    <method name="getNewObjectId" cppName="getNewObjectId"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RObject::Id" isPureVirtual="false" />
+    </method>
+    <method name="getNewObjectHandle" cppName="getNewObjectHandle"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RObject::Handle"
+      isPureVirtual="false" />
+    </method>
+    <method name="getCurrentLayerId" cppName="getCurrentLayerId"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RLayer::Id" isPureVirtual="false" />
+    </method>
+    <method name="getCurrentBlockId" cppName="getCurrentBlockId"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RBlock::Id" isPureVirtual="false" />
+    </method>
+    <method name="getCurrentViewId" cppName="getCurrentViewId"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RView::Id" isPureVirtual="false" />
+    </method>
+    <method name="getCurrentColor" cppName="getCurrentColor"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="RColor" isPureVirtual="false" />
+    </method>
+    <method name="getCurrentLineweight"
+    cppName="getCurrentLineweight" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="RLineweight::Lineweight"
+      isPureVirtual="false" />
+    </method>
+    <method name="getCurrentLinetypeId"
+    cppName="getCurrentLinetypeId" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="RLinetype::Id" isPureVirtual="false" />
+    </method>
+    <method name="deleteObject" cppName="deleteObject"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="RObject::Id" typeName="RObject::Id"
+        name="objectId" isConst="false" />
+      </variant>
+    </method>
+    <method name="setUndoStatus" cppName="setUndoStatus"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="RObject::Id" typeName="RObject::Id"
+        name="objectId" isConst="false" />
+        <arg type="bool" typeName="bool" name="status"
+        isConst="false" />
+      </variant>
+    </method>
+    <method name="getDimensionFont" cppName="getDimensionFont"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QString" isPureVirtual="false" />
+    </method>
+    <method name="getKnownVariable" cppName="getKnownVariable"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="QVariant" isPureVirtual="false">
+        <arg type="RS::KnownVariable" typeName="RS::KnownVariable"
+        name="key" isConst="false" />
+      </variant>
+    </method>
+    <method name="isInBackStorage" cppName="isInBackStorage"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="RObject::Id" typeName="RObject::Id"
+        name="object" isConst="false" />
+      </variant>
+    </method>
+    <method name="getBackStorage" cppName="getBackStorage"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="RStorage *" isPureVirtual="false" />
+    </method>
+  </class>
+</unit>

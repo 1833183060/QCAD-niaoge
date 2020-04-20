@@ -1,0 +1,62 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/View/Zoom/dir\dir.vcxproj", "{F349F89C-0F84-3EF9-9143-126FEC6B2FF4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AutoZoom", "D:/mywork/lib2/qcad/scripts/View/Zoom/AutoZoom\AutoZoom.vcxproj", "{3D15E52B-FACA-3300-9AB6-AC2B045FA442}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PanZoom", "D:/mywork/lib2/qcad/scripts/View/Zoom/PanZoom\PanZoom.vcxproj", "{CEA6E712-CD88-3CBA-A4C5-9129CE4F8316}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PreviousView", "D:/mywork/lib2/qcad/scripts/View/Zoom/PreviousView\PreviousView.vcxproj", "{902089F5-833D-3868-8A52-0099555B9B2A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindowZoom", "D:/mywork/lib2/qcad/scripts/View/Zoom/WindowZoom\WindowZoom.vcxproj", "{23C5B813-786C-37A6-8164-C8B01829F6D0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZoomIn", "D:/mywork/lib2/qcad/scripts/View/Zoom/ZoomIn\ZoomIn.vcxproj", "{560A2169-7219-3EF0-BC9B-01AAD4587A9C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZoomOut", "D:/mywork/lib2/qcad/scripts/View/Zoom/ZoomOut\ZoomOut.vcxproj", "{402F4797-D61F-364C-AE2B-EF6291038208}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZoomToSelection", "D:/mywork/lib2/qcad/scripts/View/Zoom/ZoomToSelection\ZoomToSelection.vcxproj", "{AC9351B2-FAC4-3DC2-87DF-C4A3D9506B87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F349F89C-0F84-3EF9-9143-126FEC6B2FF4}.Debug|x64.ActiveCfg = Debug|x64
+		{F349F89C-0F84-3EF9-9143-126FEC6B2FF4}.Debug|x64.Build.0 = Debug|x64
+		{F349F89C-0F84-3EF9-9143-126FEC6B2FF4}.Release|x64.ActiveCfg = Release|x64
+		{F349F89C-0F84-3EF9-9143-126FEC6B2FF4}.Release|x64.Build.0 = Release|x64
+		{3D15E52B-FACA-3300-9AB6-AC2B045FA442}.Debug|x64.ActiveCfg = Debug|x64
+		{3D15E52B-FACA-3300-9AB6-AC2B045FA442}.Debug|x64.Build.0 = Debug|x64
+		{3D15E52B-FACA-3300-9AB6-AC2B045FA442}.Release|x64.ActiveCfg = Release|x64
+		{3D15E52B-FACA-3300-9AB6-AC2B045FA442}.Release|x64.Build.0 = Release|x64
+		{CEA6E712-CD88-3CBA-A4C5-9129CE4F8316}.Debug|x64.ActiveCfg = Debug|x64
+		{CEA6E712-CD88-3CBA-A4C5-9129CE4F8316}.Debug|x64.Build.0 = Debug|x64
+		{CEA6E712-CD88-3CBA-A4C5-9129CE4F8316}.Release|x64.ActiveCfg = Release|x64
+		{CEA6E712-CD88-3CBA-A4C5-9129CE4F8316}.Release|x64.Build.0 = Release|x64
+		{902089F5-833D-3868-8A52-0099555B9B2A}.Debug|x64.ActiveCfg = Debug|x64
+		{902089F5-833D-3868-8A52-0099555B9B2A}.Debug|x64.Build.0 = Debug|x64
+		{902089F5-833D-3868-8A52-0099555B9B2A}.Release|x64.ActiveCfg = Release|x64
+		{902089F5-833D-3868-8A52-0099555B9B2A}.Release|x64.Build.0 = Release|x64
+		{23C5B813-786C-37A6-8164-C8B01829F6D0}.Debug|x64.ActiveCfg = Debug|x64
+		{23C5B813-786C-37A6-8164-C8B01829F6D0}.Debug|x64.Build.0 = Debug|x64
+		{23C5B813-786C-37A6-8164-C8B01829F6D0}.Release|x64.ActiveCfg = Release|x64
+		{23C5B813-786C-37A6-8164-C8B01829F6D0}.Release|x64.Build.0 = Release|x64
+		{560A2169-7219-3EF0-BC9B-01AAD4587A9C}.Debug|x64.ActiveCfg = Debug|x64
+		{560A2169-7219-3EF0-BC9B-01AAD4587A9C}.Debug|x64.Build.0 = Debug|x64
+		{560A2169-7219-3EF0-BC9B-01AAD4587A9C}.Release|x64.ActiveCfg = Release|x64
+		{560A2169-7219-3EF0-BC9B-01AAD4587A9C}.Release|x64.Build.0 = Release|x64
+		{402F4797-D61F-364C-AE2B-EF6291038208}.Debug|x64.ActiveCfg = Debug|x64
+		{402F4797-D61F-364C-AE2B-EF6291038208}.Debug|x64.Build.0 = Debug|x64
+		{402F4797-D61F-364C-AE2B-EF6291038208}.Release|x64.ActiveCfg = Release|x64
+		{402F4797-D61F-364C-AE2B-EF6291038208}.Release|x64.Build.0 = Release|x64
+		{AC9351B2-FAC4-3DC2-87DF-C4A3D9506B87}.Debug|x64.ActiveCfg = Debug|x64
+		{AC9351B2-FAC4-3DC2-87DF-C4A3D9506B87}.Debug|x64.Build.0 = Debug|x64
+		{AC9351B2-FAC4-3DC2-87DF-C4A3D9506B87}.Release|x64.ActiveCfg = Release|x64
+		{AC9351B2-FAC4-3DC2-87DF-C4A3D9506B87}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

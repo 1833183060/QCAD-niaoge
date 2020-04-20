@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dir", "D:/mywork/lib2/qcad/scripts/Misc/Examples/MathExamples/dir\dir.vcxproj", "{FC5A0C05-FEE0-31D1-BF28-A4001E017BBA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExMandelbrot", "D:/mywork/lib2/qcad/scripts/Misc/Examples/MathExamples/ExMandelbrot\ExMandelbrot.vcxproj", "{13F14667-0F40-3AD0-B9F4-090EB20D47D7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExMathSpiral", "D:/mywork/lib2/qcad/scripts/Misc/Examples/MathExamples/ExMathSpiral\ExMathSpiral.vcxproj", "{EE820E32-428C-31B6-AF3B-3F769AA3A355}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlexPainter", "D:/mywork/lib2/qcad/scripts/Misc/Examples/MathExamples/FlexPainter\FlexPainter.vcxproj", "{3E3AC82D-49BD-3EF4-83A8-15AF25A231C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC5A0C05-FEE0-31D1-BF28-A4001E017BBA}.Debug|x64.ActiveCfg = Debug|x64
+		{FC5A0C05-FEE0-31D1-BF28-A4001E017BBA}.Debug|x64.Build.0 = Debug|x64
+		{FC5A0C05-FEE0-31D1-BF28-A4001E017BBA}.Release|x64.ActiveCfg = Release|x64
+		{FC5A0C05-FEE0-31D1-BF28-A4001E017BBA}.Release|x64.Build.0 = Release|x64
+		{13F14667-0F40-3AD0-B9F4-090EB20D47D7}.Debug|x64.ActiveCfg = Debug|x64
+		{13F14667-0F40-3AD0-B9F4-090EB20D47D7}.Debug|x64.Build.0 = Debug|x64
+		{13F14667-0F40-3AD0-B9F4-090EB20D47D7}.Release|x64.ActiveCfg = Release|x64
+		{13F14667-0F40-3AD0-B9F4-090EB20D47D7}.Release|x64.Build.0 = Release|x64
+		{EE820E32-428C-31B6-AF3B-3F769AA3A355}.Debug|x64.ActiveCfg = Debug|x64
+		{EE820E32-428C-31B6-AF3B-3F769AA3A355}.Debug|x64.Build.0 = Debug|x64
+		{EE820E32-428C-31B6-AF3B-3F769AA3A355}.Release|x64.ActiveCfg = Release|x64
+		{EE820E32-428C-31B6-AF3B-3F769AA3A355}.Release|x64.Build.0 = Release|x64
+		{3E3AC82D-49BD-3EF4-83A8-15AF25A231C0}.Debug|x64.ActiveCfg = Debug|x64
+		{3E3AC82D-49BD-3EF4-83A8-15AF25A231C0}.Debug|x64.Build.0 = Debug|x64
+		{3E3AC82D-49BD-3EF4-83A8-15AF25A231C0}.Release|x64.ActiveCfg = Release|x64
+		{3E3AC82D-49BD-3EF4-83A8-15AF25A231C0}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
