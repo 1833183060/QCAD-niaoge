@@ -58,8 +58,7 @@ public:
     virtual ~RActionAdapter() {
 //        qDebug() << "~RActionAdapter " << QString("0x%1").arg((int)this, 0, 16);
     }
-    # hactiona
-    virtual void <a id=action>beginEvent</a>() {}
+    virtual void <span id=action color=#ff0000>beginEvent</span>() {}
     
     virtual void setGraphicsView(RGraphicsView* /*view*/) {}
     virtual void finishEvent() {}
