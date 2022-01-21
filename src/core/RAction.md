@@ -57,7 +57,7 @@ RAction::~RAction() {
  *  or NULL.
  */
 RGuiAction* RAction::getGuiAction() {
-    return [guiAction](../RActionAdapter.md#action);
+    return [guiAction](./RActionAdapter.md#action);
 }
 
 
